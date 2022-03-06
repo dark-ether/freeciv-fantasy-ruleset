@@ -1,0 +1,49 @@
+-------------------------------------------------------------
+        scifi ruleset
+-------------------------------------------------------------
+
+this is a original ruleset, it features 3 groups of factions with distinct tech trees. the groups are namely 
+1. natives: decendants of the ancient lost civilization which built the planet
+2. bioweapons: bioweapons created by the ancient lost civilization
+3. humans: human groups which have passed the defense systems of the dyson sphere
+
+natives
+-------------------------------------------------------------
+start with no technologies and a few cities pre-built, need two tiers of tech to match 
+humans. after reaching that level can reverse engineer ancient tecnology
+
+bioweapons
+-------------------------------------------------------------
+start with a gameloss unit, a hive queen, which can build nests indefinitely.have own tech 
+tree separate from humans and natives
+
+
+humans
+-------------------------------------------------------------
+start the game with a single landed spaceship some tehcs but have some advances locked to them, 
+they also continually receive units as support for colonization of the planet from home planet
+
+techtrees
+-------------------------------------------------------------
+humans start with 3 tiers of tech ahead of natives 
+the techs separated by tiers are
+1.industrialization, explosives, eletricity 
+2.computers, nuclear power, radio
+3.superconductors, robotics , fusion power
+however the natives have acess to ancient tecnology once they catch up with the humans. 
+
+the bioweapons have a rather flat tech tree with only 3 tiers but most of their better 
+techs require specific combinations of technologies. 
+
+units
+-------------------------------------------------------------
+
+
+tile improvements
+-------------------------------------------------------------
+bioweapons can't work most of the normal tiles so they need infestors to transform the land into a suitable form for them, 
+additionally their city units all cost population so they need to build nurseries to create normal units periodically .
+
+tile resources
+-------------------------------------------------------------
+gold adds trade

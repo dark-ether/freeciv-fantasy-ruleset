@@ -1,0 +1,207 @@
+;more includes go here
+[extraui]
+
+; Player visible names of the base gui types.
+
+; ui_name_base_fortress refers to all bases that have gui_type "Fortress"
+ui_name_base_fortress = _("?gui_type:Build Type A Base")
+
+; ui_name_base_airbase refers to all bases that have gui_type "Airbase"
+ui_name_base_airbase = _("?gui_type:Build Type B Base")
+
+; /* <-- avoid gettext warnings
+;
+; Each extra, including bases, roads, and resource, must have a section here.
+; Bases, roads, and resources have additional sections for their specific features.
+;
+;
+; Extra types:
+;
+; name                    = translatable name as seen by user
+; rule_name               = (optional) internal name for savegames, rulesets
+;                           etc; if not present, "name" is used for this
+;                           purpose too. Since the name used in savegames must
+;                           not change, if you want to rename an item after a
+;                           ruleset has been released, you should set
+;                           "rule_name" to the original value of "name".
+; category                = How UI should categorize this extra. One of
+;                           "Infra", "Natural", "Nuisance", "Resource",
+;                           or "Bonus"
+; causes                  = events that can create extra type.
+;                           "Irrigation", "Mine", "Hut", "Pollution", "Fallout",
+;                           "Appear", "Resource", "Base", or "Road"
+;                           (the last three require a corresponding
+;                           [resource_*] / [base_*] / [road_*] section)
+; rmcauses                = events that can remove extra type.
+;                           "CleanPollution", "CleanFallout", "Pillage",
+;                           "Disappear", or "Enter"
+; infracost               = Number of infrapoints it costs to place this
+;                           extra. 0, the default, means extra cannot be placed.
+; graphic                 = tag specifying preferred graphic
+; graphic_alt             = tag for alternate graphic if preferred graphic is
+;                           not present. Can use eg "-" for no alternate
+;                           graphic
+; activity_gfx            = tag specifying graphic for unit building extra
+;                           This can be "None" to indicate that graphic sprite
+;                           is not needed.
+; act_gfx_alt             = tag for alternative graphic for unit building extra
+; act_gfx_alt2            = tag for second alternative graphic for unit building extra
+; rmact_gfx               = tag specifying graphic for unit removing extra
+;                           This can be "None" to indicate that graphic sprite
+;                           is not needed.
+; rmact_gfx_alt           = tag for alternative graphic for unit removing extra
+; reqs                    = requirements to build the extra (see effects.ruleset
+;                           and README.effects for help on requirements)
+; rmreqs                  = requirements to remove the extra
+; appearance_reqs         = spontaneous appearance requirements
+; disappearance_reqs      = spontaneous disappearance requirements
+; visibility_req          = Tech a player needs to have to see the extra
+;                           This affects visibility only, for all the rules
+;                           extra is still there even if player can't see it.
+; buildable               = Can extra be built? Defaults to TRUE if extra has
+;                           any causes indicating it can result from worker
+;                           activity.
+;                           If extra is not buildable, it can appear in game
+;                           only if placed in the editor, it's placed by
+;                           map generator, or on city tile if the extra
+;                           also has "AlwaysOnCityCenter" flag set.
+; generated               = Can map generator place the extra? Applicable
+;                           for Hut, Resource, and River extras.
+; build_time              = how long it takes a unit to build this extra.
+;                           Value of 0 (default) means that terrain- and
+;                           build activity specific time is used instead.
+; build_time_factor       = This setting take effect only if build_time is 0.
+;                           Terrain and activity specific build time will be
+;                           multiplied by this value (default 1)
+; removal_time            = how long it takes a unit to remove this extra.
+;                           Value of 0 (default) means that terrain- and
+;                           removal activity specific time is used instead.
+; removal_time_factor     = This setting take effect only if removal_time is 0.
+;                           Terrain and activity specific removal time will be
+;                           multiplied by this value (default 1)
+; defense_bonus           = Percent added to defense when tile has the extra
+;                           (default none)
+; unit_seen               = How opponents see units inside this extra
+;                           "Normal" - Units are seen normally (default)
+;                           "Hidden" - Units are hidden from opponents
+; appearance_chance       = If extra has cause "Appear" and other requirements
+;                           for its appearance are fulfilled, this tells how big
+;                           chance it has to appear each turn. The chance is 1/10000
+;                           times this value.
+; disappearance_chance    = If extra has rmcause "Disappear" and other requirements
+;                           for its disappearance are fulfilled, this tells how big
+;                           chance it has to disappear each turn. The chance is 1/10000
+;                           times this value.
+; native_to               = List of unit classes that are considered to
+;                           be inside the extra when they are on same tile
+; conflicts               = List of extras that cannot be on the same tile.
+;                           Bases with non-zero border_sq automatically conflict
+;                           with each other.
+; hidden_by               = List of extra types that will make this extra
+;                           type not to show on UI if both present.
+; bridged_over            = List of extra types that, if present in tile, will prevent
+;                           building this extra if can't be bridged over
+; no_aggr_near_city       = When at least zero, units inside are not considered
+;                           aggressive when there`s a friendly city within this distance
+; flags
+;   - "NativeTile"        = Native units consider tile native regardless of
+;                           terrain
+;   - "Refuel"            = Native units can use tile as refuel point
+;   - "TerrChangeRemoves" = Extra gets removed when ever terrain changes even
+;                           if target terrain could support it
+;   - "AlwaysOnCityCenter" = City center tiles always have this extra type
+;                           regardless of its other requirements
+;   - "AutoOnCityCenter"  = City center tiles will automatically have this
+;                           extra type if the player can build it
+;   - "ConnectLand"       = Road style gfx on Oceanic tiles are drawn to
+;                           connect to adjacent Land tiles even if they have
+;                           no extra. This affects appearance only
+;   - "GlobalWarming"     = Instances of this extra on map count towards
+;                           Global Warming
+;   - "NuclearWinter"     = Instances of this extra on map count towards
+;                           Nuclear Winter
+;   - "ShowFlag"          = Draw owner's flag
+;   - "NaturalDefense"    = Extra's defense bonus will be counted to "Natural"
+;                           defense layer. The defense bonus of all the extras
+;                           located at the tile, native to defending unit,
+;                           is calculated as a 1 + sum of bonuses from the extras
+;                           on the default "Fortification" defense layer multiplied
+;                           by the 1 + sum of bonuses from the extras on the
+;                           "Natural" layer.
+;   - "NoStackDeath"      = Units inside do not die all at once when attacked
+; helptext                = optional help text string; should escape all raw
+;                           newlines so that xgettext parsing works
+;
+; */ <-- avoid gettext warnings
+
+;[extra_generic]
+;name           = _("Generic")
+;category       = "Infra"
+;causes         = ""
+;rmcauses       = ""
+;graphic        = "tx.generic"
+;graphic_alt    = "-"
+;activity_gfx   = "unit.generic"
+;act_gfx_alt    = "-"
+;act_gfx_alt2   = "-"
+;rmact_gfx      = "None"
+;rmact_gfx_alt  = "-"
+;build_time     = 0
+;removal_time   = 0
+;helptext       = _("")
+
+;[extra_gbase]
+;name           = _("Generic Base")
+;category       = "Infra"
+;causes         = "Base"
+;rmcauses       = ""
+;graphic        = "base.generic"
+;graphic_alt    = "-"
+;activity_gfx   = "unit.gbase"
+;act_gfx_alt    = "-"
+;act_gfx_alt2   = "-"
+;rmact_gfx      = "None"
+;rmact_gfx_alt  = "-"
+;buildable      = FALSE
+;reqs           =
+;    { "type", "name", "range"
+; No requirements
+;    }
+;build_time     = 0
+;removal_time   = 0
+;helptext       = _("")
+
+;[extra_groad]
+;name           = _("Generic Road")
+;category       = "Infra"
+;causes         = "Road"
+;rmcauses       = ""
+;graphic        = "road.generic"
+;graphic_alt    = "-"
+;activity_gfx   = "unit.groad"
+;act_gfx_alt    = "-"
+;act_gfx_alt2   = "-"
+;rmact_gfx      = "None"
+;rmact_gfx_alt  = "-"
+;buildable      = FALSE
+;reqs           =
+;    { "type", "name", "range"
+; No requirements
+;    }
+;build_time     = 0
+;removal_time   = 0
+;helptext       = _("")
+
+[extra_gresource]
+name           = _("Generic Resource")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.grassland_resources"
+graphic_alt    = "-"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+

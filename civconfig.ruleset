@@ -1,0 +1,234 @@
+[civstyle]
+; Value added to city pollution
+base_pollution   = -20
+
+; Cost in luxuries of making one citizen happier
+happy_cost       = 2
+
+; Cost in food of upkeeping a single citizen
+food_cost        = 2
+
+; Parameters used to generalize the calculation of city granary size:
+;   if city_size <= num_inis:
+;     city_granary_size = (granary_food_ini[city_size] * foodbox / 100)
+;   if city_size > num_inis;
+;     city_granary_size = (granary_food_ini[num_inis] +
+;        granary_food_inc * (city_size - num_inis)) * foodbox / 100
+granary_food_ini	= 20
+granary_food_inc	= 10
+
+; City center minimum outputs
+min_city_center_food	= 1
+min_city_center_shield	= 1
+min_city_center_trade	= 0
+
+; Square of initial city radius
+init_city_radius_sq     = 5
+
+; Square of initially visible radius (true distance).
+init_vis_radius_sq	= 5
+
+; A base bribe cost, modified heavily by other factors
+base_bribe_cost  = 750
+
+; Barbarian leader ransom in gold. The ransom is taken from
+; the victim (typically a barbarian player), and it`s possible
+; they cannot pay this in full.
+ransom_gold      = 100
+
+; Number of veteran levels lost when upgrading a unit
+upgrade_veteran_loss     = 0
+
+; Number of veteran levels lost when auto-upgrading a unit
+autoupgrade_veteran_loss = 0
+
+; Whether player gets to select which terrain improvement to pillage.
+pillage_select           = TRUE
+
+; Whether one can steal a tech for which prereqs are not known
+tech_steal_allow_holes    = TRUE
+; Whether one can get a tech for which prereqs are not known via
+; diplomatic trading
+tech_trade_allow_holes    = TRUE
+; ...and whether one can lose a tech which is prereq for another known
+; tech via trade, if techlost_donor is nonzero
+tech_trade_loss_allow_holes = TRUE
+; Whether one can get a tech for which prereqs are not known via
+; parasite effect (Great Library)
+tech_parasite_allow_holes = TRUE
+; Whether one can lose a tech which is prereq for another known tech
+; due to negative bulbs, if techlossforgiveness allows loss
+tech_loss_allow_holes     = TRUE
+
+; Whether civil war is possible at all
+civil_war_enabled        = TRUE
+
+; How many percents each celebrating city affects chance of civil war
+civil_war_bonus_celebrating = 0
+
+; How many percents each unhappy city affects chance of civil war
+civil_war_bonus_unhappy     = 0
+
+; Comma separated list of things to happen, in addition to death
+; of owner, when gameloss unit dies
+; "CivilWar"   - Part of the empire remains, controlled by a new player
+; "Barbarians" - Depending on if there`s also "CivilWar", all or part
+;                or half of the dead players empire gets under barbarian
+;                control.
+; "Loot"       - Player who killed the gameloss unit gets loot:
+;                Partial map, gold, techs, cities
+gameloss_style           = ""
+
+; Whether units may safely paradrop to transport on non-native terrain
+paradrop_to_transport    = FALSE
+
+;Method of paying unit and improvement gold upkeep
+; "City" -   The player`s total gold must be non-negative after paying upkeep
+;            costs associated with each city. If for any city the player`s
+;            gold is negative, random buildings in the city are sold off. If
+;            the gold is still negative, then supported units with gold upkeep
+;            are disbanded.
+; "Mixed" -  In the first step, the player`s total gold must be non-negative
+;            after paying upkeep for all buildings within a city. If for any
+;            city the player`s gold is negative, random buildings in the city
+;            are sold off.
+;            In the second step, gold upkeep for all units is paid in a lump
+;            sum. If the player does not have enough gold, random units with
+;            gold upkeep are disbanded.
+; "Nation" - Gold upkeep for all buildings and units is paid in a lump sum
+;            after all cities have been processed. If the player does not
+;            have enough gold, random buildings from random cities are sold.
+;            If still more gold is needed, then random units with gold
+;            upkeep are disbanded.
+gold_upkeep_style = "City"
+
+; How many points of output one basic unit consists of. Typically you
+; want this to be some 10^n.
+output_granularity = 1
+
+; Is it possible to airlift even with zero airlift capacity when
+; airliftingstyle server setting has been set to unlimited airlifts?
+airlift_from_always_enabled = FALSE
+airlift_to_always_enabled = TRUE
+
+[wonder_visibility]
+; When do opponents know which city, if any, has built the Small Wonder
+; "Always"  - Information is always sent
+; "Never"   - Information is never sent
+; "Embassy" - Information is sent when team has an embassy with Wonder owner
+small_wonders = "Always"
+
+[illness]
+; Whether plagues (illness) are possible
+illness_on = FALSE
+
+; the base factor for illness (of percent)
+illness_base_factor = 25
+
+; minimum city size for illness
+illness_min_size = 3
+
+; factor for how much trading with a plagued city increases our city`s
+; chance for plague (in percent)
+illness_trade_infection = 50
+
+; factor for how much pollution within a city increases its chance for
+; plague (in percent)
+illness_pollution_factor = 50
+
+[borders]
+; Base border radius from city.
+radius_sq_city = 0
+
+; Border radius square increased by this amount / point of city size
+size_effect    = 0
+
+; Difference between city workable area and area permanently claimed by
+; city (these tiles cannot be stolen by stronger border sources).
+; 0 means exactly city workable area is immune to border stealing.
+; Negative value means outer workable tiles can be stolen; highly negative
+; value (more than max city radius_sq) means any workable tile can be stolen.
+; If City_Radius_Sq is variable, so is the set of locked tiles; this is
+; a squared value, so the radius of the ring of tiles which are workable
+; but not locked (or vice versa) varies but the area is constant.
+radius_sq_city_permanent = 0
+
+[research]
+; Method of calculating technology costs
+;   "Civ I|II"      - Civ (I|II) style. Every new tech add base_tech_cost to
+;                     cost of next tech.
+;   "Classic"       - Cost of technology is:
+;                       base_tech_cost * (1 + reqs) * sqrt(1 + reqs) / 2
+;                     where reqs == number of requirement for tech, counted
+;                     recursively.
+;   "Classic+"      - Cost are read from tech.ruleset. Missing costs are
+;                     generated by style "Classic".
+;   "Experimental"  - Cost of technology is:
+;                       base_tech_cost * (reqs^2 / (1 + sqrt(sqrt(reqs + 1)))
+;                                         - 0.5)
+;                     where reqs == number of requirement for tech, counted
+;                     recursively. Initial techs` cost will be base_tech_cost.
+;   "Experimental+" - Cost are read from tech.ruleset. Missing costs are
+;                     generated by style "Experimental".
+;   "Linear"        - Cost of technology is:
+;                     base_tech_cost * reqs
+;                     where reqs == number of requirement for tech, counted
+;                     recursively.
+tech_cost_style = "Classic"
+
+; Base research cost. Used in tech cost styles where tech cost is generated.
+; In other words: used everywhere unless the cost of *all* techs are
+; specified and the tech cost style is "Experimental+" or "Classic+".
+base_tech_cost   = 20
+
+; Minimum research cost. This is applied for techs that have their cost
+; calculated by a formula. This is not applied for techs that have their
+; cost explicitly stated in the tech.ruleset.
+min_tech_cost    = 20
+
+; Technology leak from other civilizations
+; "None"           - No reduction of the technology cost.
+; "Embassies"      - Technology cost is reduced depending on the number of
+;                    players which already know the tech and you have an
+;                    embassy with.
+; "All Players"    - Technology cost is reduced depending on the number of
+;                    all players (human, AI and barbarians) which already
+;                    know the tech.
+; "Normal Players" - Technology cost is reduced depending on the number of
+;                    normal players (human and AI) which already know the
+;                    tech.
+tech_leakage = "None"
+
+; Method of paying tech upkeep
+; "None"   - no upkeep
+; "Basic"  - upkeep is calculated as:
+;     <Cost of technology> / tech_upkeep_divider - tech_upkeep_free
+; "Cities" - upkeep is calculated like "Basic", but multiplied by number of cities
+tech_upkeep_style = "None"
+
+; upkeep cost is divided by this value
+tech_upkeep_divider = 2000
+
+; Method of selecting techs given for free
+; "Goal"     - Towards player`s goal, random if no goal
+; "Random"   - Random researchable tech
+; "Cheapest" - Cheapest researchable tech, random among equal cost ones
+free_tech_method = "Goal"
+
+[culture]
+; Minimum culture points for cultural domination victory
+victory_min_points = 1000
+
+; How big lead relative to second best player is needed for victory
+victory_lead_pct   = 200
+
+; How much existing history grows each turn. This makes older history
+; of the same original value more valuable as newer history, as it has
+; gained more interest.
+history_interest_pml = 0
+
+; How much each culture point affects the migration
+; from/to the city. Each culture point count as this many permilles
+; of a migration point.
+migration_pml = 50
+

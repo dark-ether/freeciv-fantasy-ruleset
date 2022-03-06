@@ -1,0 +1,292 @@
+*include "scifi/map/extras/main.ruleset"
+*include "scifi/map/resources.ruleset"
+
+[datafile]
+description = "<modpack> tile_type data for Freeciv"
+options = "+Freeciv-ruleset-3.2-Devel-2022.Feb.02"
+format_version = 30
+
+[control]
+; Names for custom terrain flags. There can be up to 10 of these.
+; name          = rule name; In some circumstances user may see this
+;                 as part of some sentences, so try to make it descriptive
+;                 and sensible.
+; helptxt       = displayed in the help for terrains with this flag (optional)
+;flags =
+;  { "name", "helptxt"
+;  }
+
+; Names for custom extra flags. There can be up to 8 of these.
+; name          = rule name; In some circumstances user may see this
+;                 as part of some sentences, so try to make it descriptive
+;                 and sensible.
+; helptxt       = displayed in the help for extra types with this flag
+;                 (optional)
+;extra_flags =
+;  { "name", "helptxt"
+;  }
+
+[parameters]
+
+; Percentage of "land" tiles required to be adjacent to an ocean tile before
+; it may be "reclaimed" into a land tile (0-101; 0=anywhere, 101=nowhere)
+ocean_reclaim_requirement = 30
+
+; Percentage of "ocean" tiles required to be adjacent to a land tile before
+; it may be "channeled" into an ocean tile (0-101; 0=anywhere, 101=nowhere)
+land_channel_requirement = 10
+
+; Percentage of unfrozen tiles (no "Frozen" flag) required to be adjacent
+; to a frozen tile before it can thaw (0-101; 0=anywhere, default 101=nowhere)
+;thaw_requirement = 101
+
+; Percentage of frozen tiles ("Frozen" flag) required to be adjacent to an
+; unfrozen tile before it can freeze (0-101; 0=anywhere, default 101=nowhere)
+;freeze_requirement = 101
+
+; Bodies of water up to this size are considered freshwater lakes, if there is
+; also terrain type(s) with flag "FreshWater" in the ruleset.
+lake_max_size = 0
+
+; How many native tiles first startunit must be able to reach.
+; 0 to disable check.
+min_start_native_area = 0
+
+; How many fragments each movement point has.
+; For example road movement costs are relative to this.
+move_fragments = 1
+
+; How many move_fragments IgTer unit movement costs
+igter_cost = 1
+
+; Whether diagonal movement has increased cost (no effect with hex topology)
+; The cost increase is more accurate with larger values for move_fragments
+pythagorean_diagonal = FALSE
+
+; There is no resources in the middle of the oceans, only near coast
+ocean_resources = FALSE
+
+; /* <-- avoid gettext warnings
+;
+; The individual terrain types, one per section.
+; Roughly sorted by identifier.
+; The actual tag used (the * in [terrain_*]) must be unique for each terrain,
+; and may be used in debug output when reading this file.
+;
+; Notes:
+;
+; name                 = translatable name as seen by user
+; rule_name            = (optional) internal name for savegames, rulesets etc;
+;                        if not present, "name" is used for this purpose too.
+;                        Since the name used in savegames must not change, if
+;                        you want to rename an item after a ruleset has been
+;                        released, you should set "rule_name" to the original
+;                        value of "name".
+; graphic              = preferred graphic; Tilespec [tile_*] section
+;                        with 'tag' matching this will be used.
+; graphic_alt          = alternate graphic. When no tilespec 'tag' matching
+;                        preferred graphic is not found, this will be used.
+;                        Otherwise may be "-"
+; identifier           = single-character identifier used in savegames. This
+;                        must be unique for each terrain.
+; class                = Terrain class terrain belongs to: "Land" or "Oceanic"
+; movement_cost        = in whole movement points, not move_fragments;
+;                        typically 1 to 3
+; defense_bonus        = percent added to defense; typically 0% to 200%
+; food                 = normal food production
+; shield               = normal shield production
+; trade                = normal trade production
+; resources            = list of possible resources on this terrain
+; resource_freq        = (optional) list of relative frequencies for each
+;                        possible resource on this terrain. When specified,
+;                        must be the same length as resource list.
+;                        Otherwise, all resources occur with approximately
+;                        equal frequency.
+; road_food_incr_pct   = percent of road food_incr applied to this terrain
+; road_shield_incr_pct = percent of road shield_incr applied to this terrain
+; road_trade_incr_pct  = percent of road trade_incr applied to this terrain
+; base_time            = time to build bases; if 0, cannot build any bases.
+;                        Nonzero values only affect extras with build_time 0.
+; road_time            = time to build roads; if 0, cannot build any roads.
+;                        Nonzero values only affect extras with build_time 0.
+; cultivate_result     = cultivate activity changes to that terrain
+;                        'no' to disable cultivate
+; cultivate_time       = time to cultivate
+; plant_result         = plant activity changes to that terrain
+;                        'no' to disable planting
+; plant_time           = time to plant
+; irrigation_food_incr = increment to food if tile is 100% irrigated
+;                        (actual bonus controlled by Irrigation_Pct effect)
+; irrigation_time      = time for 'irrigate' activity; if 0, cannot irrigate
+;                        Nonzero values only affect extras with build_time 0.
+;                        Such extras can modify time with build_time_factor.
+; mining_shield_incr   = increment to shields if tile is 100% mined
+;                        (actual bonus controlled by Mining_Pct effect)
+; mining_time          = time for 'mine' activity; if 0, cannot mine
+;                        Nonzero values only affect extras with build_time 0.
+;                        Such extras can modify time with build_time_factor.
+; transform_result     = result of transformation; one of:
+;                        "no"  -- cannot transform
+;                        terrain rule_name -- transformation changes to that
+;                          terrain
+; transform_time       = time to transform
+; placing_time         = time for 'placing' an extra; if 0, cannot place
+;                        Nonzero values only affect extras with build_time 0.
+;                        Such extras can modify time with build_time_factor.
+;                        Default is 1.
+; pillage_time         = time to pillage extra from the tile (0 = impossible)
+;                        Nonzero values only affect extras with removal_time 0.
+; clean_pollution_time = time for 'clean pollution' activity (0 = impossible)
+;                        Nonzero values only affect extras with removal_time 0.
+; clean_fallout_time   = time for 'clean fallout' activity (0 = impossible)
+;                        Nonzero values only affect extras with removal_time 0.
+; animal               = unit type that can appear as animal on the terrain
+; warmer_wetter_result = result of global warming for wet terrains; one of:
+;                        "no"  -- no change; doesn''t count for warming
+;                        "yes" -- no change; counts for warming
+;                        terrain rule_name -- warming changes to that terrain
+; warmer_drier_result  = result of global warming for dry terrains;
+;                        see warmer_wetter_result
+; cooler_wetter_result = result of nuclear winter for wet terrains;
+;                        see warmer_wetter_result
+; cooler_drier_result  = result of nuclear winter for dry terrains;
+;                        see warmer_wetter_result
+; native_to            = List of unit classes that can move here
+; flags                = General flags for this terrain. List taken from the
+;                        following, and/or any user flags defined above:
+;   - NoBarbs          = Barbarians will not be spawned here.
+;   - NoCities         = Cities may not be built or found on this terrain.
+;   - Starter          = Players will only be started on "Starter" terrain.
+;                        (Currently this cannot be Oceanic terrain.)
+;   - CanHaveRiver     = Set to 1 if this terrain can have river on it (the
+;                        actual chance of river generation is controlled
+;                        separately).
+;   - UnsafeCoast      = This terrain does not provide a safe coast for
+;                        units with flag "CoastStrict"
+;   - FreshWater       = This terrain is used for small bodies of water.
+;                        If this becomes adjacent to non-FreshWater terrain,
+;                        the whole contiguous FreshWater area will be flooded
+;                        with the non-FreshWater terrain.
+;   - NotGenerated     = Map generator never places this terrain type. It can
+;                        be added from editor only, or by ingame events
+;                        (lua scripting)
+;   - NoZoc            = Units on this terrain are not generating or subject
+;                        to zoc
+;   - Frozen           = Frozen/polar terrain. For water tiles, Frozen terrain
+;                        is generated near poles. Conversion between frozen
+;                        and unfrozen terrain can be controlled with
+;                        thaw_requirement/freeze_requirement, and Frozen
+;                        terrain is shown differently on the overview map.
+; property_*           = specific property % values used by mapgen. Most
+;                        terrains will have 0 for most values. Properties
+;                        other than ocean_depth are only used for land tiles.
+;  - mountainous       = degree to which this terrain is mountainous
+;  - green             = how much life this terrain has
+;  - foliage           = how much thick undergrowth the terrain has
+;  - tropical          = how "tropical" the terrain is (high temperature)
+;  - temperate         = how "temperate" the terrain is (med temperature)
+;  - cold              = how "cold" the terrain is (low temperature)
+;  - frozen            = how "frozen" the terrain is (very low temperature)
+;                        (does not necessarily have to have the "Frozen" flag)
+;  - wet               = how "wet" the terrain is (moisture)
+;  - dry               = how "dry" the terrain is (moisture)
+;  - ocean_depth       = the depth of an ocean, as a percentage
+; color.r              = color of the terrain (red value)
+; color.g              = color of the terrain (green value)
+; color.b              = color of the terrain (blue value)
+; helptext	       = optional help text string; should escape all raw
+;		         newlines so that xgettext parsing works
+
+[terrain_generic]
+name                 = _("Generic")
+graphic              = "generic"
+graphic_alt	     = "grassland"
+identifier	     = "g"
+class                = "Land"
+movement_cost        = 1
+defense_bonus        = 0
+food                 = 1
+shield               = 1
+trade                = 0
+resources            = "Generic Resource"
+road_food_incr_pct   = 0
+road_shield_incr_pct = 0
+road_trade_incr_pct  = 100
+base_time            = 1
+road_time            = 1
+cultivate_result     = "no"
+cultivate_time       = 0
+plant_result         = "no"
+plant_time           = 0
+irrigation_food_incr = 1
+irrigation_time      = 5
+mining_shield_incr   = 0
+mining_time          = 10
+transform_result     = "no"
+transform_time       = 0
+placing_time         = 1
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "no"
+warmer_drier_result  = "no"
+cooler_wetter_result = "no"
+cooler_drier_result  = "no"
+native_to            = "Generic"
+flags                = "Starter", "CanHaveRiver"
+property_temperate   = 50
+property_green       = 50
+color.r              = 200
+color.g              = 200
+color.b              = 200
+helptext	     = _("\
+This is only possible land terrain.\
+")
+
+[terrain_ocean]
+name                 = _("Ocean")
+graphic              = "coast"
+graphic_alt	     = "-"
+identifier	     = " "
+class                = "Oceanic"
+movement_cost        = 1
+defense_bonus        = 0
+food                 = 1
+shield               = 1
+trade                = 0
+resources            = "Generic Resource"
+road_food_incr_pct   = 0
+road_shield_incr_pct = 0
+road_trade_incr_pct  = 100
+base_time            = 1
+road_time            = 1
+cultivate_result     = "no"
+cultivate_time       = 0
+plant_result         = "no"
+plant_time           = 0
+irrigation_food_incr = 0
+irrigation_time      = 0
+mining_shield_incr   = 0
+mining_time          = 0
+transform_result     = "no"
+transform_time       = 0
+placing_time         = 1
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "no"
+warmer_drier_result  = "no"
+cooler_wetter_result = "no"
+cooler_drier_result  = "no"
+native_to            = "Generic Ship"
+;flags                =
+property_ocean_depth = 10
+color.r              = 50
+color.g              = 50
+color.b              = 230
+helptext	     = _("\
+This is only possible oceanic terrain.\
+")
+
