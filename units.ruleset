@@ -12,9 +12,9 @@ format_version = 30
 ;                 as part of some sentences, so try to make it descriptive
 ;                 and sensible.
 ; helptxt       = displayed in the help for unit types with this flag (optional)
-; flags =
-;   { "name", "helptxt"
-;   }
+flags =   { "name", "helptxt"
+            _("Cities") , _("can build cities, the unit is consumed in the process")
+   }
 
 ; Names for custom unit class flags. There can be up to 15 of these.
 ; name          = rule name; In some circumstances user may see this
@@ -104,16 +104,25 @@ veteran_move_bonus = 0,0,0,0,0
 ;
 ; */ <-- avoid gettext warnings
 
-[unitclass_generic]
-name          = _("Generic")
-min_speed     = 1
+[unitclass_land]
+name          = _("Land")
+min_speed     = 2
 hp_loss_pct   = 0
-flags         = ""
+non_native_def_pct = 100
+flags         = "CanOccupyCity","CollectRansom","DamageSlows","KillCitizen","TerrainSpeed","TerrainDefense","ZOC"
 
-[unitclass_ship]
-name          = _("Generic Ship")
-min_speed     = 1
+[unitclass_sea]
+name          = _("Sea")
+min_speed     = 2
 hp_loss_pct   = 0
-flags         = ""
+non_native_def_pct = 100
+flags         = "AttackNonNative","CanOccupyCity","CollectRansom","DamageSlows","KillCitizen","TerrainSpeed","ZOC"
+
+[unitclass_air]
+name = _("Air")
+min_speed = 4
+hp_loss_pct = 0
+non_native_def_pct = 100
+flags = "AttackNonNative","CollectRansom","KillCitizen","Unreachable","HutFrighten"
 
 *include "scifi/units/starter.ruleset"

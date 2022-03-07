@@ -108,79 +108,76 @@ format_version = 30
 ;
 ; */ <-- avoid gettext warnings
 
-[control]
-;flags = {"name","helptxt"
-;        "",""
-;}
 
 [techclass_default]
 name = _("normal")
 [techclass_ancient]
 name = _("ancient technology")
 [techclass_modern_era]
-name = _("modern era")
+name = _("Modern Era")
 cost_pct = 50
 [techclass_swarm]
 name = _("swarm mutations")
 
 [advance_electricity]
-name = _("electricity")
-class =  "modern era"
+name = _("Electricity")
+class =  "Modern Era"
 req1 = "None"
 req2 = "None"
 graphic = "a.electricity"
 
 [advance_explosives]
-name = _("explosives")
-class =  "modern era"
+name = _("Explosives")
+class =  "Modern Era"
 req1 = "None"
 req2 = "None"
 graphic =  "a.explosives"
 
 [advance_industrialization]
-name = _("industrialization")
-class =  "modern era"
+name = _("Industrialization")
+class =  "Modern Era"
 req1 = "None"
 req2 = "None"
 graphic = "a.industrialization"
 
 [advance_computers]
-name = _("computers")
-class =  "modern era"
-req1 = "electricity"
+name = _("Computers")
+class =  "Modern Era"
+req1 = "Electricity"
 req2 = "None"
 graphic = "a.computers"
 
 [advance_nuclear_power]
-name = _("nuclear power")
-class =  "modern era"
-req1 = "electricity"
-req2 = "industrialization"
+name = _("Nuclear Power")
+class =  "Modern Era"
+req1 = "Electricity"
+req2 = "Industrialization"
 graphic = "a.nuclear_power"
 
 [advance_radio]
-name = _("radio")
-class =  "modern era"
-req1 = "electricity"
+name = _("Radio")
+class =  "Modern Era"
+req1 = "Electricity"
 req2 = "None"
 graphic = "a.radio"
 
 [advance_fusion_power]
-name = _("fusion power")
-req1 = "nuclear power"
-req2 = "computers"
+name = _("Fusion power")
+class = "Modern Era"
+req1 = "Nuclear power"
+req2 = "Computers"
 graphic = "a.fusion_power"
 
 [advance_robotics]
-name = _("robotics")
-class =  "modern era"
-req1 = "computers"
-req2 = "electricity"
+name = _("Robotics")
+class =  "Modern Era"
+req1 = "Computers"
+req2 = "Electricity"
 graphic = "a.robotics"
 
 [advance_super_conductors]
-name = _("super conductors")
-class =  "modern era"
-req1 = "computers"
-req2 = "industrialization"
+name = _("Super Conductors")
+class =  "Modern Era"
+req1 = "Computers"
+req2 = "Industrialization"
 graphic = "a.superconductors"

@@ -1,0 +1,462 @@
+[terrain_glacier]
+name                 = _("Glacier")
+graphic              = "arctic"
+graphic_alt          = "-"
+identifier           = "a"
+class                = "Land"
+movement_cost        = 2
+defense_bonus        = 0
+food                 = 3
+shield               = 3
+trade                = 3
+;resources            = 
+road_trade_incr_pct  = 0
+base_time            = 6
+road_time            = 12
+cultivate_result     = "no"
+cultivate_time       = 0
+plant_result         = "no"
+plant_time           = 0
+irrigation_food_incr = 0
+irrigation_time      = 0
+mining_shield_incr   = 1
+mining_time          = 15
+transform_result     = "Tundra"
+transform_time       = 40
+placing_time         = 6
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "Tundra"
+warmer_drier_result  = "Tundra"
+cooler_wetter_result = "no"
+cooler_drier_result  = "no"
+native_to            = "Land", "Air"
+flags                = "NoBarbs","CanHaveRiver", "Frozen"
+property_frozen      = 100
+color.r              = 232
+color.g              = 232
+color.b              = 232
+helptext             = _("\
+Glaciers are found only in the most northerly or southerly\
+ reaches of the world.  They are very cold, and hence difficult to\
+ work with.\
+")
+
+[terrain_desert]
+name                 = _("Desert")
+graphic              = "desert"
+graphic_alt          = "-"
+identifier           = "d"
+class                = "Land"
+movement_cost        = 1
+defense_bonus        = 0
+food                 = 0
+shield               = 9
+trade                = 0
+;resources            = 
+road_trade_incr_pct  = 100
+base_time            = 9
+road_time            = 18
+cultivate_result     = "no"
+cultivate_time       = 0
+plant_result         = "no"
+plant_time           = 0
+irrigation_food_incr = 1
+irrigation_time      = 10
+mining_shield_incr   = 1
+mining_time          = 10
+transform_result     = "Plains"
+transform_time       = 40
+placing_time         = 4
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "Grassland"
+warmer_drier_result  = "no"
+cooler_wetter_result = "Plains"
+cooler_drier_result  = "Tundra"
+native_to            = "Land", "Air"
+flags                = "CanHaveRiver"
+property_dry         = 100
+property_tropical    = 50
+property_temperate   = 20
+color.r              = 214
+color.g              = 185
+color.b              = 106
+helptext             = _("\
+Deserts are regions of extreme dryness, making agriculture and\
+ trade very difficult.\
+")
+
+[terrain_forest]
+name                 = _("Forest")
+graphic              = "forest"
+graphic_alt          = "-"
+identifier           = "f"
+class                = "Land"
+movement_cost        = 2
+defense_bonus        = 50
+food                 = 3
+shield               = 6
+trade                = 0
+;resources            = 
+road_trade_incr_pct  = 0
+base_time            = 10
+road_time            = 12
+cultivate_result     = "Plains"
+cultivate_time       = 5
+plant_result         = "Swamp"
+plant_time           = 15
+irrigation_food_incr = 0
+irrigation_time      = 0
+mining_shield_incr   = 0
+mining_time          = 0
+transform_result     = "Grassland"
+transform_time       = 24
+placing_time         = 8
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "Jungle"
+warmer_drier_result  = "Plains"
+cooler_wetter_result = "Swamp"
+cooler_drier_result  = "Tundra"
+native_to            = "Land", "Air"
+flags                = "Starter", "CanHaveRiver"
+property_cold        = 20
+property_wet         = 20
+property_foliage     = 50
+property_temperate   = 50
+color.r              = 43
+color.g              = 107
+color.b              = 19
+helptext             = _("\
+Forests are densely wooded, making agriculture somewhat\
+ problematic.\
+")
+
+[terrain_grassland]
+name                 = _("Grassland")
+graphic              = "grassland"
+graphic_alt          = "-"
+identifier           = "g"
+class                = "Land"
+movement_cost        = 1
+defense_bonus        = 0
+food                 = 9
+shield               = 0
+trade                = 0
+;resources            = 
+road_trade_incr_pct  = 100
+base_time            = 6
+road_time            = 12
+cultivate_result     = "no"
+cultivate_time       = 0
+plant_result         = "Forest"
+plant_time           = 10
+irrigation_food_incr = 1
+irrigation_time      = 5
+mining_shield_incr   = 0
+mining_time          = 0
+transform_result     = "Hills"
+transform_time       = 24
+placing_time         = 4
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "Lake"
+warmer_drier_result  = "Desert"
+cooler_wetter_result = "Glacier"
+cooler_drier_result  = "Tundra"
+native_to            = "Land", "Air"
+flags                = "Starter", "CanHaveRiver"
+property_green       = 50
+property_temperate   = 50
+color.r              = 11
+color.g              = 138
+color.b              = 4
+helptext             = _("\
+Grasslands afford exceptional agricultural opportunities.\
+")
+
+[terrain_hills]
+name                 = _("Hills")
+graphic              = "hills"
+graphic_alt          = "-"
+identifier           = "h"
+class                = "Land"
+movement_cost        = 2
+defense_bonus        = 100
+food                 = 9
+shield               = 0
+trade                = 0
+;resources            = 
+road_trade_incr_pct  = 0
+base_time            = 6
+road_time            = 24
+cultivate_result     = "no"
+cultivate_time       = 0
+plant_result         = "no"
+plant_time           = 0
+irrigation_food_incr = 1
+irrigation_time      = 10
+mining_shield_incr   = 3
+mining_time          = 10
+transform_result     = "Plains"
+transform_time       = 24
+placing_time         = 8
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "no"
+warmer_drier_result  = "no"
+cooler_wetter_result = "no"
+cooler_drier_result  = "no"
+native_to            = "Land", "Air"
+flags                = "Starter", "CanHaveRiver"
+property_green       = 50
+property_mountainous = 30
+color.r              = 24
+color.g              = 97
+color.b              = 5
+helptext             = _("\
+In addition to being amenable to agriculture, Hills are frequently\
+ rich in resources.\
+")
+
+[terrain_jungle]
+name                 = _("Jungle")
+graphic              = "jungle"
+graphic_alt          = "-"
+identifier           = "j"
+class                = "Land"
+movement_cost        = 2
+defense_bonus        = 50
+food                 = 9
+shield               = 0
+trade                = 0
+;resources            = 
+road_trade_incr_pct  = 0
+base_time            = 6
+road_time            = 24
+cultivate_result     = "Grassland"
+cultivate_time       = 15
+plant_result         = "Forest"
+plant_time           = 15
+irrigation_food_incr = 0
+irrigation_time      = 0
+mining_shield_incr   = 0
+mining_time          = 0
+transform_result     = "Plains"
+transform_time       = 24
+placing_time         = 8
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "Lake"
+warmer_drier_result  = "Desert"
+cooler_wetter_result = "Swamp"
+cooler_drier_result  = "Tundra"
+native_to            = "Land", "Air"
+flags                = "CanHaveRiver"
+property_foliage     = 50
+property_tropical    = 50
+property_wet         = 50
+color.r              = 55
+color.g              = 156
+color.b              = 38
+helptext             = _("\
+Jungles are densely overgrown, making agriculture somewhat\
+ problematic.\
+")
+
+[terrain_mountains]
+name                 = _("Mountains")
+graphic              = "mountains"
+graphic_alt          = "-"
+identifier           = "m"
+class                = "Land"
+movement_cost        = 3
+defense_bonus        = 200
+food                 = 0
+shield               = 9
+trade                = 0
+;resources            = 
+road_trade_incr_pct  = 0
+base_time            = 6
+road_time            = 36
+cultivate_result     = "no"
+cultivate_time       = 0
+plant_result         = "no"
+plant_time           = 0
+irrigation_food_incr = 0
+irrigation_time      = 0
+mining_shield_incr   = 1
+mining_time          = 10
+transform_result     = "Hills"
+transform_time       = 24
+placing_time         = 6
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "no"
+warmer_drier_result  = "no"
+cooler_wetter_result = "no"
+cooler_drier_result  = "no"
+native_to            = "Land", "Air"
+flags                = "CanHaveRiver"
+property_mountainous = 70
+color.r              = 129
+color.g              = 127
+color.b              = 118
+helptext             = _("\
+Mountains are regions of extreme altitude, making agriculture and\
+ trade very difficult.\
+")
+
+[terrain_plains]
+name                 = _("Plains")
+graphic              = "plains"
+graphic_alt          = "-"
+identifier           = "p"
+class                = "Land"
+movement_cost        = 1
+defense_bonus        = 0
+food                 = 5
+shield               = 4
+trade                = 0
+;resources            = 
+road_trade_incr_pct  = 100
+base_time            = 6
+road_time            = 12
+cultivate_result     = "no"
+cultivate_time       = 0
+plant_result         = "Forest"
+plant_time           = 15
+irrigation_food_incr = 1
+irrigation_time      = 5
+mining_shield_incr   = 0
+mining_time          = 0
+transform_result     = "Grassland"
+transform_time       = 24
+placing_time         = 4
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "Lake"
+warmer_drier_result  = "Desert"
+cooler_wetter_result = "Glacier"
+cooler_drier_result  = "Tundra"
+native_to            = "Land", "Air"
+flags                = "Starter", "CanHaveRiver"
+property_green       = 50
+property_temperate   = 50
+color.r              = 122
+color.g              = 156
+color.b              = 46
+helptext             = _("\
+Plains are very broad, sparse regions, which makes trade slightly\
+ inconvenient.\
+")
+
+[terrain_swamp]
+name                 = _("Swamp")
+graphic              = "swamp"
+graphic_alt          = "-"
+identifier           = "s"
+class                = "Land"
+movement_cost        = 2
+defense_bonus        = 50
+food                 = 9
+shield               = 0
+trade                = 0
+;resources            = 
+road_trade_incr_pct  = 0
+base_time            = 6
+road_time            = 24
+cultivate_result     = "Grassland"
+cultivate_time       = 15
+plant_result         = "Forest"
+plant_time           = 15
+irrigation_food_incr = 0
+irrigation_time      = 0
+mining_shield_incr   = 0
+mining_time          = 0
+transform_result     = "Lake"
+transform_time       = 36
+placing_time         = 8
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "Lake"
+warmer_drier_result  = "Desert"
+cooler_wetter_result = "Glacier"
+cooler_drier_result  = "Tundra"
+native_to            = "Land", "Air"
+flags                = "CanHaveRiver"
+property_wet         = 100
+property_tropical    = 10
+property_temperate   = 10
+property_cold        = 10
+color.r              = 48
+color.g              = 85
+color.b              = 97
+helptext             = _("\
+Swamps suffer from an over-abundance of water, making agriculture\
+ somewhat problematic.\
+")
+
+[terrain_tundra]
+name                 = _("Tundra")
+graphic              = "tundra"
+graphic_alt          = "-"
+identifier           = "t"
+class                = "Land"
+movement_cost        = 1
+defense_bonus        = 0
+food                 = 9
+shield               = 0
+trade                = 0
+;resources            = 
+road_trade_incr_pct  = 0
+base_time            = 6
+road_time            = 12
+cultivate_result     = "no"
+cultivate_time       = 0
+plant_result         = "no"
+plant_time           = 0
+irrigation_food_incr = 1
+irrigation_time      = 5
+mining_shield_incr   = 0
+mining_time          = 0
+transform_result     = "Desert"
+transform_time       = 24
+placing_time         = 2
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "Lake"
+warmer_drier_result  = "Desert"
+cooler_wetter_result = "Glacier"
+cooler_drier_result  = "no"
+native_to            = "Land", "Air"
+flags                = "Starter", "NoBarbs", "CanHaveRiver"
+property_cold        = 50
+color.r              = 188
+color.g              = 188
+color.b              = 188
+helptext             = _("\
+Tundra are broad, cold regions, fit for some agriculture and little\
+ else.\
+")

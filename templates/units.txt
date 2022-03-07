@@ -1,0 +1,33 @@
+[unit_]
+;basics
+name = _("")
+class = 
+flags = 
+roles = 
+;UI
+graphic = 
+graphic_alt =
+sound_move =
+sound_move_alt = 
+sound_fight = 
+sound_fight_alt = 
+;civ
+tech_req =
+;impr_req =
+;obsolete_by = 
+build_cost = 
+pop_cost = 
+;convert_to =
+;convert_time = 
+uk_happy =  
+uk_food =
+uk_gold = 
+uk_shield = 
+;fight
+attack = 
+defense = 
+firepower = 1
+
+;bonuses = { "flag","type","value"
+;}
+helptext = _("todo add description")
