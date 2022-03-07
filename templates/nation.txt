@@ -1,0 +1,21 @@
+[nation_]
+name = _("")
+plural = _("?plural:")
+groups = 
+
+flag = ""
+flag_alt = ""
+style = 
+
+init_techs= ""
+init_buildings= ""
+init_units = "" 
+
+;leaders = { "name", "sex"
+;}
+;cities = 
+;   "name", ;translated_name 
+;ruler_titles = { "government","male_title","female_title"
+;}
+;conflicts_with = 
+;civilwar_nations =

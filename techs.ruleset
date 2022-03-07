@@ -1,6 +1,7 @@
 ; This is minimal techs ruleset. Replace <modpack> with your module name in
 ; description.
 
+*include "fantasy/advances/main.ruleset"
 [datafile]
 description = "<modpack> technology data for Freeciv"
 options = "+Freeciv-ruleset-3.2-Devel-2022.Feb.02"
@@ -109,75 +110,23 @@ format_version = 30
 ; */ <-- avoid gettext warnings
 
 
-[techclass_default]
-name = _("normal")
-[techclass_ancient]
-name = _("ancient technology")
-[techclass_modern_era]
-name = _("Modern Era")
+[techclass_simple]
+name = _("Simple")
 cost_pct = 50
-[techclass_swarm]
-name = _("swarm mutations")
-
-[advance_electricity]
-name = _("Electricity")
-class =  "Modern Era"
-req1 = "None"
-req2 = "None"
-graphic = "a.electricity"
-
-[advance_explosives]
-name = _("Explosives")
-class =  "Modern Era"
-req1 = "None"
-req2 = "None"
-graphic =  "a.explosives"
-
-[advance_industrialization]
-name = _("Industrialization")
-class =  "Modern Era"
-req1 = "None"
-req2 = "None"
-graphic = "a.industrialization"
-
-[advance_computers]
-name = _("Computers")
-class =  "Modern Era"
-req1 = "Electricity"
-req2 = "None"
-graphic = "a.computers"
-
-[advance_nuclear_power]
-name = _("Nuclear Power")
-class =  "Modern Era"
-req1 = "Electricity"
-req2 = "Industrialization"
-graphic = "a.nuclear_power"
-
-[advance_radio]
-name = _("Radio")
-class =  "Modern Era"
-req1 = "Electricity"
-req2 = "None"
-graphic = "a.radio"
-
-[advance_fusion_power]
-name = _("Fusion power")
-class = "Modern Era"
-req1 = "Nuclear power"
-req2 = "Computers"
-graphic = "a.fusion_power"
-
-[advance_robotics]
-name = _("Robotics")
-class =  "Modern Era"
-req1 = "Computers"
-req2 = "Electricity"
-graphic = "a.robotics"
-
-[advance_super_conductors]
-name = _("Super Conductors")
-class =  "Modern Era"
-req1 = "Computers"
-req2 = "Industrialization"
-graphic = "a.superconductors"
+[techclass_magitech]
+name = _("Magitech")
+cost_pct = 200
+[techclass_magical]
+name = _("Magical")
+[techclass_scientific]
+name = _("Scientific")
+[techclass_divinity]
+name = _("Divinity")
+[techclass_flux]
+name = _("Flux")
+[techclass_exclusive]
+name = _("Exclusive")
+cost_pct = 300
+;[techclass_eldritch]
+;name = _("Eldritch")
+;cost_pct = 200

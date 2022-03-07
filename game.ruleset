@@ -1,8 +1,8 @@
-*include "scifi/actions/main.ruleset"
-*include "scifi/civconfig.ruleset"
+*include "fantasy/actions/main.ruleset"
+*include "fantasy/civconfig.ruleset"
 
 [datafile]
-description = "scifi game rules for Freeciv"
+description = "fantasy game rules for Freeciv"
 options = "+Freeciv-ruleset-3.2-Devel-2022.Feb.02"
 format_version = 30
 
@@ -11,11 +11,11 @@ format_version = 30
 [ruledit]
 
 ; Which file to read description in from.
-description_file = "README.scifi"
+description_file = "fantasy/README.fantasy"
 
 [about]
 ; Ruleset name
-name = _("Scifi")
+name = _("Fantasy")
 
 ; Versioning of the ruleset
 version = "0.1.0"
@@ -32,7 +32,7 @@ a experimental ruleset which focus on asymetrical gameplay and uniqueness")
 
 ; Detailed description
 ; When updating this, update also description_file in [ruledit] section to match
-description = *README.scifi*
+description = *fantasy/README.fantasy*
 
 ; What capabilities ruleset provides for the scenarios.
 capabilities = ""
@@ -381,5 +381,5 @@ colorlist =
 
 set =
     { "name", "value", "lock"
-      "startunits", "c", TRUE
+      "startunits", "ccxxww", FALSE
     }

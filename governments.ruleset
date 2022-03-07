@@ -65,23 +65,37 @@ Anarchy happens between government changes.\
 ")
 
 ;------------------------------------------------------------------------
-[government_generic]
+[government_monarchy]
 
-name        = _("Generic")
+name        = _("Monarchy")
 reqs =
    { "type", "name", "range"
 ; No requirements
    }
-graphic     = "gov.despotism"
+graphic     = "gov.monarchy"
 graphic_alt = "-"
 
-ruler_male_title = _("Leader %s")
-ruler_female_title = _("Leader %s")
+ruler_male_title = _("King %s")
+ruler_female_title = _("Queen %s")
 
 helptext = _("\
-  This is the only available form of government.\
+    a common form of government throught history\
 ")
 
+[government_hive_mind]
+
+name = _("Hive Mind")
+reqs = { "type","name","range","present","quiet"
+        "NationGroup","Hive Mind","Player",TRUE, FALSE
+}
+graphic = "gov.hivemind"
+graphic_alt = "gov.despotism"
+
+ruler_male_title = _("%s")
+ruler_female_title = _("%s")
+helptext  = _("\
+this is the form of governance of many of the worst horrors in the universe\
+")
 ; /* <-- avoid gettext warnings
 ;
 ; Multipliers (aka policies)
@@ -109,3 +123,5 @@ helptext = _("\
 ;                           newlines so that xgettext parsing works
 ;
 ; */ <-- avoid gettext warnings
+
+;

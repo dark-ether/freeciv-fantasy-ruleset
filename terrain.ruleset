@@ -1,6 +1,6 @@
-*include "scifi/map/extras/main.ruleset"
-*include "scifi/map/resources.ruleset"
-*include "scifi/map/land.ruleset"
+*include "fantasy/map/extras/main.ruleset"
+*include "fantasy/map/resources.ruleset"
+*include "fantasy/map/land.ruleset"
 [datafile]
 description = "<modpack> tile_type data for Freeciv"
 options = "+Freeciv-ruleset-3.2-Devel-2022.Feb.02"
@@ -25,7 +25,7 @@ flags = { "name", "helptxt"
 ; helptxt       = displayed in the help for extra types with this flag
 ;                 (optional)
 extra_flags = { "name", "helptxt"
-    _("Corrupted"),_("This tile was modified by a bioweapon unit, it provides a bonus to its owner and penalties to others")
+                _("Flux Touched"), _("this tile has been improved by a Flux being, it provides a bounus to its owner and a penalty to others")
 }
 
 [parameters]

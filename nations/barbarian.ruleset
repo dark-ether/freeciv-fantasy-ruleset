@@ -1,3 +1,4 @@
+
 [nation_barbarian]
 
 name=_("Barbarian")
@@ -10,7 +11,7 @@ leaders = { "name", "sex"
 
 flag     = "barbarian"
 flag_alt = "-"
-style    = "Generic"
+style    = "Babylonian"
 
 init_techs=""
 init_buildings=""

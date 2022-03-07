@@ -1,0 +1,13 @@
+[advance_]
+name = _("")
+class = ""
+req1 =
+req2 =
+root_req =
+;research_req =
+;flags =
+graphic = 
+graphic_alt = 
+helptext = _("")
+;cost = 
+;bonus_message =

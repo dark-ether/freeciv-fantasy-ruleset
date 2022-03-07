@@ -1,0 +1,58 @@
+;the includes go here
+;*include "path/to/file"
+
+[advance_pottery]
+name = _("Pottery")
+class = "Simple"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+;research_req =
+;flags =
+graphic = "a.pottery"
+graphic_alt = "-"
+;helptext = _("")
+;cost = 
+;bonus_message =
+
+[advance_mansonry]
+name = _("Masonry")
+class = "Simple"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+;research_req =
+;flags =
+graphic = "a.masonry"
+graphic_alt = "-"
+;helptext = _("")
+;cost = 
+;bonus_message =
+
+[advance_worship]
+name = _("worship")
+class = "Divinity"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+;research_req =
+;flags =
+graphic = "a.worship"
+graphic_alt = "a.cerimonial_burial"
+helptext = _("todo add description")
+;cost = 
+;bonus_message =
+
+[advance_writing]
+name = _("writing")
+class = "Simple"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+;research_req =
+;flags =
+graphic = "a.writing"
+graphic_alt = "a.alphabet"
+helptext = _("")
+;cost = 
+;bonus_message =

@@ -13,7 +13,7 @@ format_version = 30
 
 ; Nationlist to add include statement for. If this entry is omitted, all the nations
 ; will be saved to nations.ruleset itself.
-;nationlist = ""
+nationlist = "fantasy/nations/list.ruleset"
 
 ; List of nations to embed to main nations.ruleset despite separate nationlist
 ; being used for other nations.
@@ -85,25 +85,59 @@ rule_name="all"
 ; match		= How much the AI will try to select a nation in the same
 ;                 group
 
-[ngroup_generic]
-name=_("?nationgroup:Generic")
-match=2
+
+[ngroup_native]
+name  = _("?nationgroup:Native")
+match = 1
+[ngroup_interdimensional]
+name = _("?nationgroup:Interdimensional")
+match = 1
+[ngroup_flux_being]
+name = _("?nationgroup:Flux Being")
+match = 1
+[ngroup_hive_mind]
+name = _("?nationgroup:Hive Mind")
+match = 1
+
+[ngroup_tech_Divinity]
+name = _("?nationgroup:Tech Divinity")
+hidden = TRUE
+match = 1
+[ngroup_tech_Flux]
+name = _("?nationgroup:Tech Flux")
+hidden = TRUE
+match = 1
+[ngroup_tech_magical]
+name = _("?nationgroup:Tech Magical")
+hidden = TRUE
+match = 1
+[ngroup_tech_magitech]
+name = _("?nationgroup:Tech Magitech")
+hidden = TRUE
+match = 1
+[ngroup_tech_scientific]
+name = _("?nationgroup:Tech Scientific")
+hidden = TRUE
+match = 1
+
+
+
 
 [compatibility]
 ; Initial government for all the nations that do not
 ; have it explicitly defined
-default_government = "Generic"
+default_government = "Monarchy"
 
 ; Declare which governments etc the nations may refer to.
 ; If a referenced game identifier is not on these
 ; lists, it will cause an error, to allow typos to be spotted.
 
 allowed_govs =
-  "Anarchy", "Generic"
+  "Anarchy", "Monarchy","Hive Mind"
 allowed_terrains =
-  "Ocean", "Generic"
+  "Lake","Ocean","Deep Ocean","Glacier","Desert","Forest","Grassland","Hills","Jungle","Mountains","Plains","Swamp","Tundra"
 allowed_styles =
-  "Generic"
+  "European","Classical","Tropical","Asian","Babylonian","Celtic"
 
 ; Below: nations data loaded from ruleset files for
 ; all nations available. If you want to have more
@@ -112,7 +146,7 @@ allowed_styles =
 ; See doc/README.nations for information on how to
 ; create nation rulesets, including style guidelines.
 
-*include "scifi/nations/generic.ruleset"
+*include "fantasy/nations/list.ruleset"
 
-; Must have a barbarian nations
-*include "scifi/nations/barbarian.ruleset"
+;Must have a barbarian nations
+*include "fantasy/nations/barbarian.ruleset"

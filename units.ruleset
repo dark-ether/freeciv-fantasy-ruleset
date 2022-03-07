@@ -125,4 +125,4 @@ hp_loss_pct = 0
 non_native_def_pct = 100
 flags = "AttackNonNative","CollectRansom","KillCitizen","Unreachable","HutFrighten"
 
-*include "scifi/units/starter.ruleset"
+*include "fantasy/units/starter.ruleset"

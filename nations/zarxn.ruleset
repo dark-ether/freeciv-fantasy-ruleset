@@ -1,0 +1,24 @@
+[nation_]
+name = _("zarxn")
+plural = _("?plural:zarxen")
+groups = "Hive Mind","Interdimensional","Tech Flux","Tech Scientific","Tech Magical"
+
+flag = "zarxn"
+flag_alt = "mixtec"
+style = "babylonian"
+;in the future ask for style
+
+init_techs= ""
+init_buildings= ""
+init_units = "" 
+;add hive queen here
+leaders = { "name", "sex"
+            "brittol","male" ; Gibberish
+}
+;cities = 
+;   "name", ;translated_name 
+;ruler_titles = { "government","male_title","female_title"
+;}
+;conflicts_with = 
+;civilwar_nations =
+

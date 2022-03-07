@@ -249,6 +249,7 @@
 ;
 ; */ <-- avoid gettext warnings
 
+
 [unit_settlers]
 name          = _("Settlers")
 class         = "Land"
@@ -281,16 +282,17 @@ helptext      = _("\
   This is.\
 ")
 
-[unit_caravel]
-name          = _("Caravel")
+
+[unit_trireme]
+name          = _("Trireme")
 class         = "Sea"
 tech_req      = "None"
 obsolete_by   = "None"
-graphic       = "u.caravel"
+graphic       = "u.trireme"
 graphic_alt   = "-"
-sound_move    = "m_caravel"
+sound_move    = "m_trireme"
 sound_move_alt = "m_generic"
-sound_fight   = "f_caravel"
+sound_fight   = "f_trireme"
 sound_fight_alt = "f_generic"
 build_cost    = 50
 pop_cost      = 0
@@ -307,17 +309,18 @@ uk_shield     = 1
 uk_food       = 0
 uk_gold       = 0
 cargo         = "Land"
-flags         = ""
+flags         = "CoastStrict"
 roles         = "Ferryboat", "BarbarianBoat"
 helptext      = _("\
   This is the only ship type you can build.\
 ")
 
+
 [unit_explorer]
 name = _("Explorer")
 class = "Land"
-helptxt = _("these exo-armor equipped explorers can brave the strange terrain of this world")
-tech_req = "Robotics"
+helptxt = _("todo add description")
+tech_req = "None"
 obsolete_by = "None"
 build_cost = 50
 pop_cost = 0
@@ -342,6 +345,7 @@ sound_fight_alt = "f_generic"
 graphic = "u.explorer"
 graphic_alt = "-"
 
+
 [unit_worker]
 name =_("Workers")
 class = "Land"
@@ -354,7 +358,7 @@ sound_move = "m_worker"
 sound_move_alt = "m_generic"
 sound_fight = "f_worker"
 sound_fight_alt = "f_generic"
-tech_req = "Industrialization"
+tech_req = "Pottery"
 obsolete_by = "None"
 attack = 0
 defense = 0 
@@ -371,17 +375,19 @@ helptext = _("todo add description for workers")
 transport_cap = 0
 firepower = 1
 fuel = 0
+
+
 [unit_king]
 name = _("King")
 class = "Land"
 flags = "EvacuateFirst","GameLoss","IgZOC","HasNoZOC","NoBuild"
-graphic = "u.warriors"
+graphic = "u.leader"
 graphic_alt = "-"
-sound_move = "m_warriors"
+sound_move = "m_leader"
 sound_move_alt = "m_generic"
-sound_fight = "f_warriors"
+sound_fight = "f_leader"
 sound_fight_alt = "f_generic"
-tech_req = "Industrialization"
+tech_req = "None"
 obsolete_by = "None"
 pop_cost = 0 
 build_cost = 0
@@ -401,6 +407,7 @@ roles = "KingStartUnit"
 helptext = _("A king is a symbol of power but also a weakpoint")
 transport_cap = 0
 
+
 [unit_diplomat]
 name = "Diplomat"
 class = "Land"
@@ -411,7 +418,7 @@ sound_move = "m_diplomat"
 sound_move_alt = "m_generic"
 sound_fight = "f_diplomat"
 sound_fight_alt = "f_generic"
-tech_req = "Radio"
+tech_req = "None"
 obsolete_by = "None"
 build_cost = 50
 pop_cost = 0
@@ -430,8 +437,8 @@ transport_cap = 0
 roles = "DiplomatStartUnit"
 helptext = _("todo add help text for diplomats")
 
-[unit_musketeers]
-name = _("Musketeers")
+[unit_warrior]
+name = _("Warrior")
 class = "Land"
 flags = ""
 build_cost = 50
@@ -442,13 +449,13 @@ uk_happy = 1
 uk_gold = 0 
 uk_food = 0
 fuel = 0
-graphic = "u.musketeers"
+graphic = "u.warriors"
 graphic_alt = "-"
-sound_move = "m_musketeers"
+sound_move = "m_warriors"
 sound_move_alt = "m_generic"
-sound_fight = "f_musketeers"
+sound_fight = "f_warriors"
 sound_fight_alt = "f_generic"
-tech_req = "Explosives"
+tech_req = "None"
 obsolete_by = "None"
 attack = 4 
 defense = 2
@@ -518,8 +525,8 @@ tech_req = "None"
 transport_cap = 0
 helptext = _("knights are equivalent to the medieval age. this unit can be built for the natives from the start of the game")
 
-[unit_cannon]
-name = _("Cannon")
+[unit_catapult]
+name = _("catapult")
 class = "Land"
 flags = "CityBuster"
 roles = "AttackStrongStartUnit",""
@@ -535,13 +542,13 @@ uk_happy = 1
 uk_food = 0
 uk_shield = 1
 uk_gold = 0
-tech_req = "Explosives"
-graphic = "u.cannon"
+tech_req = "Writing"
+graphic = "u.catapult"
 graphic_alt = "-"
-sound_move = "m_cannon"
+sound_move = "m_catapult"
 sound_move_alt = "m_generic"
-sound_fight = "f_cannon"
+sound_fight = "f_catapult"
 sound_fight_alt = "f_generic"
 transport_cap = 0
 fuel = 0
-helptext = _("unlocked after acquiring explosives cannons obsolete city walls")
+helptext = _("todo add description")
