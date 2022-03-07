@@ -310,7 +310,7 @@ uk_food       = 0
 uk_gold       = 0
 cargo         = "Land"
 flags         = "CoastStrict"
-roles         = "Ferryboat", "BarbarianBoat"
+roles         = "FerryStartUnit","Ferryboat", "BarbarianBoat"
 helptext      = _("\
   This is the only ship type you can build.\
 ")

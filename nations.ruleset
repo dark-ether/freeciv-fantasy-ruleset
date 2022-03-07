@@ -135,7 +135,7 @@ default_government = "Monarchy"
 allowed_govs =
   "Anarchy", "Monarchy","Hive Mind"
 allowed_terrains =
-  "Lake","Ocean","Deep Ocean","Glacier","Desert","Forest","Grassland","Hills","Jungle","Mountains","Plains","Swamp","Tundra"
+  "Glacier","Desert","Forest","Grassland","Hills","Jungle","Mountains","Plains","Swamp","Tundra"
 allowed_styles =
   "European","Classical","Tropical","Asian","Babylonian","Celtic"
 
