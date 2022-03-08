@@ -1,4 +1,4 @@
-[nation_]
+[nation_zarxn]
 name = _("zarxn")
 plural = _("?plural:zarxen")
 groups = "Hive Mind","Interdimensional","Tech Flux","Tech Scientific","Tech Magical"
