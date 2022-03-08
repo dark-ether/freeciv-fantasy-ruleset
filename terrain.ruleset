@@ -53,7 +53,7 @@ lake_max_size = 15
 
 ; How many native tiles first startunit must be able to reach.
 ; 0 to disable check.
-min_start_native_area = 10
+min_start_native_area = 0
 
 ; How many fragments each movement point has.
 ; For example road movement costs are relative to this.

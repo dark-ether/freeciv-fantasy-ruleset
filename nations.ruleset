@@ -88,7 +88,7 @@ rule_name="all"
 
 [ngroup_native]
 name  = _("?nationgroup:Native")
-match = 1
+match = 2
 [ngroup_interdimensional]
 name = _("?nationgroup:Interdimensional")
 match = 1
