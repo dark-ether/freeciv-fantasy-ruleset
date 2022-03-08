@@ -15,8 +15,10 @@ init_units = ""
 leaders = { "name", "sex"
             "brittol","male" ; Gibberish
 }
-;cities = 
-;   "name", ;translated_name 
+cities = 
+    "name", ;Translatedname
+    "string" ;AnotherR
+    
 ;ruler_titles = { "government","male_title","female_title"
 ;}
 ;conflicts_with = 
