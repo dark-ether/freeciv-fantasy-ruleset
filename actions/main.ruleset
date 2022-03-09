@@ -172,3 +172,4 @@ found_city_consuming_always = TRUE
 ; Can make the help text less redundant when you document it your self.
 ;quiet_actions = "Targeted Sabotage City", "Targeted Steal Tech", "Unit Move"
 
+*include "fantasy/actions/movement.ruleset"
