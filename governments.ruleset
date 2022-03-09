@@ -7,7 +7,7 @@ options = "+Freeciv-ruleset-3.2-Devel-2022.Feb.02"
 format_version = 30
 
 [governments]
-during_revolution = "Anarchy"
+during_revolution = "Revolution"
 
 ; /* <-- avoid gettext warnings
 ;
@@ -52,16 +52,16 @@ during_revolution = "Anarchy"
 ;------------------------------------------------------------------------
 [government_anarchy]
 
-name        = _("Anarchy")
+name        = _("Revolution")
 ; No reqs
-graphic     = "gov.anarchy"
-graphic_alt = "-"
+graphic     = "gov.revolution"
+graphic_alt = "gov.anarchy"
 
-ruler_male_title = _("Usurper %s")
-ruler_female_title = _("?female:Usurper %s")
+ruler_male_title = _("Revolutionary %s")
+ruler_female_title = _("?female:Revolutionary %s")
 
 helptext = _("\
-Anarchy happens between government changes.\
+Revolution happens between government changes.\
 ")
 
 ;------------------------------------------------------------------------

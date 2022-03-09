@@ -133,7 +133,7 @@ default_government = "Monarchy"
 ; lists, it will cause an error, to allow typos to be spotted.
 
 allowed_govs =
-  "Anarchy", "Monarchy","Hive Mind"
+  "Revolution", "Monarchy","Hive Mind"
 allowed_terrains =
   "Glacier","Desert","Forest","Grassland","Hills","Jungle","Mountains","Plains","Swamp","Tundra"
 allowed_styles =
