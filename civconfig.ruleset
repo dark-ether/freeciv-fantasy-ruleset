@@ -3,10 +3,10 @@
 base_pollution   = -20
 
 ; Cost in luxuries of making one citizen happier
-happy_cost       = 2
+happy_cost       = 5
 
 ; Cost in food of upkeeping a single citizen
-food_cost        = 2
+food_cost        = 5
 
 ; Parameters used to generalize the calculation of city granary size:
 ;   if city_size <= num_inis:
@@ -15,21 +15,21 @@ food_cost        = 2
 ;     city_granary_size = (granary_food_ini[num_inis] +
 ;        granary_food_inc * (city_size - num_inis)) * foodbox / 100
 granary_food_ini	= 20
-granary_food_inc	= 10
+granary_food_inc	= 0
 
 ; City center minimum outputs
-min_city_center_food	= 1
-min_city_center_shield	= 1
+min_city_center_food	= 5
+min_city_center_shield	= 4
 min_city_center_trade	= 0
 
 ; Square of initial city radius
-init_city_radius_sq     = 5
+init_city_radius_sq     = 2
 
 ; Square of initially visible radius (true distance).
 init_vis_radius_sq	= 5
 
 ; A base bribe cost, modified heavily by other factors
-base_bribe_cost  = 750
+base_bribe_cost  = 2000
 
 ; Barbarian leader ransom in gold. The ransom is taken from
 ; the victim (typically a barbarian player), and it`s possible
@@ -46,19 +46,19 @@ autoupgrade_veteran_loss = 0
 pillage_select           = TRUE
 
 ; Whether one can steal a tech for which prereqs are not known
-tech_steal_allow_holes    = TRUE
+tech_steal_allow_holes    = FALSE
 ; Whether one can get a tech for which prereqs are not known via
 ; diplomatic trading
-tech_trade_allow_holes    = TRUE
+tech_trade_allow_holes    = FALSE
 ; ...and whether one can lose a tech which is prereq for another known
 ; tech via trade, if techlost_donor is nonzero
-tech_trade_loss_allow_holes = TRUE
+tech_trade_loss_allow_holes = FALSE
 ; Whether one can get a tech for which prereqs are not known via
 ; parasite effect (Great Library)
-tech_parasite_allow_holes = TRUE
+tech_parasite_allow_holes = FALSE
 ; Whether one can lose a tech which is prereq for another known tech
 ; due to negative bulbs, if techlossforgiveness allows loss
-tech_loss_allow_holes     = TRUE
+tech_loss_allow_holes     = FALSE
 
 ; Whether civil war is possible at all
 civil_war_enabled        = TRUE
@@ -77,7 +77,7 @@ civil_war_bonus_unhappy     = 0
 ;                control.
 ; "Loot"       - Player who killed the gameloss unit gets loot:
 ;                Partial map, gold, techs, cities
-gameloss_style           = ""
+gameloss_style           = "CivilWar","Barbarians","Loot"
 
 ; Whether units may safely paradrop to transport on non-native terrain
 paradrop_to_transport    = FALSE
@@ -120,28 +120,28 @@ small_wonders = "Always"
 
 [illness]
 ; Whether plagues (illness) are possible
-illness_on = FALSE
+illness_on = TRUE
 
 ; the base factor for illness (of percent)
-illness_base_factor = 25
+illness_base_factor = 5
 
 ; minimum city size for illness
-illness_min_size = 3
+illness_min_size = 5
 
 ; factor for how much trading with a plagued city increases our city`s
 ; chance for plague (in percent)
-illness_trade_infection = 50
+illness_trade_infection = 200
 
 ; factor for how much pollution within a city increases its chance for
 ; plague (in percent)
-illness_pollution_factor = 50
+illness_pollution_factor = 200
 
 [borders]
 ; Base border radius from city.
-radius_sq_city = 0
+radius_sq_city = 1
 
 ; Border radius square increased by this amount / point of city size
-size_effect    = 0
+size_effect    = 0.25
 
 ; Difference between city workable area and area permanently claimed by
 ; city (these tiles cannot be stolen by stronger border sources).
@@ -204,10 +204,10 @@ tech_leakage = "None"
 ; "Basic"  - upkeep is calculated as:
 ;     <Cost of technology> / tech_upkeep_divider - tech_upkeep_free
 ; "Cities" - upkeep is calculated like "Basic", but multiplied by number of cities
-tech_upkeep_style = "None"
+tech_upkeep_style = "Cities"
 
 ; upkeep cost is divided by this value
-tech_upkeep_divider = 2000
+tech_upkeep_divider = 5000
 
 ; Method of selecting techs given for free
 ; "Goal"     - Towards player`s goal, random if no goal
@@ -217,7 +217,7 @@ free_tech_method = "Goal"
 
 [culture]
 ; Minimum culture points for cultural domination victory
-victory_min_points = 1000
+victory_min_points = 2000
 
 ; How big lead relative to second best player is needed for victory
 victory_lead_pct   = 200
@@ -230,5 +230,5 @@ history_interest_pml = 0
 ; How much each culture point affects the migration
 ; from/to the city. Each culture point count as this many permilles
 ; of a migration point.
-migration_pml = 50
+migration_pml = 0
 
