@@ -1,12 +1,11 @@
-[nation_zarxn]
-name = _("zarxn")
-plural = _("?plural:zarxen")
+[nation_testing]
+name = _("testing")
+plural = _("?plural:testers")
 groups = "Hive Mind","Interdimensional","Tech Flux","Tech Scientific","Tech Magical"
 
-flag = "zarxn"
+flag = "testing"
 flag_alt = "mixtec"
 style = "babylonian"
-;in the future ask for style
 
 init_techs= ""
 init_buildings= ""
