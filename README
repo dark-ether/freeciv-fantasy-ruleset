@@ -7,36 +7,31 @@ fantasy is a in development ruleset which aims to be fun and strategic by using 
         design goals
 -------------------------------------------------------------
 the fantasy ruleset was created with some goals in mind, it should
-1. be asymmetric
-2. use most features of freeciv
-3. be strategic
+1. be asymmetric, playing with each nation should be a very different experience
+2. use most features of freeciv, there are many things added which aren't used by the classic and civ2civ3 ruleset
+3. be strategic, optimal play should give very different results from bad play
+4. be hard , a player should be very skillful to not fall in civil war
 
 -------------------------------------------------------------
 roadmap
 -------------------------------------------------------------
-initial github release - by then have 3 techs in each tech tree, 2 units provided from each tech tree, 
-4 government types + anarchy, 2 policies , add at least 1 resource per terrain type , choose what the divinity tech tree focuses on.
+1. fix not generating map bug
+2. create program to generate similar nations from description file
+3. create a tier in tech tree, adding 3 techs for each
+4. add the things the techs give , should respect balance and the tech trees theme
+5. add 5 nations
+6. repeat 3 through 5
 
+-------------------------------------------------------------
 techtrees
 -------------------------------------------------------------
-there are many tech trees separated by tech class, currently what tech tree you can use depend on your nation groups
+there are many planned tech trees separated by tech class, currently what tech tree you can use depends on your nation groups
 the tech trees are Divinity,Flux,Magical,Magitech,Scientific or more specifically one for each tech class,
 with the exception of simple and exclusive which are respectively the starter techs any nation can acquire 
 and the techs exclusive to a single nation most nations for balance purposes most nations have acess to three tech trees. 
 the magitech tree is special in that it has dependecies on other trees namely magical and Scientific.
-Each tech tree has a focus. Divinity focus in , 
-Flux in tile "improvements" ,Magical in units ,Scientific in city Improvements
-
-
-units
--------------------------------------------------------------
-
-
-tile improvements
--------------------------------------------------------------
-
-
-tile resources
--------------------------------------------------------------
-
-
+Each tech tree has a theme which determines what it focus on
+Divinity blesses your nation with the power of the gods (focus in human development,culture tech happiness etc)
+Flux  warps their surroundings in unrecognizable  ways (focus in tile improvements)
+Magic focus on the individual prowess of the people (focus on units )
+Science focus ; todo add suitable description for science here (focus on city improvements)
