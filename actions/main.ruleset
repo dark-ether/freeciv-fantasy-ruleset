@@ -142,13 +142,13 @@ found_city_consuming_always = TRUE
 ; [actionenabler_embassy]
 ; action = "Establish Embassy"
 
-[actionenabler_regular_move]
-action     = "Unit Move"
-actor_reqs =
-    { "type",         "name",        "range", "present"
-      "MinMoveFrags", "1",           "Local", TRUE
-      "UnitState",    "Transported", "Local", FALSE
-    }
+;[actionenabler_regular_move]
+;action     = "Unit Move"
+;actor_reqs =
+;    { "type",         "name",        "range", "present"
+;      "MinMoveFrags", "1",           "Local", TRUE
+;      "UnitState",    "Transported", "Local", FALSE
+;    }
 
 ; Blank ruleset defined user actions.
 ; See the section "Ruleset defined actions" in doc/README.actions

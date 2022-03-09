@@ -276,7 +276,7 @@ uk_happy      = 0
 uk_shield     = 0
 uk_food       = 3
 uk_gold       = 0
-flags         = "Cities","NewCityGamesOnly","NonMil","Settlers"
+flags         = "NewCityGamesOnly","NonMil","Settlers"
 roles         = "CitiesStartUnit"
 helptext      = _("\
   This is.\
