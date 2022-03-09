@@ -1,1 +1,27 @@
+; /* <-- avoid gettext warnings
+;
+; Base types:
+;
+; extra                   = name of the extra this base section is part of
+;                           (must have "Base" in its causes)
+; gui_type                = How gui should handle this base.
+;                           Value can be "Fortress", "Airbase", or "Other"
+;                           See also [extraui] section
+; border_sq               = Base will claim land ownership up to this radius,
+;                           -1 to disable. If enabled, base cannot exist in
+;                           city tile.
+;                           Base (and border) ownership will change hands if
+;                           an enemy unit does "Conquer Extras" to the tile.
+; vision_main_sq          = Base will have main layer vision to this radius.
+;                           Vision initially provided to owner of unit that
+;                           built base; base will not then change hands unless
+;                           it also claims territory, or tile has another such
+;                           base or city, or another base is built (tile only
+;                           tracks one owner for all bases).
+; vision_invis_sq         = Base will have invisible layer vision to this radius
+; vision_subs_sq          = Base will have subsurface layer vision to this radius
+;
+; */ <-- avoid gettext warnings
+
+
 

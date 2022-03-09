@@ -1,4 +1,4 @@
-;more includes go here
+
 [extraui]
 
 ; Player visible names of the base gui types.
@@ -192,16 +192,4 @@ ui_name_base_airbase = _("?gui_type:Build Type B Base")
 ;removal_time   = 0
 ;helptext       = _("")
 
-[extra_gresource]
-name           = _("Generic Resource")
-category       = "Resource"
-causes         = "Resource"
-;rmcauses       = ""
-graphic        = "ts.grassland_resources"
-graphic_alt    = "-"
-activity_gfx   = "None"
-act_gfx_alt    = "-"
-act_gfx_alt2   = "-"
-rmact_gfx      = "None"
-rmact_gfx_alt  = "-"
-
+*include "fantasy/map/extras/resources.ruleset"

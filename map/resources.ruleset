@@ -18,36 +18,54 @@
 ;
 ; */ <-- avoid gettext warnings
 
-[resource_generic]
-extra       = "Generic Resource"
+[resource_blessed_land]
+extra = "Blessed Land"
+food = 6
+trade = 6
+identifier = "b"
+
+[resource_coal]
+extra = "Coal"
+shield = 9
+identifier= "c"
+
+[resource_fish]
+extra = "Fish"
+food = 6
+trade = 6
+identifier = "f"
+
+[resource_game]
+extra = "Game"
+food = 9
+identifier = "a"
+
+[resource_gems]
+extra = "Gems"
+shield = 6
+trade = 6
+identifier = "e"
+
+[resource_gold]
+extra       = "Gold"
 food        = 0
 shield      = 0
-trade       = 1
+trade       = 9
 identifier  = "g"
 
-; /* <-- avoid gettext warnings
-;
-; Base types:
-;
-; extra                   = name of the extra this base section is part of
-;                           (must have "Base" in its causes)
-; gui_type                = How gui should handle this base.
-;                           Value can be "Fortress", "Airbase", or "Other"
-;                           See also [extraui] section
-; border_sq               = Base will claim land ownership up to this radius,
-;                           -1 to disable. If enabled, base cannot exist in
-;                           city tile.
-;                           Base (and border) ownership will change hands if
-;                           an enemy unit does "Conquer Extras" to the tile.
-; vision_main_sq          = Base will have main layer vision to this radius.
-;                           Vision initially provided to owner of unit that
-;                           built base; base will not then change hands unless
-;                           it also claims territory, or tile has another such
-;                           base or city, or another base is built (tile only
-;                           tracks one owner for all bases).
-; vision_invis_sq         = Base will have invisible layer vision to this radius
-; vision_subs_sq          = Base will have subsurface layer vision to this radius
-;
-; */ <-- avoid gettext warnings
+[resource_mithril]
+extra = "Mithril"
+food = 0 
+shield = 0 
+trade = 9
+identifier = "m"
 
+[resource_oil]
+extra = "Oil"
+production = 9
+identifier = "o"
 
+[resource_silk]
+extra = "Silk"
+production = 9
+identifier = "s"

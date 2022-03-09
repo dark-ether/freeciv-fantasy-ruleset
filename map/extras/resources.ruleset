@@ -1,0 +1,115 @@
+[extra_blessed_land]
+name = _("Blessed Land")
+category = "Resource"
+causes = "Resource"
+graphic = "ts.blessed_land"
+graphic_alt = "ts.oasis"
+activity_gfx = "None"
+act_gfx_alt = "-"
+act_gfx_alt2 = "-"
+rmact_gfx = "None"
+rmact_gfx_alt = "-"
+
+[extra_coal]
+name           = _("Coal")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.coal"
+graphic_alt    = "-"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+
+[extra_fish]
+name           = _("Fish")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.fish"
+graphic_alt    = "-"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+
+[extra_game]
+name           = _("?animals:Game")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.tundra_game"
+graphic_alt    = "-"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+
+[extra_gems]
+name           = _("Gems")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.gems"
+graphic_alt    = "-"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+
+[extra_gold]
+name           = _("Gold")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.gold"
+graphic_alt    = "-"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+
+[extra_mithril]
+name           = _("Mithril")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.mithril"
+graphic_alt    = "ts.iron"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+
+[extra_oil]
+name           = _("Oil")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.oil"
+graphic_alt    = "-"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+
+[extra_silk]
+name           = _("Silk")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.silk"
+graphic_alt    = "-"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
