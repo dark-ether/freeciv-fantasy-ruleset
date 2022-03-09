@@ -1,31 +1,28 @@
 -------------------------------------------------------------
         fantasy ruleset
 -------------------------------------------------------------
+fantasy is a in development ruleset which aims to be fun and strategic by using most of the features of freeciv
 
-this is a original ruleset, it features groups of factions with various distinct tech trees 
-
-natives
 -------------------------------------------------------------
-natives lived on this plane for a long time but due to the recent arrival of monsters from the flux and interdimensional 
-refugees that may change
-start with a few cities pre-built.
-
-flux-beings
+        design goals
 -------------------------------------------------------------
-start with especial units 
+the fantasy ruleset was created with some goals in mind, it should
+1. be asymmetric
+2. use most features of freeciv
+3. be strategic
 
-refugees
 -------------------------------------------------------------
-refugees start with tech some may receive reinforcements from their home plane
+roadmap
+-------------------------------------------------------------
+initial github release - by then have 3 techs in each tech tree, 2 units provided from each tech tree, 
+4 government types + anarchy, 2 policies , add at least 1 resource per terrain type , choose what the divinity tech tree focuses on.
 
 techtrees
 -------------------------------------------------------------
-there are many tech trees separated by tech class,as there isn't any way to prevent a tech from being reseached if you researched 
-a tech, what tech tree you can use depends on your Nation Group,
-but that will become less relevant when more support for tech requirements and tech classes is added
+there are many tech trees separated by tech class, currently what tech tree you can use depend on your nation groups
 the tech trees are Divinity,Flux,Magical,Magitech,Scientific or more specifically one for each tech class,
 with the exception of simple and exclusive which are respectively the starter techs any nation can acquire 
-and the techs exclusive to a single nation most nations have acess to three tech trees. 
+and the techs exclusive to a single nation most nations for balance purposes most nations have acess to three tech trees. 
 the magitech tree is special in that it has dependecies on other trees namely magical and Scientific.
 Each tech tree has a focus. Divinity focus in , 
 Flux in tile "improvements" ,Magical in units ,Scientific in city Improvements

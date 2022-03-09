@@ -11,7 +11,7 @@ format_version = 30
 [ruledit]
 
 ; Which file to read description in from.
-description_file = "fantasy/README.fantasy"
+description_file = "fantasy/README"
 
 [about]
 ; Ruleset name
@@ -32,7 +32,7 @@ a experimental ruleset which focus on asymetrical gameplay and uniqueness")
 
 ; Detailed description
 ; When updating this, update also description_file in [ruledit] section to match
-description = *fantasy/README.fantasy*
+description = *fantasy/README*
 
 ; What capabilities ruleset provides for the scenarios.
 capabilities = ""
