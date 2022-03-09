@@ -15,12 +15,11 @@ the fantasy ruleset was created with some goals in mind, it should
 -------------------------------------------------------------
 roadmap
 -------------------------------------------------------------
-1. fix not generating map bug
-2. create program to generate similar nations from description file
-3. create a tier in tech tree, adding 3 techs for each
-4. add the things the techs give , should respect balance and the tech trees theme
-5. add 5 nations
-6. repeat 3 through 5
+1. create program to generate similar nations from description file
+2. create a tier in tech tree, adding 3 techs for each
+3. add the things the techs give , should respect balance and the tech trees theme
+4. add 5 nations
+5. repeat 2 through 4
 
 -------------------------------------------------------------
 techtrees
@@ -28,10 +27,15 @@ techtrees
 there are many planned tech trees separated by tech class, currently what tech tree you can use depends on your nation groups
 the tech trees are Divinity,Flux,Magical,Magitech,Scientific or more specifically one for each tech class,
 with the exception of simple and exclusive which are respectively the starter techs any nation can acquire 
-and the techs exclusive to a single nation most nations for balance purposes most nations have acess to three tech trees. 
+and the techs exclusive to a single nation. for balance purposes most nations have acess to three tech trees. 
 the magitech tree is special in that it has dependecies on other trees namely magical and Scientific.
 Each tech tree has a theme which determines what it focus on
 Divinity blesses your nation with the power of the gods (focus in human development,culture tech happiness etc)
 Flux  warps their surroundings in unrecognizable  ways (focus in tile improvements)
 Magic focus on the individual prowess of the people (focus on units )
 Science focus ; todo add suitable description for science here (focus on city improvements)
+
+
+-------------------------------------------------------------
+
+-------------------------------------------------------------

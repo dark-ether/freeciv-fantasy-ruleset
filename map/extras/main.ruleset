@@ -192,4 +192,39 @@ ui_name_base_airbase = _("?gui_type:Build Type B Base")
 ;removal_time   = 0
 ;helptext       = _("")
 
+
+[extra_river]
+name = _("River")
+category = "Natural"
+;causes = 
+;rmcauses =
+infracost = 0  
+graphic = "road.river"
+graphic_alt = "-"
+activity_gfx = "None"
+act_gfx_alt = "-"
+rmact_gfx = "None"
+rmact_gfx_alt = "-"
+;reqs =
+;rmreqs = 
+;appearance_reqs = 
+;disapearance_reqs =
+;visibility_req = 
+buildable = FALSE
+;generated = 
+;build_time = 
+;build_time_factor = 
+;removal_time = 
+;removal_time_factor = 
+;defense_bonus = 
+;unit_seen =
+;appearance_chance = 
+;disapearance_chance = 
+;native_to = 
+;conflicts = 
+;hidden_by = 
+;bridged_over = 
+;no_aggr_near_city = 
+;flags =
+
 *include "fantasy/map/extras/resources.ruleset"

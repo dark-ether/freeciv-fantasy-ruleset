@@ -64,3 +64,10 @@
 ; trade_bonus    = 0
 ; compat_special = "None"
 ; flags          = ""
+
+[road_river]
+extra = "River"
+move_cost = 6
+food_incr_const = 3
+flags = "River","UnrestrictedInfra"
+

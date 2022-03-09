@@ -1,0 +1,34 @@
+[extra_]
+name = _("")
+category = ""
+causes = ""
+;rmcauses =
+infracost = 
+graphic = 
+graphic_alt = 
+activity_gfx = 
+act_gfx_alt = 
+rmact_gfx = 
+rmact_gfx_alt = 
+;reqs =
+;rmreqs = 
+;appearance_reqs = 
+;disapearance_reqs =
+;visibility_req = 
+;buildable = 
+;generated = 
+;build_time = 
+;build_time_factor = 
+;removal_time = 
+;removal_time_factor = 
+;defense_bonus = 
+;unit_seen =
+;appearance_chance = 
+;disapearance_chance = 
+;native_to = 
+;conflicts = 
+;hidden_by = 
+;bridged_over = 
+;no_aggr_near_city = 
+;flags =
+
