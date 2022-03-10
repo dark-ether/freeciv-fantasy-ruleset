@@ -94,8 +94,10 @@ graphic_alt = "gov.despotism"
 ruler_male_title = _("%s")
 ruler_female_title = _("%s")
 helptext  = _("\
-this is the form of governance of many of the worst horrors in the universe\
+some governments aren't even governments at all\
 ")
+
+
 ; /* <-- avoid gettext warnings
 ;
 ; Multipliers (aka policies)
@@ -125,3 +127,4 @@ this is the form of governance of many of the worst horrors in the universe\
 ; */ <-- avoid gettext warnings
 
 ;
+

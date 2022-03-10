@@ -1,0 +1,8 @@
+[actionenabler_build_city]
+action = "Found City"
+actor_reqs = {"type","name","range","present","quiet"
+            "UnitType" ,"Settlers","Local",TRUE,FALSE
+}
+target_reqs = {"type","name","range","present","quiet"
+            "TerrainFlag","NoCities","Tile",FALSE,FALSE
+}

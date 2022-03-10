@@ -173,3 +173,4 @@ found_city_consuming_always = TRUE
 ;quiet_actions = "Targeted Sabotage City", "Targeted Steal Tech", "Unit Move"
 
 *include "fantasy/actions/movement.ruleset"
+*include "fantasy/actions/infra.ruleset"

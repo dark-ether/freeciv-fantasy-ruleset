@@ -98,7 +98,7 @@ combat_odds_scaled_veterancy = FALSE
 
 ; Does unit`s bombard rate get scaled down by how damaged it is.
 ; Even after this unit gets at least one bombard round.
-damage_reduces_bombard_rate = TRUE
+damage_reduces_bombard_rate = FALSE
 
 ; When the attacker has BadWallAttacker flag, and there`s
 ; positive DefendBonus effect applied to the attack, attacker`s
