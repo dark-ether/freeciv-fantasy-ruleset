@@ -102,30 +102,30 @@ helptext = _("\
 ; "advanced" governments
 [government_monarchy]
 name = _("Monarchy")
-reqs = {"type","name","range","present"
-;        "Tech","Monarchy","Player",TRUE
+reqs = {"type","name","range"
+        "Tech","Monarchy","Player"
 }
 graphic = "gov.monarchy"
 graphic_alt = "-"
 
 ruler_male_title = _("King %s")
 ruler_female_title = _("Queen %s")
-helptext = _("")
+helptext = _("does it need help txt")
 
 [government_Democracy]
 name = _("Democracy")
 reqs = { "type","name","range","present"
-;        "Tech","Democracy","Player",TRUE
+         "Tech","Democracy","Player",TRUE
 }
 
-;TODO: tech tree specific governments
-; divine tech tree governments
 graphic = "gov.democracy"
 graphic_alt = "-"
 
 ruler_male_title = _("President %s")
 ruler_female_title = _("President %s")
 helptext = _("") 
+;TODO: tech tree specific governments
+
 ; /* <-- avoid gettext warnings
 ; [multiplier_]
 ; Multipliers (aka policies)

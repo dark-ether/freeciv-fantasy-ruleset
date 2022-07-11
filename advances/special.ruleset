@@ -41,8 +41,8 @@
 ; and "Never" (never available).  If only one tech is required,
 ; it should be listed as req1.
 
-[tech_monarchy]
-name = "Monarchy"
+[advance_monarchy]
+name = _("Monarchy")
 class = "Special"
 
 req1 = "Never"
@@ -57,8 +57,8 @@ gives access to monarchy government type this tech can't be researched and
 instead is given to a nation when a specific tech per tech tree is discovered\
 ")
 
-[tech_democracy]
-name = "Democracy"
+[advance_democracy]
+name = _("Democracy")
 class = "Special"
 
 req1 = "Never"
