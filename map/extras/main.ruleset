@@ -228,3 +228,4 @@ buildable = FALSE
 ;flags =
 
 *include "fantasy/map/extras/resources.ruleset"
+*include "fantasy/map/extras/strategic-resources.ruleset"
