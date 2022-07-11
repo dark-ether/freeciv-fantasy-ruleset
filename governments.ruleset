@@ -50,7 +50,7 @@ during_revolution = "Revolution"
 ; */ <-- avoid gettext warnings
 
 ;------------------------------------------------------------------------
-[government_anarchy]
+[government_revolution]
 
 name        = _("Revolution")
 ; No reqs
@@ -65,41 +65,69 @@ Revolution happens between government changes.\
 ")
 
 ;------------------------------------------------------------------------
-[government_monarchy]
+;starter govs
+[government_depotism]
 
-name        = _("Monarchy")
+name        = _("Depotism")
 reqs =
    { "type", "name", "range"
 ; No requirements
    }
-graphic     = "gov.monarchy"
+graphic     = "gov.depotism"
+graphic_alt = "-"
+
+ruler_male_title = _("Ruler %s")
+ruler_female_title = _("Ruler %s")
+
+helptext = _("\
+    depotism\
+")
+[government_tribal]
+
+name        = _("Tribal")
+reqs =
+   { "type", "name", "range"
+; No requirements
+   }
+graphic     = "gov.tribal"
+graphic_alt = "-"
+
+ruler_male_title = _("Ruler %s")
+ruler_female_title = _("Ruler %s")
+
+helptext = _("\
+    republic\
+")
+;------------------------------------------------------------------------
+; "advanced" governments
+[government_monarchy]
+name = _("Monarchy")
+reqs = {"type","name","range","present"
+;        "Tech","Monarchy","Player",TRUE
+}
+graphic = "gov.monarchy"
 graphic_alt = "-"
 
 ruler_male_title = _("King %s")
 ruler_female_title = _("Queen %s")
+helptext = _("")
 
-helptext = _("\
-    a common form of government throught history\
-")
-
-[government_hive_mind]
-
-name = _("Hive Mind")
-reqs = { "type","name","range","present","quiet"
-        "NationGroup","Hive Mind","Player",TRUE, FALSE
+[government_Democracy]
+name = _("Democracy")
+reqs = { "type","name","range","present"
+;        "Tech","Democracy","Player",TRUE
 }
-graphic = "gov.hivemind"
-graphic_alt = "gov.despotism"
 
-ruler_male_title = _("%s")
-ruler_female_title = _("%s")
-helptext  = _("\
-some governments aren't even governments at all\
-")
+;TODO: tech tree specific governments
+; divine tech tree governments
+graphic = "gov.democracy"
+graphic_alt = "-"
 
-
+ruler_male_title = _("President %s")
+ruler_female_title = _("President %s")
+helptext = _("") 
 ; /* <-- avoid gettext warnings
-;
+; [multiplier_]
 ; Multipliers (aka policies)
 ;
 ; name                    = translatable name as seen by user
@@ -125,6 +153,4 @@ some governments aren't even governments at all\
 ;                           newlines so that xgettext parsing works
 ;
 ; */ <-- avoid gettext warnings
-
-;
 

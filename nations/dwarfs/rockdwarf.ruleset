@@ -1,0 +1,16 @@
+[nation_rock_dwarf]
+name = _("Rock Dwarf")
+plural = _("?plural:Rock Dwarfs")
+groups = "Tech Magical","Tech Scientific"
+
+leaders = {"name","sex"
+           "Garmelo the second","Male"
+}
+flag = "rock_dwarf"
+flag_alt = "brasil"
+style = "european"
+
+
+init_techs = ""
+init_buildings = ""
+init_units = ""

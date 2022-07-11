@@ -2,7 +2,7 @@
 ; description.
 
 [datafile]
-description = "<modpack> unit_type data for Freeciv"
+description = "fantasy unit_type data for Freeciv"
 options = "+Freeciv-ruleset-3.2-Devel-2022.Feb.02"
 format_version = 30
 
@@ -32,7 +32,7 @@ class_flags =
 veteran_names = _("green") , _("experienced") , _("veteran"), _("elite"), _("legendary")
 
 ; The percentage chance of increasing level through combat
-veteran_base_raise_chance = 10,10,0,0,0
+veteran_base_raise_chance = 50,30,0,0,0
 
 ; Power factors are as a percentage.
 ; +50% is represented by 150
@@ -40,7 +40,7 @@ veteran_power_fact = 100,200,300,400,500
 
 ; The percentage chance of a settler/engineer increasing level through
 ; performing useful work (per turn)
-veteran_work_raise_chance = 0,0,0,0,0
+veteran_work_raise_chance = 50,30,0,0,0
 
 ; The additional number of movement points granted for different veteran
 ; levels. These are fractional move points as defined by move_fragments in
@@ -133,7 +133,7 @@ min_speed = 1
 hp_loss_pct = 20
 non_native_def_pct = 200
 flags = "AttackNonNative","DoesntOccupyTile","KillCitizen","Unreachable","HutFrighten"
-helptext = _("transient units can ignore Terrain but if not properly supported the die")
+helptext = _("transient units can ignore Terrain but if not properly supported they die")
 
 [unitclass_mage]
 name = _("Mage")
@@ -156,4 +156,13 @@ min_speed = 2
 hp_loss_pct = 0
 flags = "AttackNonNative","CollectRansom","KillCitizen","TerrainDefense","Special"
 
+[unitclass_flux_resistant]
+name          = _("Flux Resistant")
+min_speed     = 2
+hp_loss_pct   = 0
+non_native_def_pct = 100
+flags         = "CanOccupyCity","CollectRansom","DamageSlows","KillCitizen","TerrainSpeed","TerrainDefense","ZOC"
+helptext = _("Flux resistant units can survive in the flux but do not benefit from it")
+
 *include "fantasy/units/starter.ruleset"
+;*include "fantasy/units/tier1.ruleset"

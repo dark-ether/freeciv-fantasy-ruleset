@@ -1,41 +1,42 @@
--------------------------------------------------------------
-        fantasy ruleset
--------------------------------------------------------------
+=============================================================
+          fantasy ruleset
+=============================================================
 fantasy is a in development ruleset which aims to be fun and strategic by using most of the features of freeciv
 
--------------------------------------------------------------
-        design goals
--------------------------------------------------------------
+=============================================================
+          design goals
+=============================================================
 the fantasy ruleset was created with some goals in mind, it should
 1. be asymmetric, playing with each nation should be a very different experience
 2. use most features of freeciv, there are many things added which aren't used by the classic and civ2civ3 ruleset
-3. be strategic, optimal play should give very different results from bad play
-4. be hard , a player should be very skillful to not fall in civil war
+3. be strategic, optimal play should differ in result compared to suboptimal play
+4. be balanced, there should be multiple viable strategies
 
--------------------------------------------------------------
-roadmap
--------------------------------------------------------------
-1. create program to generate similar nations from description file
-2. create a tier in tech tree, adding 3 techs for each
-3. add the things the techs give , should respect balance and the tech trees theme
-4. add 5 nations
-5. repeat 2 through 4
+=============================================================
+          ideas
+=============================================================
+strategic resources: increase total value of output of a city per worked one
+strategic resources 2: allow construction of special units
+strategic resources 3: techs that need a resource, almost certain this is impossible for now
+buildings that increase the output of specialists
+massive populations amounts => lots of specialists
+specialist tiers, technology making new ones available 
+government types tiers. with the first and second giving massive penalties
+city statuses, choice between log and short term, this could be a policy
+choice between production and growth
 
--------------------------------------------------------------
-techtrees
--------------------------------------------------------------
-there are many planned tech trees separated by tech class, currently what tech tree you can use depends on your nation groups
-the tech trees are Divinity,Flux,Magical,Magitech,Scientific or more specifically one for each tech class,
-with the exception of simple and exclusive which are respectively the starter techs any nation can acquire 
-and the techs exclusive to a single nation. for balance purposes most nations have acess to three tech trees. 
-the magitech tree is special in that it has dependecies on other trees namely magical and Scientific.
-Each tech tree has a theme which determines what it focus on
-Divinity blesses your nation with the power of the gods (focus in human development,culture tech happiness etc)
-Flux  warps their surroundings in unrecognizable  ways (focus in tile improvements)
-Magic focus on the individual prowess of the people (focus on units )
-Science focus ; todo add suitable description for science here (focus on city improvements)
+=============================================================
+          roadmap
+=============================================================
+1 mvp first stage 
+  1. 8 nations 
+  2. 5 techs for each tree
+  3. 60 total between wonders, buildings, units
+  4. implement strategic resources
+  5. rebalance terrain to 1
 
-
--------------------------------------------------------------
-
--------------------------------------------------------------
+=============================================================
+          wishlist of freeciv features
+=============================================================
+1 custom actions
+2 multi requirements

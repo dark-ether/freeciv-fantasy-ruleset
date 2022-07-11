@@ -1,0 +1,27 @@
+;divine section
+
+[advance_divine_fast_unit1]
+name = _("Divine Fast Unit 1")
+class = "Divine"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_req = { "type", "name", "range", "present", "quiet"
+                 "NationGroup", "Tech Divine","player",TRUE,FALSE
+}
+;flags =
+graphic = "-"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 50
+;bonus_message =
+;gives access to a explorer
+
+
+
+;flux section
+
+;magical section
+
+;scientific section
+

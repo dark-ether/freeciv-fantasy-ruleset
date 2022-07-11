@@ -1,9 +1,8 @@
 ; This is minimal techs ruleset. Replace <modpack> with your module name in
 ; description.
 
-*include "fantasy/advances/main.ruleset"
 [datafile]
-description = "<modpack> technology data for Freeciv"
+description = "fantasy technology data for Freeciv"
 options = "+Freeciv-ruleset-3.2-Devel-2022.Feb.02"
 format_version = 30
 
@@ -109,24 +108,15 @@ format_version = 30
 ;
 ; */ <-- avoid gettext warnings
 
-
-[techclass_simple]
-name = _("Simple")
-cost_pct = 50
-[techclass_magitech]
-name = _("Magitech")
-cost_pct = 200
+[techclass_special]
+name = _("Special")
+[techclass_divine]
+name = _("Divine")
+[techclass_flux]
+name = _("Flux")
 [techclass_magical]
 name = _("Magical")
 [techclass_scientific]
 name = _("Scientific")
-[techclass_divinity]
-name = _("Divinity")
-[techclass_flux]
-name = _("Flux")
-[techclass_exclusive]
-name = _("Exclusive")
-cost_pct = 300
-;[techclass_eldritch]
-;name = _("Eldritch")
-;cost_pct = 200
+
+*include "fantasy/advances/main.ruleset"

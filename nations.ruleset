@@ -2,7 +2,7 @@
 ; description.
 
 [datafile]
-description = "<modpack> nations data for Freeciv"
+description = "fantasy nations data for Freeciv"
 options = "+Freeciv-ruleset-3.2-Devel-2022.Feb.02"
 format_version = 30
 
@@ -95,12 +95,9 @@ match = 1
 [ngroup_flux_being]
 name = _("?nationgroup:Flux Being")
 match = 1
-[ngroup_hive_mind]
-name = _("?nationgroup:Hive Mind")
-match = 1
 
-[ngroup_tech_Divinity]
-name = _("?nationgroup:Tech Divinity")
+[ngroup_tech_Divine]
+name = _("?nationgroup:Tech Divine")
 hidden = TRUE
 match = 1
 [ngroup_tech_Flux]
@@ -109,10 +106,6 @@ hidden = TRUE
 match = 1
 [ngroup_tech_magical]
 name = _("?nationgroup:Tech Magical")
-hidden = TRUE
-match = 1
-[ngroup_tech_magitech]
-name = _("?nationgroup:Tech Magitech")
 hidden = TRUE
 match = 1
 [ngroup_tech_scientific]
@@ -126,14 +119,14 @@ match = 1
 [compatibility]
 ; Initial government for all the nations that do not
 ; have it explicitly defined
-default_government = "Monarchy"
+default_government = "Depotism"
 
 ; Declare which governments etc the nations may refer to.
 ; If a referenced game identifier is not on these
 ; lists, it will cause an error, to allow typos to be spotted.
 
 allowed_govs =
-  "Revolution", "Monarchy","Hive Mind"
+  "Revolution","Depotism","Tribal"
 allowed_terrains =
   "Glacier","Desert","Forest","Grassland","Hills","Jungle","Mountains","Plains","Swamp","Tundra"
 allowed_styles =
