@@ -1,23 +1,84 @@
 ;divine section
 
-[advance_divine_fast_unit1]
-name = _("Divine Fast Unit 1")
+[advance_divine_blessed_explorers]
+name = _("Blessed Explorers")
 class = "Divine"
 req1 = "None"
 req2 = "None"
 root_req = "None"
-research_req = { "type", "name", "range", "present", "quiet"
-                 "NationGroup", "Tech Divine","player",TRUE,FALSE
+research_req = { "type", "name", "range",
+                 "NationGroup", "Tech Divine","player"
 }
 ;flags =
-graphic = "-"
+graphic = "a.blessed_explorers"
+graphic_alt = "a.pottery"
+helptext = _("")
+cost = 50
+;bonus_message =
+
+[advance_divine_building_1]
+name = _("Divine Building 1")
+class = "Divine"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_req = { "type", "name", "range"
+                 "NationGroup","Tech Divine","Player"
+}
+;flags =
+graphic = "a.divine_building_1"
 graphic_alt = "a.philosophy"
 helptext = _("")
 cost = 50
 ;bonus_message =
-;gives access to a explorer
 
+[advance_divine_champion_1]
+name = _("Divine Champion 1")
+class = "Divine"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_req = { "type","name","range"
+                 "NationGroup","Tech Divine","Player"
+}
+;flags = 
+graphic = "a.divine_champion_1"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 50
+;bonus_message = 
 
+[advance_divine_wonder_1]
+name = _("Divine Wonder 1")
+class = "Divine"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_req = { "type","name","range"
+                 "NationGroup", "Tech Divine", "Player"
+}
+;flags =
+graphic = "a.divine_wonder_1"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 50
+;bonus_message =
+
+[advance_divine_wonder_2]
+name = _("Divine Wonder 2")
+class = "Divine"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_req = { "type","name","range"
+                "NationGroup","Tech Divine","Player"
+}
+;flags =
+graphic = "a.divine_wonder_2"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 50
+;bonus_message =
 
 ;flux section
 

@@ -1,0 +1,23 @@
+
+[nation_rabbit_people]
+name = _("Rabbit-People")
+plural = _("?plural:Rabbit-People")
+groups = "Native","Tech Flux","Tech Scientific"
+
+flag = "beast-people"
+flag_alt = "lesotho"
+style = "celtic"
+
+init_techs= ""
+init_buildings= ""
+init_units = "" 
+
+leaders = { "name", "sex"
+            "leogred", "male"
+}
+;cities = 
+;   "name", ;translated_name 
+;ruler_titles = { "government","male_title","female_title"
+;}
+;conflicts_with = 
+;civilwar_nations =

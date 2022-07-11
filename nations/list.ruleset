@@ -1,3 +1,9 @@
+*include "fantasy/nations/beastpeople/rabbitpeople.ruleset"
 *include "fantasy/nations/dwarfs/rockdwarf.ruleset"
-*include "fantasy/nations/testing.ruleset"
+*include "fantasy/nations/elves/darkelves.ruleset"
+*include "fantasy/nations/elves/moonelves.ruleset"
+*include "fantasy/nations/humans/human.ruleset"
+*include "fantasy/nations/humans/magicalhuman.ruleset"
+*include "fantasy/nations/orcs/purpleorcs.ruleset"
+*include "fantasy/nations/orcs/redorcs.ruleset"
 

@@ -49,12 +49,12 @@ act_gfx_alt2   = "-"
 rmact_gfx      = "None"
 rmact_gfx_alt  = "-"
 
-[extra_gems]
-name           = _("Gems")
+[extra_wheat]
+name           = _("Wheat")
 category       = "Resource"
 causes         = "Resource"
 ;rmcauses       = ""
-graphic        = "ts.gems"
+graphic        = "ts.wheat"
 graphic_alt    = "-"
 activity_gfx   = "None"
 act_gfx_alt    = "-"
@@ -75,13 +75,13 @@ act_gfx_alt2   = "-"
 rmact_gfx      = "None"
 rmact_gfx_alt  = "-"
 
-[extra_mithril]
-name           = _("Mithril")
+[extra_furs]
+name           = _("Furs")
 category       = "Resource"
 causes         = "Resource"
 ;rmcauses       = ""
-graphic        = "ts.mithril"
-graphic_alt    = "ts.iron"
+graphic        = "ts.furs"
+graphic_alt    = "-"
 activity_gfx   = "None"
 act_gfx_alt    = "-"
 act_gfx_alt2   = "-"

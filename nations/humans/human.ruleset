@@ -1,0 +1,22 @@
+[nation_human]
+name = _("Human")
+plural = _("?plural:Humans")
+groups = "Native","Tech Divine","Tech Scientific"
+
+flag = "human"
+flag_alt = "navajo"
+style = "european"
+
+init_techs = ""
+init_buildings = ""
+init_units = "" 
+
+leaders = { "name", "sex"
+            "Kevin Parry","male"
+}
+;cities = 
+;   "name", ;translated_name 
+;ruler_titles = { "government","male_title","female_title"
+;}
+;conflicts_with = 
+;civilwar_nations =

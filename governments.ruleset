@@ -66,14 +66,14 @@ Revolution happens between government changes.\
 
 ;------------------------------------------------------------------------
 ;starter govs
-[government_depotism]
+[government_despotism]
 
-name        = _("Depotism")
+name        = _("Despotism")
 reqs =
    { "type", "name", "range"
 ; No requirements
    }
-graphic     = "gov.depotism"
+graphic     = "gov.despotism"
 graphic_alt = "-"
 
 ruler_male_title = _("Ruler %s")

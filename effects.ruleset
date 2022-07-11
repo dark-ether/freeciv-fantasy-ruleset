@@ -27,7 +27,7 @@ format_version = 30
 ; Base vision range - radius of vision is sqrt(5) = 2.24
 [effect_city_vision]
 type    = "City_Vision_Radius_Sq"
-value   = 9
+value   = 1
 
 [effect_base_unit_upkeep]
 type	= "Upkeep_Factor"
@@ -63,3 +63,5 @@ value   = 1
 type    = "City_Build_Slots"
 value   = 1
 
+*include "fantasy/effects/nation-effects.ruleset"
+;*include "fantasy/effects/government-effects.ruleset"

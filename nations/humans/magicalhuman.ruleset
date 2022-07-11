@@ -1,0 +1,23 @@
+
+[nation_magical_human]
+name = _("Magical-Human")
+plural = _("?plural:Magical-Humans")
+groups = "Native","Tech Divine","Tech Magical","Tech Scientific"
+
+flag = "magical-human"
+flag_alt = "normandy"
+style = "european" 
+
+init_techs= ""
+init_buildings= ""
+init_units = "" 
+
+leaders = { "name", "sex"
+            "Elliott Sutton", "male"
+}
+;cities = 
+;   "name", ;translated_name 
+;ruler_titles = { "government","male_title","female_title"
+;}
+;conflicts_with = 
+;civilwar_nations =

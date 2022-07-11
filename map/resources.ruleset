@@ -40,11 +40,11 @@ extra = "Game"
 food = 2
 identifier = "a"
 
-[resource_gems]
-extra = "Gems"
+[resource_wheat]
+extra = "Wheat"
 shield = 1
 trade = 1
-identifier = "e"
+identifier = "w"
 
 [resource_gold]
 extra       = "Gold"
@@ -53,8 +53,8 @@ shield      = 0
 trade       = 2
 identifier  = "g"
 
-[resource_mithril]
-extra = "Mithril"
+[resource_furs]
+extra = "Furs"
 food = 0 
 shield = 0 
 trade = 2

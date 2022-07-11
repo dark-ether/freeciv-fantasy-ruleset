@@ -13,11 +13,25 @@ reqs = { "type", "name", "range"
          "Nation","Dark-Elf","Player"
 }
 
+[effect_human_pop_cost_free]
+type = "Popcost_Free"
+amount = 2
+reqs = { "type", "name", "range"
+         "Nation","Human","Player"
+}
+
 [effect_moon_elf_extra_city_size]
 type = "Size_Adj"
 amount = 6
-reqs = {"type","name","range"
+reqs = { "type","name","range"
         "Nation","Moon-Elf","Player"
+}
+
+[effect_red_orc_veteran_build]
+type = "Veteran_Build"
+amount = 2
+reqs = { "type","name","range"
+         "Nation","Red-Orc","Player"
 }
 
 [effect_rock_dwarf_natural_infrapoints]

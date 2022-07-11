@@ -1,0 +1,23 @@
+
+[nation_red_orcs]
+name = _("Red-Orc")
+plural = _("?plural:Red-Orcs")
+groups = "Interdimensional","Tech Flux","Tech Magical"
+
+flag = "red-orc"
+flag_alt = "nicaragua"
+style = "babylonian"
+
+init_techs= ""
+init_buildings= ""
+init_units = "" 
+
+leaders = { "name", "sex"
+            "Mor", "female"
+}
+;cities = 
+;   "name", ;translated_name 
+;ruler_titles = { "government","male_title","female_title"
+;}
+;conflicts_with = 
+;civilwar_nations =
