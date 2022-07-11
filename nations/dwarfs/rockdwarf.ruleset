@@ -1,7 +1,7 @@
 [nation_rock_dwarf]
-name = _("Rock Dwarf")
-plural = _("?plural:Rock Dwarfs")
-groups = "Tech Magical","Tech Scientific"
+name = _("Rock-Dwarf")
+plural = _("?plural:Rock-Dwarfs")
+groups = "Native","Tech Magical","Tech Scientific"
 
 leaders = {"name","sex"
            "Garmelo the second","Male"

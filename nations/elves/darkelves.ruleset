@@ -1,0 +1,23 @@
+
+[nation_dark_elf]
+name = _("Dark-Elf")
+plural = _("?plural:Dark-Elves")
+groups = "Native","Tech Divine","Tech Magical"
+
+flag = "dark-elf"
+flag_alt = "leon"
+style = "european"
+
+init_techs= ""
+init_buildings= ""
+init_units = "" 
+
+leaders = { "name", "sex"
+            "Vulas Elxina","female"
+}
+;cities = 
+;   "name", ;translated_name 
+;ruler_titles = { "government","male_title","female_title"
+;}
+;conflicts_with = 
+;civilwar_nations =
