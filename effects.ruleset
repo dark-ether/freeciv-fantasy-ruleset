@@ -47,7 +47,11 @@ value   = 40
 
 [effect_base_size]
 type    = "Size_Adj"
-value   = 8
+value   = 4
+
+[effect_unhappy_size]
+type = "City_Unhappy_Size"
+value = 4
 
 [effect_tech_cost_base]
 type    = "Tech_Cost_Factor"
@@ -64,4 +68,5 @@ type    = "City_Build_Slots"
 value   = 1
 
 *include "fantasy/effects/nation-effects.ruleset"
+*include "fantasy/effects/strategic-resources.ruleset"
 ;*include "fantasy/effects/government-effects.ruleset"

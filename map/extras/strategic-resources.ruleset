@@ -1,8 +1,8 @@
-; food strategic resources
+
 [extra_anole_weasel]
 name = _("Anole Weasel")
 category = "Natural"
-;causes = ""
+causes = "Hut"
 ;rmcauses =
 infracost = 0
 graphic = "ts.anole_weasel"
@@ -36,7 +36,7 @@ generated = TRUE
 [extra_cows]
 name = _("Cow")
 category = "Natural"
-;causes = ""
+causes = "Hut"
 ;rmcauses =
 infracost = 0
 graphic = "ts.cow"
@@ -70,7 +70,7 @@ generated = TRUE
 [extra_hunting_newt]
 name = _("Hunting Newt")
 category = "Natural"
-;causes = ""
+causes = "Hut"
 ;rmcauses =
 infracost = 0
 graphic = "ts.hunting_newt"
@@ -104,7 +104,7 @@ generated = TRUE
 [extra_giant_spider]
 name = _("Giant Spider")
 category = "Natural"
-;causes = ""
+causes = "Hut"
 ;rmcauses =
 infracost = 0
 graphic = "ts.giant_spider"
@@ -140,7 +140,7 @@ generated = TRUE
 [extra_gestril]
 name = _("Gestril")
 category = "Natural"
-;causes = ""
+causes = "Hut"
 ;rmcauses =
 infracost = 0
 graphic = "ts.gestril"
@@ -174,7 +174,7 @@ generated = TRUE
 [extra_orichalcum]
 name = _("Orichalcum")
 category = "Natural"
-;causes = ""
+causes = "Hut"
 ;rmcauses =
 infracost = 0
 graphic = "ts.orichalcum"
@@ -208,7 +208,7 @@ generated = TRUE
 [extra_steel]
 name = _("Steel")
 category = "Natural"
-;causes = ""
+causes = "Hut"
 ;rmcauses =
 infracost = 0
 graphic = "ts.steel"
@@ -242,7 +242,7 @@ generated = TRUE
 [extra_votrite]
 name = _("Votrite")
 category = "Natural"
-;causes = ""
+causes = "Hut"
 ;rmcauses =
 infracost = 0
 graphic = "ts.votrite"
@@ -279,7 +279,7 @@ generated = TRUE
 [extra_diamond]
 name = _("Diamond")
 category = "Natural"
-;causes = ""
+causes = "Hut"
 ;rmcauses =
 infracost = 0
 graphic = "ts.diamond"
@@ -313,7 +313,7 @@ generated = TRUE
 [extra_molserite]
 name = _("Molserite")
 category = "Natural"
-;causes = ""
+causes = "Hut"
 ;rmcauses =
 infracost = 0 
 graphic = "ts.molserite"
@@ -347,7 +347,7 @@ generated = TRUE
 [extra_rutssanite]
 name = _("Rutssanite")
 category = "Natural"
-;causes = ""
+causes = "Hut"
 ;rmcauses =
 infracost = 0
 graphic = "ts.rutssanite"
@@ -381,7 +381,7 @@ generated = TRUE
 [extra_wyarpuhyite]
 name = _("Wyarpuhyite")
 category = "Natural"
-;causes = ""
+causes = "Hut"
 ;rmcauses =
 infracost = 0
 graphic = "ts.wyarpuhyite"

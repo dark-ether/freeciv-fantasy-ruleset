@@ -15,9 +15,6 @@ the fantasy ruleset was created with some goals in mind, it should
 =============================================================
           ideas
 =============================================================
-strategic resources: increase total value of output of a city per worked one
-strategic resources 2: allow construction of special units
-strategic resources 3: techs that need a resource, almost certain this is impossible for now
 buildings that increase the output of specialists
 massive populations amounts => lots of specialists
 specialist tiers, technology making new ones available 
@@ -29,11 +26,11 @@ choice between production and growth
           roadmap
 =============================================================
 1 mvp first stage 
-  1. 8 nations [x]
+  1. infraestructure
   2. 5 techs for each tree [ ] 
   3. 60 total between wonders, buildings, units [ ]
-  4. implement strategic resources [ ] 
-  5. rebalance terrain to 1[ ]
+  4. implement strategic resources [] 
+
 
 =============================================================
           wishlist of freeciv features
