@@ -1,13 +1,21 @@
 [effect_farmland_food_bonus]
-type = "Irrigation_Pct"
-amount = 100
-reqs = {"type","name","range"
-        "Extra","Farmland","Tile"
+type = "Output_Add_Tile"
+amount = 1
+reqs = {"type","name","range","present"
+        "Extra","Farmland","Tile",TRUE
+        "OutputType","Food","Local",TRUE
 }
 
 [effect_workshop_shield_bonus]
-type = "Mining_pct"
+type = "Output_Add_Tile"
+amount = 1
+reqs = {"type","name","range","present"
+        "Extra","Workshop","Tile",TRUE
+        "OutputType","Shield","Local",TRUE
+}
+[effect_why_won_t_this_work]
+type = "Irrigation_Pct"
 amount = 100
-reqs = {"type","name","range"
-        "Extra","Workshop","Tile"
+reqs = {"type","name","range","present"
+        "Extra","Farmland","Tile",TRUE
 }

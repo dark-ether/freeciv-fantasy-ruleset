@@ -239,17 +239,14 @@ activity_gfx = "unit.farmland"
 act_gfx_alt = "None"
 rmact_gfx = "unit.pillage"
 rmact_gfx_alt = "None"
-reqs = {"type","name","range","present"
-        "Extra","Farmland","Tile",FALSE
-        "Extra","Workshop","Tile",FALSE
-}
+;reqs =
 ;rmreqs = 
 ;appearance_reqs = 
 ;disapearance_reqs =
 ;visibility_req = 
 buildable = TRUE
 ;generated = 
-;build_time = 
+build_time = 5
 ;build_time_factor = 
 ;removal_time = 
 ;removal_time_factor = 
@@ -276,17 +273,14 @@ activity_gfx = "unit.mine"
 act_gfx_alt = "None"
 rmact_gfx = "unit.pillage"
 rmact_gfx_alt = "None"
-reqs = {"type","name","range","present"
-        "Extra","Farmland","Tile",FALSE
-        "Extra","Workshop","Tile",FALSE
-}
+;reqs =
 ;rmreqs = 
 ;appearance_reqs = 
 ;disapearance_reqs =
 ;visibility_req = 
 buildable = TRUE
 ;generated = 
-;build_time = 
+build_time = 5
 ;build_time_factor = 
 ;removal_time = 
 ;removal_time_factor = 
