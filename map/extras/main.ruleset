@@ -239,12 +239,15 @@ activity_gfx = "unit.farmland"
 act_gfx_alt = "None"
 rmact_gfx = "unit.pillage"
 rmact_gfx_alt = "None"
-;reqs =
+reqs = {"type","name","range","present"
+        "Extra","Farmland","Tile",FALSE
+        "Extra","Workshop","Tile",FALSE
+}
 ;rmreqs = 
 ;appearance_reqs = 
 ;disapearance_reqs =
 ;visibility_req = 
-;buildable = 
+buildable = TRUE
 ;generated = 
 ;build_time = 
 ;build_time_factor = 
@@ -273,12 +276,15 @@ activity_gfx = "unit.mine"
 act_gfx_alt = "None"
 rmact_gfx = "unit.pillage"
 rmact_gfx_alt = "None"
-;reqs =
+reqs = {"type","name","range","present"
+        "Extra","Farmland","Tile",FALSE
+        "Extra","Workshop","Tile",FALSE
+}
 ;rmreqs = 
 ;appearance_reqs = 
 ;disapearance_reqs =
 ;visibility_req = 
-;buildable = 
+buildable = TRUE
 ;generated = 
 ;build_time = 
 ;build_time_factor = 
@@ -295,6 +301,6 @@ conflicts = "Farmland"
 ;no_aggr_near_city = 
 ;flags =
 
-
+*include "fantasy/map/extras/bases/main.ruleset"
 *include "fantasy/map/extras/resources.ruleset"
 *include "fantasy/map/extras/strategic-resources.ruleset"

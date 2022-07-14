@@ -6,11 +6,37 @@ actor_reqs = {"type","name","range","present","quiet"
 }
 target_reqs = {"type","name","range","present","quiet"
             "TerrainFlag","NoCities","Tile",FALSE,FALSE
-            ; add anti city extra
+            "Extra","Fortification","Adjacent",FAlSE,FALSE
 }
 
 [actionenabler_construct_farmland]
-action = "Irrigate"
-actor_reqs = { "type","name","range","present","quit"
-              "UnitType",
+action = "Build Irrigation"
+actor_reqs = { "type","name","range","present","quiet"
+               "UnitFlag","Settlers","Local",TRUE,FALSE
+}
+target_reqs = {"type", "name", "range", "present","quiet"
+               "TerrainAlter","CanIrrigate","Tile",TRUE, FALSE
+               "Extra","Farmland","Tile",FALSE,FALSE
+               "Extra","Workshop","Tile",FALSE,FALSE
+}
+
+[actionenabler_construct_workshop]
+action = "Build Mine"
+actor_reqs = { "type","name","range","present","quiet"
+               "UnitFlag","Settlers","Local",TRUE,FALSE
+}
+target_reqs = {"type", "name", "range", "present","quiet"
+               "TerrainAlter","CanMine","Tile",TRUE,FALSE
+               "Extra","Farmland","Tile",FALSE,FALSE
+               "Extra","Workshop","Tile",FALSE,FALSE
+}
+
+[actionenabler_construct_fortification]
+action = "Build Base"
+actor_reqs = {"type", "name", "range", "present", "quiet"
+              "UnitFlag", "Settlers", "Local", TRUE, FALSE
+}
+target_reqs = {"type", "name", "range", "present", "quiet"
+               "TerrainAlter","CanBase","Tile",TRUE,FALSE
+               "Extra","Fortification","Tile",FALSE,FALSE
 }

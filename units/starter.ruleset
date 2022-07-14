@@ -467,7 +467,7 @@ helptext = _("todo add description for warriors")
 transport_cap = 0
 
 [unit_phalanx]
-name = _("phalanx")
+name = _("Phalanx")
 class = "Land"
 build_cost = 30
 pop_cost = 0
@@ -526,7 +526,7 @@ transport_cap = 0
 helptext = _("todo add description knights")
 
 [unit_catapult]
-name = _("catapult")
+name = _("Catapult")
 class = "Land"
 flags = "CityBuster"
 roles = "AttackStrongStartUnit"

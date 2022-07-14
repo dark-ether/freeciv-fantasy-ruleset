@@ -1,0 +1,68 @@
+; /* <-- avoid gettext warnings
+;
+; Base types:
+;
+; extra                   = name of the extra this base section is part of
+;                           (must have "Base" in its causes)
+; gui_type                = How gui should handle this base.
+;                           Value can be "Fortress", "Airbase", or "Other"
+;                           See also [extraui] section
+; border_sq               = Base will claim land ownership up to this radius,
+;                           -1 to disable. If enabled, base cannot exist in
+;                           city tile.
+;                           Base (and border) ownership will change hands if
+;                           an enemy unit does "Conquer Extras" to the tile.
+; vision_main_sq          = Base will have main layer vision to this radius.
+;                           Vision initially provided to owner of unit that
+;                           built base; base will not then change hands unless
+;                           it also claims territory, or tile has another such
+;                           base or city, or another base is built (tile only
+;                           tracks one owner for all bases).
+; vision_invis_sq         = Base will have invisible layer vision to this radius
+; vision_subs_sq          = Base will have subsurface layer vision to this radius
+;
+; */ <-- avoid gettext warnings
+
+
+
+[extra_fortification]
+name = _("Fortification")
+category = "Infra"
+causes = "Base"
+rmcauses = "Pillage"
+infracost = 3
+graphic = "extra.fortress"
+graphic_alt = "base.fortress"
+activity_gfx = "unit.fortress" 
+act_gfx_alt = "None"
+rmact_gfx = "None"
+rmact_gfx_alt = "-"
+reqs = {"type","name","range","present","quiet"
+        "TerrainClass","Land","Tile",TRUE,FALSE
+; maybe add other reqs for now seems ok
+}
+;rmreqs = 
+;appearance_reqs = 
+;disapearance_reqs =
+;visibility_req = 
+;buildable = 
+;generated = 
+;build_time = 
+;build_time_factor = 
+;removal_time = 
+;removal_time_factor = 
+defense_bonus = 100
+;unit_seen =
+;appearance_chance = 
+;disapearance_chance = 
+;native_to = "Land"
+;conflicts = 
+;hidden_by = 
+;bridged_over = 
+;no_aggr_near_city = 
+;flags =
+
+[base_fortification]
+extra = "Fortification"
+gui_type = "Fortress"
+border_sq = 1
