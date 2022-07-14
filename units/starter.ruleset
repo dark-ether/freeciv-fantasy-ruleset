@@ -319,7 +319,7 @@ helptext      = _("\
 [unit_explorer]
 name = _("Explorer")
 class = "Land"
-helptxt = _("todo add description")
+helptext = _("todo add description")
 tech_req = "None"
 obsolete_by = "None"
 build_cost = 50
@@ -349,7 +349,6 @@ graphic_alt = "-"
 [unit_worker]
 name =_("Workers")
 class = "Land"
-helptxt = _("todo add suitable description")
 graphic = "u.worker"
 build_cost = 40
 pop_cost = 0

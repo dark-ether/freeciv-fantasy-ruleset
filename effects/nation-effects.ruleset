@@ -1,42 +1,42 @@
 
 [effect_dark_elf_extra_city_size]
 type = "Size_Adj"
-amount = 3
+value = 3
 reqs = { "type", "name","range"
          "Nation","Dark-Elf","Player"
 }
 
 [effect_dark_elf_veteran_level]
 type = "Veteran_Build"
-amount = "1"
+value = 1
 reqs = { "type", "name", "range"
          "Nation","Dark-Elf","Player"
 }
 
 [effect_human_pop_cost_free]
 type = "Popcost_Free"
-amount = 2
+value = 2
 reqs = { "type", "name", "range"
          "Nation","Human","Player"
 }
 
 [effect_moon_elf_extra_city_size]
 type = "Size_Adj"
-amount = 6
+value = 6
 reqs = { "type","name","range"
         "Nation","Moon-Elf","Player"
 }
 
 [effect_red_orc_veteran_build]
 type = "Veteran_Build"
-amount = 2
+value = 2
 reqs = { "type","name","range"
          "Nation","Red-Orc","Player"
 }
 
 [effect_rock_dwarf_natural_infrapoints]
 type = "Infra_Points"
-amount = 6
+value = 6
 reqs = {"type", "name","range","present"
         "Nation","Rock-Dwarf","Player",TRUE
 }

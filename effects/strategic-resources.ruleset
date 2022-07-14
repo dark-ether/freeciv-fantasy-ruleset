@@ -1,6 +1,6 @@
 [effect_anole_weasel_food]
 type = "Output_Inc_Tile"
-amount = 1
+value = 1
 reqs = { "type", "name", "range"
          "Extra","Anole Weasel", "City"
          "OutputType","Food","Local"
@@ -8,7 +8,7 @@ reqs = { "type", "name", "range"
 
 [effect_cow_food]
 type = "Output_Inc_Tile"
-amount = 1 
+value = 1 
 reqs = { "type", "name", "range"
          "Extra","Cow", "City"
          "OutputType","Food","Local"
@@ -16,7 +16,7 @@ reqs = { "type", "name", "range"
 
 [effect_hunting_newt_food]
 type = "Output_Inc_Tile"
-amount = 1
+value = 1
 reqs = { "type", "name", "range"
          "Extra", "Hunting Newt", "City"
          "OutputType", "Food", "Local"
@@ -24,7 +24,7 @@ reqs = { "type", "name", "range"
 
 [effect_giant_spider_food]
 type = "Output_Inc_Tile"
-amount = 1 
+value = 1 
 reqs = { "type", "name", "range"
          "Extra", "Giant Spider", "City"
          "OutputType", "Food", "Local"
@@ -33,7 +33,7 @@ reqs = { "type", "name", "range"
 
 [effect_gestril_shield]
 type = "Output_Inc_Tile"
-amount = 1
+value = 1
 reqs = { "type", "name" , "range"
          "Extra", "Gestril", "City"
          "OutputType","Shield","Local"
@@ -41,7 +41,7 @@ reqs = { "type", "name" , "range"
 
 [effect_orichalcum_shield]
 type = "Output_Inc_Tile"
-amount = 1
+value = 1
 reqs = { "type", "name" , "range"
          "Extra", "Orichalcum", "City"
          "OutputType","Shield","Local"
@@ -49,7 +49,7 @@ reqs = { "type", "name" , "range"
 
 [effect_steel_shield]
 type = "Output_Inc_Tile"
-amount = 1
+value = 1
 reqs = { "type", "name" , "range"
          "Extra", "Steel", "City"
          "OutputType","Shield","Local"
@@ -57,7 +57,7 @@ reqs = { "type", "name" , "range"
 
 [effect_votrite_shield]
 type = "Output_Inc_Tile"
-amount = 1
+value = 1
 reqs = { "type", "name" , "range"
          "Extra", "Votrite", "City"
          "OutputType","Shield","Local"
@@ -68,7 +68,7 @@ reqs = { "type", "name" , "range"
 
 [effect_diamond_trade]
 type = "Output_Inc_Tile"
-amount = 1
+value = 1
 reqs = { "type", "name" , "range"
          "Extra", "Diamond", "City"
          "OutputType","Trade","Local"
@@ -76,14 +76,14 @@ reqs = { "type", "name" , "range"
 
 [effect_molserite_trade]
 type = "Output_Inc_Tile"
-amount = 1
+value = 1
 reqs = { "type", "name" , "range"
          "Extra", "Molserite", "City"
          "OutputType","Trade","Local"
 }
 [effect_rutssanite_trade]
 type = "Output_Inc_Tile"
-amount = 1
+value = 1
 reqs = { "type", "name" , "range"
          "Extra", "Rutssanite", "City"
          "OutputType","Trade","Local"
@@ -91,7 +91,7 @@ reqs = { "type", "name" , "range"
 
 [effect_wyarpuhyite_trade]
 type = "Output_Inc_Tile"
-amount = 1
+value = 1
 reqs = { "type", "name" , "range"
          "Extra", "Wyarpuhyite", "City"
          "OutputType","Trade","Local"

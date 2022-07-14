@@ -62,10 +62,10 @@ identifier = "m"
 
 [resource_oil]
 extra = "Oil"
-production = 2
+shield = 2
 identifier = "o"
 
 [resource_silk]
 extra = "Silk"
-production = 2
+shield = 2
 identifier = "s"
