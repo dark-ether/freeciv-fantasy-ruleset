@@ -67,6 +67,7 @@ value   = 1
 type    = "City_Build_Slots"
 value   = 1
 
+*include "fantasy/effects/extras/main.ruleset"
 *include "fantasy/effects/nation-effects.ruleset"
 *include "fantasy/effects/strategic-resources.ruleset"
 ;*include "fantasy/effects/government-effects.ruleset"

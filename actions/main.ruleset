@@ -188,5 +188,17 @@ found_city_consuming_always = TRUE
 ; Can make the help text less redundant when you document it your self.
 ;quiet_actions = "Targeted Sabotage City", "Targeted Steal Tech", "Unit Move"
 
-*include "fantasy/actions/movement.ruleset"
-*include "fantasy/actions/infra.ruleset"
+[actionenabler_normal_movement]
+action = "Unit Move"
+actor_reqs = {"type","name","range","present","quiet"
+            "MinMoveFrags","1","Local",TRUE,FALSE
+            "UnitState","Transported","Local",FALSE,FALSE
+            "UnitClass","Mage","Local",FALSE,FALSE
+            "UnitClass","Flux","Local",FALSE,FALSE
+            "UnitClass","Champion","Local",FALSE,FALSE
+}
+target_reqs = {"type",        "name","range","present","quiet"
+; none
+}
+;need to add movement to mage flux and champion classes
+*include "fantasy/actions/infra/main.ruleset"

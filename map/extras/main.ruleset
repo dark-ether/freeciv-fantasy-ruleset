@@ -211,7 +211,7 @@ rmact_gfx_alt = "-"
 ;disapearance_reqs =
 ;visibility_req = 
 buildable = FALSE
-;generated = 
+generated = TRUE
 ;build_time = 
 ;build_time_factor = 
 ;removal_time = 
@@ -226,6 +226,75 @@ buildable = FALSE
 ;bridged_over = 
 ;no_aggr_near_city = 
 ;flags =
+
+[extra_farmland]
+name = _("Farmland")
+category = "Infra"
+causes = "Irrigation"
+rmcauses = "Pillage"
+infracost = 1
+graphic = "tx.farmland"
+graphic_alt = "-"
+activity_gfx = "unit.farmland"
+act_gfx_alt = "None"
+rmact_gfx = "unit.pillage"
+rmact_gfx_alt = "None"
+;reqs =
+;rmreqs = 
+;appearance_reqs = 
+;disapearance_reqs =
+;visibility_req = 
+;buildable = 
+;generated = 
+;build_time = 
+;build_time_factor = 
+;removal_time = 
+;removal_time_factor = 
+;defense_bonus = 
+;unit_seen =
+;appearance_chance = 
+;disapearance_chance = 
+;native_to = 
+conflicts = "Workshop"
+;hidden_by = 
+;bridged_over = 
+;no_aggr_near_city = 
+;flags =
+
+[extra_workshop]
+name = _("Workshop")
+category = "Infra"
+causes = "Mine"
+rmcauses = "Pillage"
+infracost = 1
+graphic = "tx.workshop"
+graphic_alt = "tx.village"
+activity_gfx = "unit.mine"
+act_gfx_alt = "None"
+rmact_gfx = "unit.pillage"
+rmact_gfx_alt = "None"
+;reqs =
+;rmreqs = 
+;appearance_reqs = 
+;disapearance_reqs =
+;visibility_req = 
+;buildable = 
+;generated = 
+;build_time = 
+;build_time_factor = 
+;removal_time = 
+;removal_time_factor = 
+;defense_bonus = 
+;unit_seen =
+;appearance_chance = 
+;disapearance_chance = 
+;native_to = 
+conflicts = "Farmland"
+;hidden_by = 
+;bridged_over = 
+;no_aggr_near_city = 
+;flags =
+
 
 *include "fantasy/map/extras/resources.ruleset"
 *include "fantasy/map/extras/strategic-resources.ruleset"

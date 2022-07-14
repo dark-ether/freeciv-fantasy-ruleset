@@ -15,12 +15,10 @@ the fantasy ruleset was created with some goals in mind, it should
 =============================================================
           ideas
 =============================================================
-buildings that increase the output of specialists
-massive populations amounts => lots of specialists
-specialist tiers, technology making new ones available 
-government types tiers. with the first and second giving massive penalties
-city statuses, choice between log and short term, this could be a policy
-choice between production and growth
+specialists give trade, science and gold, tiles give production and food
+terrain specific infraestructure? only advanced basic independs of terrain
+first choose between workshop and farm then depending on tech tree and terrain
+different infraestructure can be created
 
 =============================================================
           roadmap
@@ -28,12 +26,10 @@ choice between production and growth
 1 mvp first stage 
   1. infraestructure
   2. 5 techs for each tree [ ] 
-  3. 60 total between wonders, buildings, units [ ]
-  4. implement strategic resources [] 
-
+  3. 60 total between wonders, buildings, units [ ] 
 
 =============================================================
           wishlist of freeciv features
 =============================================================
 1 custom actions
-2 multi requirements
+

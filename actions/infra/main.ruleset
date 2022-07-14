@@ -1,3 +1,4 @@
+
 [actionenabler_build_city]
 action = "Found City"
 actor_reqs = {"type","name","range","present","quiet"
@@ -5,4 +6,11 @@ actor_reqs = {"type","name","range","present","quiet"
 }
 target_reqs = {"type","name","range","present","quiet"
             "TerrainFlag","NoCities","Tile",FALSE,FALSE
+            ; add anti city extra
+}
+
+[actionenabler_construct_farmland]
+action = "Irrigate"
+actor_reqs = { "type","name","range","present","quit"
+              "UnitType",
 }

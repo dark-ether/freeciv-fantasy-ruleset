@@ -27,7 +27,7 @@ color.g  = 200
 color.b = 200
 native_to = "Transient","Flux","Air","Mage","Champion","Flux Resistant"
 flags =  "FluxTerrain","NoZoc"
-helptext = _("affected by its proximity with its closeness with reality holes this terrain is inhospitable to most")
+helptext = _("affected by its proximity with reality holes this terrain is inhospitable to most")
 placing_time = 30
 pillage_time = 5
 

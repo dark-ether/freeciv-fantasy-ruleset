@@ -1,0 +1,13 @@
+[effect_farmland_food_bonus]
+type = "Irrigation_Pct"
+amount = 100
+reqs = {"type","name","range"
+        "Extra","Farmland","Tile"
+}
+
+[effect_workshop_shield_bonus]
+type = "Mining_pct"
+amount = 100
+reqs = {"type","name","range"
+        "Extra","Workshop","Tile"
+}
