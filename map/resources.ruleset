@@ -21,51 +21,44 @@
 [resource_blessed_land]
 extra = "Blessed Land"
 food = 1
-trade = 1
 identifier = "b"
 
 [resource_coal]
 extra = "Coal"
-shield = 2
+shield = 1
 identifier= "c"
 
 [resource_fish]
 extra = "Fish"
 food = 1
-trade = 1
 identifier = "f"
 
 [resource_game]
 extra = "Game"
-food = 2
+food = 1
 identifier = "a"
 
 [resource_wheat]
 extra = "Wheat"
 shield = 1
-trade = 1
 identifier = "w"
 
 [resource_gold]
 extra       = "Gold"
-food        = 0
-shield      = 0
-trade       = 2
+trade       = 1
 identifier  = "g"
 
 [resource_furs]
-extra = "Furs"
-food = 0 
-shield = 0 
-trade = 2
+extra = "Furs" 
+trade = 1
 identifier = "m"
 
 [resource_oil]
 extra = "Oil"
-shield = 2
+shield = 1
 identifier = "o"
 
 [resource_silk]
 extra = "Silk"
-shield = 2
+shield = 1
 identifier = "s"

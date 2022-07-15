@@ -10,10 +10,16 @@ format_version = 30
 ;                 and sensible.
 ; helptxt       = displayed in the help for terrains with this flag (optional)
 flags = { "name", "helptxt" 
-    _("FluxTerrain"),_("this terrain is inhospitable to most")
     _("NoPollution"),_("This tile can't become polluted")
     _("NoFortify"), _("No units can Fortify here ")
     _("NoFallout"),_("This tile cannot become irradiated")
+    _("Cold"),_("todo: add description")
+    _("Elevated"),_("todo: add description")
+    _("FluxAffected"),_("this terrain is inhospitable to most")
+    _("Forested"),_("todo: add description")
+    _("Oceanic"),_("todo: add description")
+    _("Open"),_("this terrain contains large open spaces")
+    _("Wet"),_("todo: add description")
 }
 
 ; Names for custom extra flags. There can be up to 8 of these.
@@ -275,7 +281,7 @@ warmer_drier_result  = "Swamp"
 cooler_wetter_result = "Glacier"
 cooler_drier_result  = "Tundra"
 native_to            = "Sea", "Air","Mage","Flux","Champion"
-flags                = "NoBarbs", "NoPollution", "FreshWater", "NoZoc", "NoFortify"
+flags                = "NoBarbs", "NoPollution", "FreshWater", "NoZoc", "NoFortify","Wet"
 property_ocean_depth = 0
 color.r              = 46
 color.g              = 120
@@ -319,7 +325,7 @@ warmer_drier_result  = "Swamp"
 cooler_wetter_result = "Glacier"
 cooler_drier_result  = "Glacier"
 native_to            = "Sea", "Air","Mage","Flux","Champion"
-flags                = "NoPollution", "UnsafeCoast", "NoZoc", "NoFortify"
+flags                = "NoPollution", "UnsafeCoast", "NoZoc", "NoFortify","Oceanic"
 property_ocean_depth = 32
 color.r              = 0
 color.g              = 46
@@ -364,7 +370,7 @@ warmer_drier_result  = "no"
 cooler_wetter_result = "no"
 cooler_drier_result  = "no"
 native_to            = "Sea", "Air","Mage","Flux","Champion"
-flags                = "NoPollution", "UnsafeCoast", "NoZoc", "NoFortify"
+flags                = "NoPollution", "UnsafeCoast", "NoZoc", "NoFortify","Oceanic"
 property_ocean_depth = 87
 color.r              = 0
 color.g              = 33

@@ -239,7 +239,9 @@ activity_gfx = "unit.farmland"
 act_gfx_alt = "None"
 rmact_gfx = "unit.pillage"
 rmact_gfx_alt = "None"
-;reqs =
+reqs = {"type","name","range"
+        "TerrainClass","Land","Tile"
+}
 ;rmreqs = 
 ;appearance_reqs = 
 ;disapearance_reqs =
@@ -273,7 +275,9 @@ activity_gfx = "unit.mine"
 act_gfx_alt = "None"
 rmact_gfx = "unit.pillage"
 rmact_gfx_alt = "None"
-;reqs =
+reqs = {"type","name","range"
+        "TerrainClass","Land","Tile"
+}
 ;rmreqs = 
 ;appearance_reqs = 
 ;disapearance_reqs =
@@ -290,6 +294,40 @@ build_time = 5
 ;disapearance_chance = 
 ;native_to = 
 conflicts = "Farmland"
+;hidden_by = 
+;bridged_over = 
+;no_aggr_near_city = 
+;flags =
+
+[extra_test]
+name = _("Test")
+category = "Infra"
+causes = "Irrigation"
+;rmcauses =
+infracost = 1
+graphic = "tx.farmland"
+graphic_alt = "-"
+activity_gfx = "None"
+act_gfx_alt = "-"
+rmact_gfx = "None"
+rmact_gfx_alt = "-"
+;reqs =
+;rmreqs = 
+;appearance_reqs = 
+;disapearance_reqs =
+;visibility_req = 
+buildable = TRUE
+;generated = 
+;build_time = 
+;build_time_factor = 
+;removal_time = 
+;removal_time_factor = 
+;defense_bonus = 
+;unit_seen =
+;appearance_chance = 
+;disapearance_chance = 
+;native_to = 
+;conflicts = 
 ;hidden_by = 
 ;bridged_over = 
 ;no_aggr_near_city = 

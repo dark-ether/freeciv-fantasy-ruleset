@@ -1,0 +1,17 @@
+
+
+[effect_open_workable]
+type    = "Tile_Workable"
+value   = 1
+reqs = {"type","name","range"
+        "TerrainFlag","Open","Tile"
+}
+
+[effect_forested_workable]
+type    = "Tile_Workable"
+value   = 1
+reqs = {"type","name","range"
+        "TerrainFlag","Forested","Tile"
+}
+
+*include "fantasy/effects/map/extras/main.ruleset"
