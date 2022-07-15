@@ -367,5 +367,4 @@ colorlist =
 set =
     { "name", "value", "lock"
       "startunits", "ccxxww", FALSE
-      "huts",200,TRUE
     }

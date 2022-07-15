@@ -1,4 +1,5 @@
 ;divine section
+; requirements are commented as nationg group requirements are broken
 
 [advance_divine_oceanic_terrain_access]
 name = _("Divine Oceanic Terrain Access")
@@ -7,7 +8,7 @@ req1 = "None"
 req2 = "None"
 root_req = "None"
 research_reqs = {"type","name","range","present"
-                 "Nation","Moon-Elf","Player",TRUE
+;                 "Nation","Tech Divine","Player",TRUE
 }
 ;flags =
 graphic = "a.divine_oceanic_terrain_access"
@@ -25,7 +26,7 @@ req1 = "None"
 req2 = "None"
 root_req = "None"
 research_reqs = {"type","name","range"
-                "NationGroup","Tech Divine","Player"
+;                "NationGroup","Tech Divine","Player"
 }
 ;flags =
 graphic = "a.divine_wet_terrain_access"
@@ -43,7 +44,7 @@ req1 = "None"
 req2 = "None"
 root_req = "None"
 research_reqs = {"type","name","range"
-                "NationGroup","Tech Divine","Player"
+;                "NationGroup","Tech Divine","Player"
 }
 ;flags =
 graphic = "a.divine_champion_1"
