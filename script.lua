@@ -13,3 +13,12 @@
 -- ruleset. When freeciv loads a ruleset, it also loads script
 -- file called 'default.lua'. The one loaded if your ruleset
 -- does not provide an override is default/default.lua.
+signal.connect("tech_researched","tech_research_callback")
+
+signal.connect("turn_begin","turn_begin_callback")
+function tech_research_callback(learned_tech, tech_research_player,source_of_tech)
+
+end
+
+function turn_begin_callback(turn_started,current_year)
+end

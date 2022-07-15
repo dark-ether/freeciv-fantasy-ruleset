@@ -1,5 +1,57 @@
 ;divine section
 
+[advance_divine_oceanic_terrain_access]
+name = _("Divine Oceanic Terrain Access")
+class = "Divine"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range","present"
+                 "Nation","Moon-Elf","Player",TRUE
+}
+;flags =
+graphic = "a.divine_oceanic_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("makes oceanic terrains workable, combined with other similar technologies\
+allows creation of terrain Improvements")
+cost = 20
+;bonus_message =
+
+
+[advance_divine_wet_terrain_access]
+name = _("Divine Wet Terrain Access")
+class = "Divine"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                "NationGroup","Tech Divine","Player"
+}
+;flags =
+graphic = "a.divine_wet_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("makes wet terrains workable, combined with other similar technologies allows\
+ creation of terrain improvements")
+cost = 20
+;bonus_message =
+
+
+[advance_divine_basic_champion]
+name = _("Divine Basic Champion")
+class = "Divine"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                "NationGroup","Tech Divine","Player"
+}
+;flags =
+graphic = "a.divine_champion_1"
+graphic_alt = "a.philosophy"
+helptext = _("after being researched a champion wil appear in the capital each \
+turn if there is no current champion")
+cost = 20
+;bonus_message =
 
 ;flux section
 

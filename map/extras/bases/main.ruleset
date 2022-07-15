@@ -39,7 +39,7 @@ rmact_gfx = "None"
 rmact_gfx_alt = "-"
 reqs = {"type","name","range","present","quiet"
         "TerrainClass","Land","Tile",TRUE,FALSE
-; maybe add other reqs for now seems ok
+        "CityTile","Claimed","Tile",FALSE,FALSE
 }
 ;rmreqs = 
 ;appearance_reqs = 
@@ -47,7 +47,7 @@ reqs = {"type","name","range","present","quiet"
 ;visibility_req = 
 ;buildable = 
 ;generated = 
-;build_time = 
+build_time = 1
 ;build_time_factor = 
 ;removal_time = 
 ;removal_time_factor = 

@@ -73,3 +73,25 @@ sound_alt	= "b_generic"
 helptext	= _("\
 This is the only building you can build.\
 ")
+
+
+[building_test]
+name		= _("Test")
+genus		= "Improvement"
+reqs	=
+    { "type", "name", "range"
+      "NationGroup","Tech Divine","Player"
+    }
+graphic	= "b.barracks"
+graphic_alt	= "-"
+obsolete_by     =
+    { "type", "name", "range"
+    }
+build_cost	= 100
+upkeep		= 0
+sabotage	= 100
+sound		= "b_barracks"
+sound_alt	= "b_generic"
+helptext	= _("\
+This a test building which should only be buildable by divine nations\
+")

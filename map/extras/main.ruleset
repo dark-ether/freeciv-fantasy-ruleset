@@ -239,8 +239,9 @@ activity_gfx = "unit.farmland"
 act_gfx_alt = "None"
 rmact_gfx = "unit.pillage"
 rmact_gfx_alt = "None"
-reqs = {"type","name","range"
-        "TerrainClass","Land","Tile"
+reqs = {"type","name","range","present"
+        "TerrainClass","Land","Tile", TRUE
+        "Extra","Workshop","Tile",FALSE
 }
 ;rmreqs = 
 ;appearance_reqs = 
@@ -275,8 +276,9 @@ activity_gfx = "unit.mine"
 act_gfx_alt = "None"
 rmact_gfx = "unit.pillage"
 rmact_gfx_alt = "None"
-reqs = {"type","name","range"
-        "TerrainClass","Land","Tile"
+reqs = {"type","name","range","present"
+        "TerrainClass","Land","Tile",TRUE
+        "Extra","Farmland","Tile",FALSE
 }
 ;rmreqs = 
 ;appearance_reqs = 
@@ -299,39 +301,6 @@ conflicts = "Farmland"
 ;no_aggr_near_city = 
 ;flags =
 
-[extra_test]
-name = _("Test")
-category = "Infra"
-causes = "Irrigation"
-;rmcauses =
-infracost = 1
-graphic = "tx.farmland"
-graphic_alt = "-"
-activity_gfx = "None"
-act_gfx_alt = "-"
-rmact_gfx = "None"
-rmact_gfx_alt = "-"
-;reqs =
-;rmreqs = 
-;appearance_reqs = 
-;disapearance_reqs =
-;visibility_req = 
-buildable = TRUE
-;generated = 
-;build_time = 
-;build_time_factor = 
-;removal_time = 
-;removal_time_factor = 
-;defense_bonus = 
-;unit_seen =
-;appearance_chance = 
-;disapearance_chance = 
-;native_to = 
-;conflicts = 
-;hidden_by = 
-;bridged_over = 
-;no_aggr_near_city = 
-;flags =
 
 *include "fantasy/map/extras/bases/main.ruleset"
 *include "fantasy/map/extras/resources.ruleset"

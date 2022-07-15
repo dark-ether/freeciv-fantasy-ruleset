@@ -14,4 +14,56 @@ reqs = {"type","name","range"
         "TerrainFlag","Forested","Tile"
 }
 
+[effect_cold_workable]
+type = "Tile_Workable"
+value = 1
+reqs = {"type","name","range"
+        "TerrainFlag","Cold","Tile"
+        "Tech","Cold Terrain Access","Player"
+}
+
+[effect_desert_workable]
+type = "Tile_Workable"
+value = 1
+reqs = {"type","name","range"
+        "Terrain","Desert","Tile"
+        "Tech","Desert Terrain Access","Player"
+}
+
+
+[effect_elevated_workable]
+type = "Tile_Workable"
+value = 1
+reqs = {"type","name","range"
+        "TerrainFlag","Elevated","Tile"
+        "Tech","Elevated Terrain Access","Player"
+}
+
+
+[effect_fluxaffected_workable]
+type = "Tile_Workable"
+value = 1
+reqs = {"type","name","range"
+        "TerrainFlag","FluxAffected","Tile"
+        "Tech","FluxAffected Terrain Access","Player"
+}
+
+
+[effect_oceanic_workable]
+type = "Tile_Workable"
+value = 1
+reqs = {"type","name","range"
+        "TerrainFlag","Oceanic","Tile"
+        "Tech","Oceanic Terrain Access","Player"
+}
+
+
+[effect_wet_workable]
+type = "Tile_Workable"
+value = 1
+reqs = {"type","name","range"
+        "TerrainFlag","Wet","Tile"
+        "Tech","Wet Terrain Access","Player"
+}
+
 *include "fantasy/effects/map/extras/main.ruleset"

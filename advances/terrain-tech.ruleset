@@ -1,0 +1,91 @@
+
+[advance_cold_terrain_access]
+name = _("Cold Terrain Access")
+class = "Special"
+req1 = "Never"
+req2 = "Never"
+root_req = "Cold Terrain Access"
+;research_req =
+;flags =
+graphic = "a.cold_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("Your civilization can now work Cold tiles \
+further research on related technologies will unlock new improvements for Cold tiles")
+cost = 0
+;bonus_message =
+
+[advance_desert_terrain_access]
+name = _("Desert Terrain Access")
+class = "Special"
+req1 = "Never"
+req2 = "Never"
+root_req = "Desert Terrain Access"
+;research_req =
+;flags =
+graphic = "a.desert_terrain_acess"
+graphic_alt = "a.philosophy"
+helptext = _("Your civilization can now work Desert tiles \
+further research on related technologies will unlock new improvements for Desert tiles")
+cost = 0
+;bonus_message =
+
+[advance_elevated_terrain_access]
+name = _("Elevated Terrain Access")
+class = "Special"
+req1 = "Never"
+req2 = "Never"
+root_req = "Elevated Terrain Access"
+;research_req =
+;flags =
+graphic = "a.elevated_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("Your civilization can now work Elevated tiles \
+further research on related technologies will unlock new improvements for Elevated tiles")
+cost = 0
+;bonus_message =
+
+[advance_flux_affected_terrain_access]
+name = _("FluxAffected Terrain Access")
+class = "Special"
+req1 = "Never"
+req2 = "Never"
+root_req = "FluxAffected Terrain Access"
+;research_req =
+;flags =
+graphic = "a.fluxaffected_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("Your civilization can work FluxAffected tiles further \
+reseach on related technologies will unlock new improvements for FluxAffected tiles")
+cost = 0
+;bonus_message =
+
+[advance_oceanic_terrain_access]
+name = _("Oceanic Terrain Access")
+class = "Special"
+req1 = "Never"
+req2 = "Never"
+root_req = "Oceanic Terrain Access"
+;research_req =
+;flags =
+graphic = "a.oceanic_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("Your civilization can work Oceanic tiles \
+further research on related technologies will unlock new improvements for Oceanic tiles")
+cost = 0
+;bonus_message =
+
+[advance_wet_terrain_access]
+name = _("Wet Terrain Access")
+class = "Special"
+req1 = "Never"
+req2 = "Never"
+root_req = "Wet Terrain Access"
+;research_req =
+;flags =
+graphic = "a.wet_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("Your civilization can work Wet tiles \
+furthur research on related technologies will unlock new improvements for Wet tiles")
+cost = 0
+;bonus_message =
+

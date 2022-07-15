@@ -97,20 +97,17 @@ name = _("?nationgroup:Flux Being")
 match = 1
 
 [ngroup_tech_Divine]
-name = _("?nationgroup:Tech Divine")
-hidden = TRUE
+;name = _("?nationgroup:Tech Divine")
+name = _("Tech Divine")
 match = 1
 [ngroup_tech_Flux]
 name = _("?nationgroup:Tech Flux")
-hidden = TRUE
 match = 1
 [ngroup_tech_magical]
 name = _("?nationgroup:Tech Magical")
-hidden = TRUE
 match = 1
 [ngroup_tech_scientific]
 name = _("?nationgroup:Tech Scientific")
-hidden = TRUE
 match = 1
 
 
