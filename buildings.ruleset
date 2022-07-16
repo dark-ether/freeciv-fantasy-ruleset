@@ -75,14 +75,12 @@ This is the only building you can build.\
 ")
 
 
-[building_test]
-name		= _("Test")
-genus		= "Improvement"
-reqs	=
-    { "type", "name", "range"
-      "NationGroup","Tech Divine","Player"
-    }
-graphic	= "b.barracks"
+[building_palace]
+name		= _("Palace")
+genus		= "SmallWonder"
+;reqs	=
+flags = "SaveSmallWonder"
+graphic	= "b.palace"
 graphic_alt	= "-"
 obsolete_by     =
     { "type", "name", "range"
@@ -93,5 +91,5 @@ sabotage	= 100
 sound		= "b_barracks"
 sound_alt	= "b_generic"
 helptext	= _("\
-This a test building which should only be buildable by divine nations\
+the palace marks the capital of a civilization\
 ")

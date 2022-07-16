@@ -1,0 +1,92 @@
+
+[effect_despotism_output_penalty_tile]
+type = "Output_Penalty_Tile"
+value = 3
+reqs = {"type","name","range"
+        "Gov","Despotism","Player"
+}
+
+[effect_despotism_shield_penalty]
+type = "Output_Tile_Punish_Pct"
+value = 50
+reqs = {"type","name","range"
+        "Gov","Despotism","Player"
+        "OutputType","Shield","Local"
+}
+
+
+[effect_despotism_waste_per_distance]
+type = "Output_Waste_By_Distance"
+value = 100
+reqs = {"type","name","range"
+        "Gov","Despotism","Player"
+}
+
+[effect_despotism_empire_size_base]
+type = "Empire_Size_Base"
+value = 3
+reqs = {"type","name","range"
+        "Gov","Despotism","Player"
+}
+
+[effect_tribal_output_penalty_tile]
+type = "Output_Penalty_Tile"
+value = 4
+reqs = {"type","name","range"
+        "Gov","Tribal","Player"
+}
+[effect_tribal_food_penalty]
+type = "Output_Tile_Punish_Pct"
+value = 34
+reqs = {"type","name","range"
+        "Gov","Tribal","Player"
+        "OutputType","Food","Local"
+}
+[effect_tribal_empire_size_base]
+type    = "Empire_Size_Base"
+value   = 3
+reqs = {"type","name","range"
+        "Gov","Tribal","Player"
+}
+[effect_tribal_base_waste]
+type = "Output_Waste"
+value = 0
+reqs = {"type","name","range"
+        "Gov","Tribal","Player"
+}
+
+[effect_tribal_waste_per_distance]
+type = "Output_Waste_By_Distance"
+value = 100
+reqs = {"type","name","range"
+        "Gov","Tribal","Player"
+}
+
+[effect_monarchy_empire_size_base]
+type = "Empire_Size_Base"
+value = 7 
+reqs = {"type","name","range"
+        "Gov","Monarchy","Player"
+}
+
+[effect_monarchy_free_unit_shield_upkeep_per_city]
+type = "Unit_Upkeep_Free_Per_City"
+value = 3
+reqs = {"type","name","range"
+        "Gov","Monarchy","Player"
+        "OutputType","Shield","Local"
+}
+
+[effect_democracy_empire_size_base]
+type = "Empire_Size_Base"
+value = 8
+reqs = {"type","name","range"
+        "Gov","Democracy","Player"
+} 
+[effect_democracy_trade_bonus]
+type = "Output_Add_Tile"
+value = 2
+reqs = {"type","name","range"
+        "Gov","Democracy","Player"
+        "OutputType","Trade","Local"
+}

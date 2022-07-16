@@ -1,0 +1,44 @@
+
+[unit_basic_champion]
+;basics
+name = _("Basic Champion")
+class = "Champion"
+flags = "Unique", "NoHome"
+;roles = 
+;UI
+graphic = "u.basic_champion"
+graphic_alt = "u.pikemen"
+sound_move = "m_basic_champion"
+sound_move_alt = "m_generic"
+sound_fight = "f_basic_champion"
+sound_fight_alt = "f_generic"
+;civ
+tech_req = "Divine Basic Champion"
+;impr_req =
+;obsolete_by = 
+build_cost = 1
+pop_cost = 0
+;convert_to =
+;convert_time = 
+uk_happy = 0 
+uk_food = 0
+uk_gold = 0
+uk_shield = 0
+;fight
+veteran_names = _("level 1"), _("level 2"), _("level 3"), _("level 4"), _("level 5"),
+                _("level 6"), _("level 7"), _("level 8"), _("level 9"), _("level 10")
+veteran_base_raise_chance = 50, 50, 50, 50, 50, 50, 50, 50, 50, 00
+veteran_work_raise_chance = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+veteran_power_fact = 100, 200, 300, 400, 500, 550, 600, 650, 700, 750
+veteran_move_bonus = 0, 0, 0, 0, 0, 4, 8, 12, 16, 20
+attack = 3
+defense = 3
+hitpoints = 20
+firepower = 2
+move_rate = 2
+vision_radius_sq = 1
+transport_cap = 0
+fuel = 0
+;bonuses = { "flag","type","value"
+;}
+helptext = _("todo add description")

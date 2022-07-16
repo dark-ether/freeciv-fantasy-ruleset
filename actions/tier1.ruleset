@@ -1,0 +1,33 @@
+[actionenabler_basic_champion_normal_movement]
+action = "Unit Move"
+actor_reqs = {"type","name","range","present","quiet"
+              "MinMoveFrags","1","Local",TRUE,FALSE
+              "UnitState","Transported","Local",FALSE,FALSE
+              "UnitType","Basic Champion","Local",TRUE,FALSE
+}
+target_reqs = {"type","name","range","present","quiet"
+               "TerrainFlag","FluxAffected","Tile",FALSE,FALSE
+               "TerrainFlag","Oceanic","Tile",FALSE,FALSE
+}
+
+[actionenabler_basic_champion_flux_movement]
+action = "Unit Move"
+actor_reqs = {"type","name","range","present","quiet"
+              "MinMoveFrags","1","Local",TRUE,FALSE
+              "UnitState","Transported","Local",FALSE,FALSE
+              "UnitType","Basic Champion","Local",TRUE,FALSE
+              "MinVeteran","5","Local",TRUE,FALSE
+}
+target_reqs = {"type","name","range","present","quiet"
+               "TerrainFlag","FluxAffected","Tile",TRUE,FALSE
+               "TerrainFlag","Oceanic","Tile",FALSE,FALSE
+}
+
+[actionenabler_basic_champion_attack]
+action = "Attack"
+actor_reqs = {"type","name","range","present","quiet"
+              "MinMoveFrags","1","Local",TRUE,FALSE
+              "UnitFlag","NonMil","Local",FALSE,FALSE
+              "DiplRel","War","Local",TRUE,FALSE
+              "UnitType","Basic Champion","Local",TRUE,FALSE
+}

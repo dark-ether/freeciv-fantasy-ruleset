@@ -57,38 +57,76 @@ Utility.random_from_list =  function (list)
   return list[index]
 end
 
+
+Utility.deep_copy = function (mytable)
+  local new_table = {}
+  for key,value in pairs(mytable)do
+    if type(value) == "table" then
+      new_table[key] = Utility.deep_copy(value)
+    else
+      new_table[key] = value
+    end
+  end
+  return new_table
+end
+
+Utility.map = function (table_to_operate,lifted_func)
+  local new_table = {}
+  for key ,value in pairs(table_to_operate) do
+    new_table[key] = lifted_func(value)
+  end
+  return new_table
+end
+
+Utility.map_key = function(table_to_operate,lifted_func)
+  local new_table = {}
+  for key,value in pairs(table_to_operate) do
+    new_table[key] = lifted_func(key,value)
+  end
+  return new_table
+end
+
+Utility.filter = function(table_to_operate,predicate)
+  local new_table = {}
+  for key,value in pairs(table_to_operate)do
+    if predicate(value)then
+    new_table[key] = Utility.deep_copy(value)
+    end
+  end
+  return new_table
+end
+
+Utility.filter_key = function (table_to_filter,predicate)
+   local new_table = {}
+  for key,value in pairs(table_to_filter)do
+    if predicate(key,value) then
+    new_table[key] = Utility.deep_copy(value)
+    end
+  end
+  return new_table
+end
+
+
+-- things i expect to use more than once but which aren't utilities
+
+
 -- signals that i am connecting to, 
--- they have a set order first is map generation 
+-- they have a set order first is mapgen
 -- then things that fire every turn
 -- then things that fire per events 
 -- and finally things that fire due to actions 
-signal.connect("map_generated","map_generated_callback")
+signal.connect("map_generated","Map_generated_callback")
 
 
-signal.connect("turn_begin","turn_begin_callback")
+signal.connect("turn_begin","Turn_begin_callback")
 
 
-function terrain_access_tech_routine (learned_tech, tr_player)
-  for name, techList in pairs(Terrain_Access_Techs) do
-    if Utility.table_contains(techList,learned_tech:rule_name()) then
-      local special_tech_name = name .. Terrain_Access_Name
-      if not tr_player:knows_tech(find.tech_type(special_tech_name)) then
-        tr_player:give_tech(find.tech_type(special_tech_name),0,true,"researched")
-      end
-    end
-  end
-end
-
-function tech_research_callback(learned_tech, tech_research_player,source_of_tech)
-  terrain_access_tech_routine(learned_tech,tech_research_player)
-  --government_tech_routine(learned_tech,tech_research_player)
-end
-signal.connect("tech_researched","tech_research_callback")
+signal.connect("tech_researched","Tech_research_callback")
 
 
 -- callback functions and supporting functions 
 -- any local function is a auxiliary function
-function map_generated_callback()
+function Map_generated_callback()
   for tile in whole_map_iterate() do
     -- for now the simplest i can think about should be sufficient 
     -- so we will randomly get a tile with 1 in 15 chance 
@@ -100,11 +138,31 @@ function map_generated_callback()
 end
 
 
-function turn_begin_callback(turn_started,current_year)
+local function setup_player_turn(player)
+
 end
 
+function Turn_begin_callback(turn_started,current_year)
+  for player in players_iterate()do
+    setup_player_turn(player)
+  end
+end
 
+-- tech_research_callback
+local function terrain_access_tech_routine (learned_tech, tr_player)
+  for name, techList in pairs(Terrain_Access_Techs) do
+    if Utility.table_contains(techList,learned_tech:rule_name()) then
+      local special_tech_name = name .. Terrain_Access_Name
+      if not tr_player:knows_tech(find.tech_type(special_tech_name)) then
+        tr_player:give_tech(find.tech_type(special_tech_name),0,true,"researched")
+      end
+    end
+  end
+end
 
-
+function Tech_research_callback(learned_tech, tech_research_player,source_of_tech)
+  terrain_access_tech_routine(learned_tech,tech_research_player)
+  --government_tech_routine(learned_tech,tech_research_player)
+end
 
 

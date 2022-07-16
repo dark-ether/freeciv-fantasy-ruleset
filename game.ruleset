@@ -39,7 +39,7 @@ capabilities = ""
 
 [options]
 global_init_techs=""
-global_init_buildings=""
+global_init_buildings="Palace"
 
 [tileset]
 ; If preferred tileset is set, clients that support the feature will suggest
@@ -295,6 +295,7 @@ goods_selection = "Leaving"
 [goods_good]
 name = _("Goods")
 
+;TODO: add more goods and complex trade system
 
 ; /* <-- avoid gettext warnings
 ;
@@ -310,6 +311,16 @@ name = _("Goods")
 ;
 ; */ <-- avoid gettext warnings
 
+[clause_ceasefire]
+type = "Ceasefire"
+
+[clause_peace]
+type = "Peace"
+
+[clause_alliance]
+type = "Alliance"
+
+;TODO add more types
 
 [playercolors]
 background.r = 86

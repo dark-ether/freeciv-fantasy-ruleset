@@ -33,10 +33,6 @@ value   = 2
 type	= "Upkeep_Factor"
 value	= 1
 
-[effect_empire_size_base]
-type    = "Empire_Size_Base"
-value   = 3
-
 [effect_empire_size_step_base]
 type    = "Empire_Size_Step"
 value   = 1
@@ -57,6 +53,19 @@ value = 4
 type    = "Tech_Cost_Factor"
 value   = 1
 
+[effect_capital]
+type    = "Capital_City"
+value   = 1
+reqs    = {"type","name","range"
+           "Building","Palace","City"
+} 
+[effect_gov_center]
+type = "Gov_Center"
+value = 1
+reqs = {"type","name","range"
+        "Building","Palace","City"
+}
+
 ; each city has at least one slot to build units
 [effect_city_build_slots_basic]
 type    = "City_Build_Slots"
@@ -65,4 +74,4 @@ value   = 1
 *include "fantasy/effects/map/main.ruleset"
 *include "fantasy/effects/nation-effects.ruleset"
 *include "fantasy/effects/strategic-resources.ruleset"
-;*include "fantasy/effects/government-effects.ruleset"
+*include "fantasy/effects/government-effects.ruleset"

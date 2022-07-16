@@ -49,8 +49,7 @@ research_reqs = {"type","name","range"
 ;flags =
 graphic = "a.divine_champion_1"
 graphic_alt = "a.philosophy"
-helptext = _("after being researched a champion wil appear in the capital each \
-turn if there is no current champion")
+helptext = _("after being researched allows creation of basic champion")
 cost = 20
 ;bonus_message =
 
