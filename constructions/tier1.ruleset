@@ -1,0 +1,17 @@
+
+[building_temple]
+name = _("Temple")
+genus = "Improvement"
+reqs = {"type","name","range"
+        "Tech","Worship","Player"
+}
+graphic = "b.temple"
+graphic_alt = "-"
+;obsolete_by =
+upkeep = 0
+build_cost = 50
+sabotage = 100
+;flags = 
+;helptext = _("")
+
+

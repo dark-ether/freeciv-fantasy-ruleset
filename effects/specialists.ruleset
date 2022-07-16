@@ -1,0 +1,25 @@
+
+[effect_base_entertainer_luxury_production]
+type = "Specialist_Output"
+value = 2
+reqs = {"type", "name", "range"
+        "OutputType", "Luxury", "Local"
+        "Specialist","Entertainer","Local"
+}
+
+[effect_base_scientist_science_production]
+type = "Specialist_Output"
+value = 2
+reqs = {"type", "name", "range"
+        "OutputType","Science","Local"
+        "Specialist","Scientist","Local"
+}
+
+
+[effect_base_taxman_gold_production]
+type = "Specialist_Output"
+value = 2
+reqs = {"type", "name", "range"
+        "OutputType","Gold","Local"
+        "Specialist","Taxman","Local"
+}

@@ -14,7 +14,7 @@ food_cost        = 1
 ;   if city_size > num_inis;
 ;     city_granary_size = (granary_food_ini[num_inis] +
 ;        granary_food_inc * (city_size - num_inis)) * foodbox / 100
-granary_food_ini	= 20
+granary_food_ini	= 10
 granary_food_inc	= 0
 
 ; City center minimum outputs
@@ -141,7 +141,7 @@ illness_pollution_factor = 200
 radius_sq_city = 1
 
 ; Border radius square increased by this amount / point of city size
-size_effect    = 0.20
+size_effect    = 0.05
 
 ; Difference between city workable area and area permanently claimed by
 ; city (these tiles cannot be stolen by stronger border sources).

@@ -53,6 +53,40 @@ helptext = _("after being researched allows creation of basic champion")
 cost = 20
 ;bonus_message =
 
+
+[advance_worship]
+name = _("Worship")
+class = "Divine"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+;                "NationGroup","Tech Divine","Player"
+}
+;flags =
+graphic = "a.worship"
+graphic_alt = "a.philosophy"
+helptext = _("allows temples and The Chapel")
+cost = 20
+;bonus_message =
+
+
+[advance_divine_defensive_unit_and_wonder]
+name = _("Divine Defensive Unit And Wonder")
+class = "Divine"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+;                 "NationGroup","Tech Divine","Player"
+}
+;flags =
+graphic = "a.divine_defensive_unit_and_wonder"
+graphic_alt = "a.philosophy"
+helptext = _("Allows access to a new Unit and to the (insert wonder name here)")
+cost = 20
+;bonus_message =
+
 ;flux section
 
 ;magical section

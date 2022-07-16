@@ -93,3 +93,5 @@ sound_alt	= "b_generic"
 helptext	= _("\
 the palace marks the capital of a civilization\
 ")
+
+*include "fantasy/constructions/main.ruleset"

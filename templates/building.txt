@@ -1,0 +1,12 @@
+[building_]
+name = _("")
+genus = 
+;reqs = 
+graphic =
+graphic_alt = 
+build_cost =
+;obsolete_by =
+;upkeep = 
+sabotage = 
+;flags = 
+;helptext = _("")
