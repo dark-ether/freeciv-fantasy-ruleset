@@ -2,11 +2,11 @@
 [advance_cold_terrain_access]
 name = _("Cold Terrain Access")
 class = "Special"
-req1 = "Never"
-req2 = "Never"
 root_req = "Cold Terrain Access"
 ;research_req =
 ;flags =
+req1 = "None"
+req2 = "None"
 graphic = "a.cold_terrain_access"
 graphic_alt = "a.philosophy"
 helptext = _("Your civilization can now work Cold tiles \
@@ -17,8 +17,8 @@ cost = 0
 [advance_desert_terrain_access]
 name = _("Desert Terrain Access")
 class = "Special"
-req1 = "Never"
-req2 = "Never"
+req1 = "None"
+req2 = "None"
 root_req = "Desert Terrain Access"
 ;research_req =
 ;flags =
@@ -32,8 +32,8 @@ cost = 0
 [advance_elevated_terrain_access]
 name = _("Elevated Terrain Access")
 class = "Special"
-req1 = "Never"
-req2 = "Never"
+req1 = "None"
+req2 = "None"
 root_req = "Elevated Terrain Access"
 ;research_req =
 ;flags =
@@ -47,8 +47,8 @@ cost = 0
 [advance_flux_affected_terrain_access]
 name = _("FluxAffected Terrain Access")
 class = "Special"
-req1 = "Never"
-req2 = "Never"
+req1 = "None"
+req2 = "None"
 root_req = "FluxAffected Terrain Access"
 ;research_req =
 ;flags =
@@ -62,8 +62,8 @@ cost = 0
 [advance_oceanic_terrain_access]
 name = _("Oceanic Terrain Access")
 class = "Special"
-req1 = "Never"
-req2 = "Never"
+req1 = "None"
+req2 = "None"
 root_req = "Oceanic Terrain Access"
 ;research_req =
 ;flags =
@@ -77,8 +77,8 @@ cost = 0
 [advance_wet_terrain_access]
 name = _("Wet Terrain Access")
 class = "Special"
-req1 = "Never"
-req2 = "Never"
+req1 = "None"
+req2 = "None"
 root_req = "Wet Terrain Access"
 ;research_req =
 ;flags =

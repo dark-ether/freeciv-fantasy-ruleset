@@ -27,7 +27,7 @@ format_version = 30
 ; Base vision range - radius of vision is sqrt(5) = 2.24
 [effect_city_vision]
 type    = "City_Vision_Radius_Sq"
-value   = 1
+value   = 2
 
 [effect_base_unit_upkeep]
 type	= "Upkeep_Factor"

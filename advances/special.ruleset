@@ -45,8 +45,8 @@
 name = _("Monarchy")
 class = "Special"
 
-req1 = "Never"
-req2 = "Never"
+req1 = "None"
+req2 = "None"
 root_req = "Monarchy"
 
 graphic = "a.monarchy"
@@ -61,8 +61,8 @@ instead is given to a nation when a specific tech per tech tree is discovered\
 name = _("Democracy")
 class = "Special"
 
-req1 = "Never"
-req2 = "Never"
+req1 = "None"
+req2 = "None"
 root_req = "Democracy"
 
 graphic = "a.democracy"
