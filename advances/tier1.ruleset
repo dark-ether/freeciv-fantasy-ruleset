@@ -89,7 +89,151 @@ cost = 20
 
 ;flux section
 
+[advance_flux_desert_terrain_access]
+name = _("Flux Desert Terrain Access")
+class = "Flux"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+;               "NationGroup","Tech Flux","Player"          
+}
+;flags =
+graphic = "a.flux_desert_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("makes desert terrain workable, combined with other similar technologies \
+allows creation of terrain improvements")
+cost = 20
+;bonus_message =
+
+
+[advance_flux_fluxaffected_terrain_access]
+name = _("Flux FluxAffected Terrain Access")
+class = "Flux"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = { "type","name","range"
+;                 "NationGroup","Tech Flux","Player"
+}
+;flags =
+graphic = "a.flux_flux_affected_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("makes desert terrain workable, combined with other similar technologies \
+allows creation of terrain improvements")
+cost = 20
+;bonus_message =
+
+
+[advance_flux_open_terrain_improvement]
+name = _("Flux Open Terrain Improvement")
+class = "Flux"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+;                "NationGroup","Tech Flux","Player"
+}
+;flags =
+graphic = "a.flux_open_terrain_improvement"
+graphic_alt = "a.philosophy"
+helptext = _("allows improvement of open terrain combined with other similar technologies \
+allows the creation of further improvements")
+cost = 20 
+;bonus_message =
+
+;TODO: add other tier 1 flux technologies
+
 ;magical section
 
-;scientific section
+[advance_magical_desert_terrain_access]
+name = _("Magical Desert Terrain Access")
+class = "Magical"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Magical","Player"
+}
+;flags =
+graphic = "a.magical_desert_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("makes desert terrain workable, combined with other similar technologies \
+allows creation of terrain improvements")
+cost = 20
+;bonus_message =
 
+
+[advance_magical_cold_terrain_access]
+name = _("Magical Cold Terrain Access")
+class = "Magical"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = { "type","name","range"
+                  "NationGroup","Tech Magical","Player"
+}
+;flags =
+graphic = "a.magical_cold_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("makes cold terrain workable, combined with other similar technologies \
+allows creation of terrain improvements")
+cost = 20
+;bonus_message =
+
+;TODO: add other tier1  magical techs
+
+;scientific section
+[advance_scientific_open_terrain_improvement]
+name = _("Scientific Open Terrain Improvement")
+class = "Scientific"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Scientific","Player"
+}
+;flags =
+graphic = "a.scientific_open_terrain_improvement"
+graphic_alt = "a.philosophy"
+helptext = _("allows improvement of open terrain combined with other similar technologies \
+allows the creation of further improvements")
+cost = 20
+;bonus_message =
+
+[advance_scietific_forested_terrain_improvement]
+name = _("Scientific Forested Terrain Improvement")
+class = "Scientific"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                  "NationGroup","Tech Scientific","Player"
+}
+;flags =
+graphic = "a.scientific_forested_terrain_improvement"
+graphic_alt = "a.philosophy"
+helptext = _("allows improvement of forested terrain combined with other similar technologies \
+allows the creation of further improvements")
+cost = 20
+;bonus_message =
+
+
+[advance_scientific_elevated_terrain_access]
+name = _("Scientific Elevated Terrain Access")
+class = "Scientific"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                  "NationGroup","Tech Scientific","Player"
+}
+;flags =
+graphic = "a.scientific_elevated_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("makes elevated terrain workable, combined with other similar technologies \
+allows creation of terrain improvements")
+cost = 20
+;bonus_message =
+
+;TODO: add other tier 1 scientific techs

@@ -1,0 +1,222 @@
+;divine
+
+[advance_divine_elevated_terrain_access]
+name = _("Divine Elevated Terrain Access")
+class = "Divine"
+;TODO change these requirements
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Divine","Player"
+}
+;flags =
+graphic = "a.divine_elevated_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 40
+;bonus_message =
+
+
+[advance_divine_fluxaffected_terrain_access]
+name = _("Divine FluxAffected Terrain Access")
+class = "Divine"
+;TODO Change these requirements
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Divine","Player"
+}
+;flags =
+graphic = "a.divine_fluxaffected_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 40
+;bonus_message =
+;TODO add other tier 2 divine techs 
+
+
+;flux
+
+
+[advance_flux_cold_terrain_access]
+name = _("Flux Cold Terrain Access")
+class = "Flux"
+; TODO: change these requirements
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Flux","Player"
+}
+;flags =
+graphic = "a.flux_cold_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 40
+;bonus_message =
+
+[advance_flux_elevated_terrain_access]
+name = _("Flux Elevated Terrain Access")
+class = "Flux"
+; TODO: change these reqs
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Flux","Player"
+}
+;flags =
+graphic = "a.flux_elevated_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 40
+;bonus_message =
+
+[advance_flux_forested_terrain_improvement]
+name = _("Flux Forested Terrain Improvement")
+class = "Flux"
+; TODO: Change these reqs
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Flux","Player"
+}
+;flags =
+graphic = "a.flux_forested_terrain_improvement"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 40
+;bonus_message =
+
+[advance_flux_wet_terrain_access]
+name = _("Flux Wet Terrain Access")
+class = "Flux"
+;TODO: change these reqs
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Flux","Player"
+}
+;flags =
+graphic = "a.flux_wet_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 40
+;bonus_message =
+
+
+;magical
+
+
+
+[advance_magical_fluxaffected_terrain_access]
+name = _("Magical FluxAffected Terrain Access")
+class = "Magical"
+;TODO: Change these reqs
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Magical","Player"
+}
+;flags =
+graphic = "a.magical_fluxaffected_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 40
+;bonus_message =
+
+[advance_magical_oceanic_terrain_access]
+name = _("Magical Oceanic Terrain Access")
+class = "Magical"
+;TODO: changes these reqs
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup", "Tech Magical", "Player"
+}
+;flags =
+graphic = "a.magical_oceanic_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 40
+;bonus_message =
+
+;scientifc
+
+
+[advance_scientific_cold_terrain_access]
+name = _("Scientific Cold Terrain Access")
+class = "Scientific"
+; TODO: Change these reqs
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Scientific","Player"
+}
+;flags =
+graphic = "a.scientific_cold_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 40
+;bonus_message =
+
+
+[advance_scientific_desert_terrain_access]
+name = _("Scientific Desert Terrain Access")
+class = "Scientific"
+;TODO: change these requiremtens
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Scientific","player"
+}
+;flags =
+graphic = "a.scientific_desert_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 40
+;bonus_message =
+
+
+[advance_scientific_oceanic_terrain_access]
+name = _("Scientific Oceanic Terrain Access")
+class = "Scientific"
+; TODO: change these reqs
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Scientific","Player"
+}
+;flags =
+graphic = "a.scientific_oceanic_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 40
+;bonus_message =
+
+
+[advance_scientific_wet_terrain_access]
+name = _("Scientific Wet Terrain Access")
+class = "Scientific"
+; TODO: change these reqs
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                "NationGroup","Tech Scientific","Player"
+}
+;flags =
+graphic = "a.scientific_wet_terrain_access"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 40
+;bonus_message =

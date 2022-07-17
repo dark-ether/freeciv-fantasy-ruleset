@@ -17,15 +17,45 @@
 
 -- constants later will test if i can get them from luadata.txt file
 Terrain_Access_Techs = {
-  Cold = {},
-  Desert = {},
-  Elevated = {},
-  FluxAffected = {},
+  Cold = {
+    "Flux Cold Terrain Access",
+    "Magical Cold Terrain Access",
+    "Scientific Cold Terrain Access"
+  },
+  Desert = {
+    "Flux Desert Terrain Access",
+    "Magical Desert Terrain Access",
+    "Scientific Desert Terrain Access"
+  },
+  Elevated = {
+    "Divine Elevated Terrain Access",
+    "Flux Elevated Terrain Access",
+    "Scientific Elevated Terrain Access"
+  },
+  FluxAffected = {
+    "Divine FluxAffected Terrain Access",
+    "Flux FluxAffected Terrain Access",
+    "Magical FluxAffected Terrain Access"
+  },
   Oceanic = {
-    "Divine Oceanic Terrain Access"
+    "Divine Oceanic Terrain Access",
+    "Magical Oceanic Terrain Access",
+    "Scientific Oceanic Terrain Access"
   },
   Wet = {
-    "Divine Wet Terrain Access"
+    "Divine Wet Terrain Access",
+    "Flux Wet Terrain Access",
+    "Scientific Wet Terrain Access"
+  }
+}
+Terrain_Improvement_Techs = {
+  Open = {
+    "Flux Open Terrain Improvement",
+    "Scientific Open Terrain Improvement"
+  },
+  Forested = {
+    "Flux Forested Terrain Improvement",
+    "Scientific Forested Terrain Improvement"
   }
 }
 Terrain_Access_Name = " Terrain Access"
@@ -139,7 +169,6 @@ end
 
 
 local function setup_player_turn(player,turn)
-
 end
 
 function Turn_begin_callback(turn_started,current_year)

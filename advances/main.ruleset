@@ -2,3 +2,4 @@
 *include "fantasy/advances/special.ruleset"
 *include "fantasy/advances/terrain-tech.ruleset"
 *include "fantasy/advances/tier1.ruleset"
+*include "fantasy/advances/tier2.ruleset"

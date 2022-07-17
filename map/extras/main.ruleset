@@ -302,6 +302,40 @@ conflicts = "Farmland"
 ;flags =
 
 
+[extra_terrain_crystal]
+name = _("Terrain Crystal")
+category = "Infra"
+causes = "Mine"
+rmcauses = "Pillage"
+infracost = 3
+graphic = "tx.terrain_crystal"
+graphic_alt = "tx.mine"
+activity_gfx = "unit.terrain_crystal"
+act_gfx_alt = "unit.irrigation"
+rmact_gfx = "None"
+rmact_gfx_alt = "None"
+;reqs = {"type","name","range"}
+;rmreqs = 
+;appearance_reqs = 
+;disapearance_reqs =
+;visibility_req = 
+buildable = TRUE
+;generated = 
+build_time = 10
+;build_time_factor = 
+removal_time = 1
+;removal_time_factor = 
+;defense_bonus = 
+;unit_seen =
+;appearance_chance = 
+;disapearance_chance = 
+;native_to = 
+;conflicts = 
+;hidden_by = 
+;bridged_over = 
+;no_aggr_near_city = 
+;flags =
+
 *include "fantasy/map/extras/bases/main.ruleset"
 *include "fantasy/map/extras/resources.ruleset"
 *include "fantasy/map/extras/roads.ruleset"

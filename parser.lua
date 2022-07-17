@@ -11,3 +11,5 @@
 
 -- This file is for lua-functionality for parsing luadata.txt
 -- of this ruleset.
+
+String = luadata.get_str("test.str")

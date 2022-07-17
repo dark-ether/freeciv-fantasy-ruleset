@@ -88,7 +88,7 @@ helptext = _("\
 the mark of progress building it starts a new age, when built the civilization which \
 built it gets a new tech , their cities can grow 4 population more and \
 each tile of every city gets 1 food ,shield and trade, however the mark signals \
-the start of a new age. settlers will cost 5 population instead of 3.\
+the start of a new age.for all players settlers will cost 5 population instead of 3.\
 ")
 
 *include "fantasy/constructions/main.ruleset"

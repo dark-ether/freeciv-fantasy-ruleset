@@ -11,3 +11,5 @@ value = 100
 reqs = {"type","name","range","present"
         "Extra","Workshop","Tile",TRUE
 }
+
+*include "fantasy/effects/map/extras/terrain-crystal.ruleset"

@@ -1,0 +1,215 @@
+[effect_tc_f_m_cold]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Flux Cold Terrain Access","Player"
+        "Tech","Magical Cold Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Cold","Tile"
+        }
+[effect_tc_f_s_cold]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Flux Cold Terrain Access","Player"
+        "Tech","Scientific Cold Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Cold","Tile"
+        }
+[effect_tc_m_s_cold]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Magical Cold Terrain Access","Player"
+        "Tech","Scientific Cold Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Cold","Tile"
+        }
+[effect_tc_f_m_desert]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Flux Desert Terrain Access","Player"
+        "Tech","Magical Desert Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "Terrain","Desert","Tile"
+        }
+[effect_tc_f_s_desert]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Flux Desert Terrain Access","Player"
+        "Tech","Scientific Desert Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "Terrain","Desert","Tile"
+        }
+[effect_tc_m_s_desert]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Magical Desert Terrain Access","Player"
+        "Tech","Scientific Desert Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "Terrain","Desert","Tile"
+        }
+[effect_tc_f_m_elevated]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Flux Elevated Terrain Access","Player"
+        "Tech","Divine Elevated Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Elevated","Tile"
+        }
+[effect_tc_f_s_elevated]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Flux Elevated Terrain Access","Player"
+        "Tech","Scientific Elevated Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Elevated","Tile"
+        }
+[effect_tc_m_s_elevated]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Divine Elevated Terrain Access","Player"
+        "Tech","Scientific Elevated Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Elevated","Tile"
+        }
+[effect_tc_d_f_fluxaffected]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Divine FluxAffected Terrain Access","Player"
+        "Tech","Flux FluxAffected Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","FluxAffected","Tile"
+        }
+[effect_tc_d_m_fluxaffected]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Divine FluxAffected Terrain Access","Player"
+        "Tech","Magical FluxAffected Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","FluxAffected","Tile"
+        }
+[effect_tc_f_m_fluxaffected]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Flux FluxAffected Terrain Access","Player"
+        "Tech","Magical FluxAffected Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","FluxAffected","Tile"
+        }
+[effect_tc_d_m_oceanic]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Divine Oceanic Terrain Access","Player"
+        "Tech","Magical Oceanic Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Oceanic","Tile"
+        }
+[effect_tc_d_s_oceanic]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Divine Oceanic Terrain Access","Player"
+        "Tech","Scientific Oceanic Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Oceanic","Tile"
+        }
+[effect_tc_m_s_oceanic]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Magical Oceanic Terrain Access","Player"
+        "Tech","Scientific Oceanic Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Oceanic","Tile"
+        }
+[effect_tc_d_f_wet]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Divine Wet Terrain Access","Player"
+        "Tech","Flux Wet Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Wet","Tile"
+        }
+[effect_tc_d_s_wet]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Divine Wet Terrain Access","Player"
+        "Tech","Scientific Wet Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Wet","Tile"
+        }
+[effect_tc_f_s_wet]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Flux Wet Terrain Access","Player"
+        "Tech","Scientific Wet Terrain Access","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Wet","Tile"
+        }
+
+[effect_tc_f_forested]
+type = "Irrigation_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Flux Forested Terrain Improvement","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Forested","Tile"
+        }
+
+[effect_tc_s_forested]
+type = "Irrigation_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Scientific Forested Terrain Improvement","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Forested","Tile"
+        }
+[effect_tc_f_s_forested]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Flux Forested Terrain Improvement","Player"
+        "Tech","Scientific Forested Terrain Improvement","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Forested","Tile"
+        }
+[effect_tc_f_open]
+type = "Irrigation_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Flux Open Terrain Improvement","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Open","Tile"
+        }
+
+[effect_tc_s_open]
+type = "Irrigation_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Scientific Open Terrain Improvement","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Open","Tile"
+        }
+[effect_tc_f_s_open]
+type = "Mining_Pct"
+value = 100
+reqs = {"type","name","range"
+        "Tech","Flux Open Terrain Improvement","Player"
+        "Tech","Scientific Open Terrain Improvement","Player"
+        "Extra","Terrain Crystal","Tile"
+        "TerrainFlag","Open","Tile"
+        }

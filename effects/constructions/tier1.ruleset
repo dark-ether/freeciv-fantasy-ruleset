@@ -11,3 +11,11 @@ value = 3
 reqs = { "type", "name", "range"
          "Building","The Chapel","Player"
 }
+
+;TODO: change this to a damage effect based on tech and unit class later when possible
+[effect_altar_of_the_faithkeeper_sword]
+type = "Make_Content_Mil"
+value = 1
+reqs = {"type", "name", "range"
+        "Building", "Altar Of The Faithkeeper Sword","Player"
+}
