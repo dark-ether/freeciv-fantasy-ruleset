@@ -40,3 +40,5 @@ target_reqs = {"type", "name", "range", "present", "quiet"
                "TerrainAlter","CanBase","Tile",TRUE,FALSE
                "Extra","Fortification","Tile",FALSE,FALSE
 }
+
+*include "fantasy/actions/infra/terrain-crystal.ruleset"

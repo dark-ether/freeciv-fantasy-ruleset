@@ -1,0 +1,264 @@
+
+[actionenabler_tc_f_m_cold]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Flux Cold Terrain Access","Player"
+        "Tech","Magical Cold Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Cold","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_f_s_cold]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Flux Cold Terrain Access","Player"
+        "Tech","Scientific Cold Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Cold","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_m_s_cold]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Magical Cold Terrain Access","Player"
+        "Tech","Scientific Cold Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Cold","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_f_m_desert]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Flux Desert Terrain Access","Player"
+        "Tech","Magical Desert Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "Terrain","Desert","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_f_s_desert]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Flux Desert Terrain Access","Player"
+        "Tech","Scientific Desert Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "Terrain","Desert","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_m_s_desert]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Magical Desert Terrain Access","Player"
+        "Tech","Scientific Desert Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "Terrain","Desert","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_f_m_elevated]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Flux Elevated Terrain Access","Player"
+        "Tech","Divine Elevated Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Elevated","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_f_s_elevated]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Flux Elevated Terrain Access","Player"
+        "Tech","Scientific Elevated Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Elevated","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_m_s_elevated]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Divine Elevated Terrain Access","Player"
+        "Tech","Scientific Elevated Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Elevated","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_d_f_fluxaffected]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Divine FluxAffected Terrain Access","Player"
+        "Tech","Flux FluxAffected Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","FluxAffected","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_d_m_fluxaffected]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Divine FluxAffected Terrain Access","Player"
+        "Tech","Magical FluxAffected Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","FluxAffected","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_f_m_fluxaffected]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Flux FluxAffected Terrain Access","Player"
+        "Tech","Magical FluxAffected Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","FluxAffected","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_d_m_oceanic]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Divine Oceanic Terrain Access","Player"
+        "Tech","Magical Oceanic Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Oceanic","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_d_s_oceanic]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Divine Oceanic Terrain Access","Player"
+        "Tech","Scientific Oceanic Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Oceanic","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_m_s_oceanic]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Magical Oceanic Terrain Access","Player"
+        "Tech","Scientific Oceanic Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Oceanic","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_d_f_wet]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Divine Wet Terrain Access","Player"
+        "Tech","Flux Wet Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Wet","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_d_s_wet]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Divine Wet Terrain Access","Player"
+        "Tech","Scientific Wet Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Wet","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+[actionenabler_tc_f_s_wet]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Flux Wet Terrain Access","Player"
+        "Tech","Scientific Wet Terrain Access","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Wet","Tile",TRUE
+        "TerrainAlter","canMine","Tile",TRUE
+        }
+
+[actionenabler_tc_f_forested]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "UnitFlag","Settlers","Local"
+        "Tech","Flux Forested Terrain Improvement","Player"
+        }
+target_reqs = {"type","name","range","present"
+        "TerrainAlter","CanMine","Tile",TRUE
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Forested","Tile",TRUE
+        }
+
+[actionenabler_tc_s_forested]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Scientific Forested Terrain Improvement","Player"
+        "UnitFlag","Settlers","Local"
+        }
+target_reqs = {"type","name","range","present"
+        "TerrainAlter","canMine","Tile",TRUE
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Forested","Tile",TRUE
+        }
+[actionenabler_tc_f_open]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "Tech","Flux Open Terrain Improvement","Player"
+        "UnitFlag","Settlers","Local"
+}
+target_reqs = {"type","name","range","present"
+        "TerrainAlter","canMine","Tile",TRUE
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Open","Tile",TRUE
+        }
+
+[actionenabler_tc_s_open]
+action = "Build Mine"
+actor_reqs = {"type","name","range"
+        "UnitFlag","Settlers","Local"
+        "Tech","Scientific Open Terrain Improvement","Player"
+        }
+target_reqs = {"type","name","range","present"
+        "TerrainAlter","canMine","Tile",TRUE
+        "Extra","Terrain Crystal","Tile",FALSE
+        "TerrainFlag","Open","Tile",TRUE
+        }
