@@ -336,7 +336,8 @@ removal_time = 1
 ;bridged_over = 
 ;no_aggr_near_city = 
 ;flags =
-
+helptext = _("A terrain crystal gives 1 shield production for each pair of applicable \
+terrain access tech that a civilization has, it also gives 1 food per terrain improvement \tech for forested or open terrain, the improvement terrain techs behave as if they were terrain access techs for their own terrain")
 
 
 *include "fantasy/map/extras/bases/main.ruleset"
