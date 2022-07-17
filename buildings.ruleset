@@ -53,28 +53,6 @@ format_version = 30
 ;
 ; */ <-- avoid gettext warnings
 
-[building_generic]
-name		= _("Generic")
-genus		= "Improvement"
-reqs	=
-    { "type", "name", "range"
-; No requirements
-    }
-graphic	= "b.barracks"
-graphic_alt	= "-"
-obsolete_by     =
-    { "type", "name", "range"
-    }
-build_cost	= 100
-upkeep		= 0
-sabotage	= 100
-sound		= "b_barracks"
-sound_alt	= "b_generic"
-helptext	= _("\
-This is the only building you can build.\
-")
-
-
 [building_palace]
 name		= _("Palace")
 genus		= "SmallWonder"
@@ -85,13 +63,32 @@ graphic_alt	= "-"
 obsolete_by     =
     { "type", "name", "range"
     }
-build_cost	= 100
+build_cost	= 50
 upkeep		= 0
-sabotage	= 100
+sabotage	= 0
 sound		= "b_barracks"
 sound_alt	= "b_generic"
 helptext	= _("\
 the palace marks the capital of a civilization\
+")
+
+[building_mark_of_progress]
+name = _("Mark Of Progress")
+genus = "GreatWonder"
+;reqs = 
+;flags
+graphic = "b.mark_of_progress"
+graphic_alt = "b.palace"
+build_cost = 200
+upkeep = 0 
+sabotage = 0
+sound = "b_mark_of_progress"
+sound_alt = "b_generic"
+helptext = _("\
+the mark of progress building it starts a new age, when built the civilization which \
+built it gets a new tech , their cities can grow 4 population more and \
+each tile of every city gets 1 food ,shield and trade, however the mark signals \
+the start of a new age. settlers will cost 5 population instead of 3.\
 ")
 
 *include "fantasy/constructions/main.ruleset"

@@ -67,6 +67,7 @@
 
 [road_river]
 extra = "River"
+gui_type = "Other"
 move_cost = 6
 food_incr_const = 1
 flags = "River","UnrestrictedInfra"

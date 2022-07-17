@@ -196,7 +196,7 @@ ui_name_base_airbase = _("?gui_type:Build Type B Base")
 [extra_river]
 name = _("River")
 category = "Natural"
-;causes = 
+causes = "road"
 ;rmcauses =
 infracost = 0  
 graphic = "road.river"
@@ -304,4 +304,5 @@ conflicts = "Farmland"
 
 *include "fantasy/map/extras/bases/main.ruleset"
 *include "fantasy/map/extras/resources.ruleset"
+*include "fantasy/map/extras/roads.ruleset"
 *include "fantasy/map/extras/strategic-resources.ruleset"

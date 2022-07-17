@@ -380,7 +380,6 @@ Deep oceans cover much of the world away from coastlines, and only\
  seaworthy units (not including Triremes) can travel on them.\
 ")
 *include "fantasy/map/extras/main.ruleset"
-*include "fantasy/map/resources.ruleset"
 *include "fantasy/map/flux.ruleset"
 *include "fantasy/map/land.ruleset"
 

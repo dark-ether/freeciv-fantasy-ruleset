@@ -14,6 +14,7 @@ sound_fight_alt =
 ;civ
 tech_req =
 ;impr_req =
+;gov_req =
 ;obsolete_by = 
 build_cost = 
 pop_cost = 
@@ -27,7 +28,16 @@ uk_shield =
 attack = 
 defense = 
 firepower = 1
-
+hitpoints = 
+move_rate =
+vision_radius_sq =
+fuel = 
+transport_cap = 
 ;bonuses = { "flag","type","value"
 ;}
+;veteran_names = 
+:veteran_base_raise_chance =
+:veteran_work_raise_chance =
+;veteran_power_fact = 
+;veteran_move_bonus = 
 helptext = _("todo add description")

@@ -219,7 +219,7 @@ actor_reqs = {"type","name","range","present","quiet"
               "DiplRel","War","Local",TRUE,FALSE
 }
 target_reqs = {"type","name","range","present","quiet"
-; none               
+;none for now
 }
 ;need to add movement to mage, flux and champion classes
 *include "fantasy/actions/infra/main.ruleset"

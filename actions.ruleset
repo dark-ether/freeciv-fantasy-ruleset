@@ -1,0 +1,7 @@
+
+[datafile]
+description = "fantasy game rules for Freeciv"
+options = "+Freeciv-ruleset-3.2-Devel-2022.Feb.02"
+format_version = 30
+
+

@@ -138,13 +138,13 @@ function Map_generated_callback()
 end
 
 
-local function setup_player_turn(player)
+local function setup_player_turn(player,turn)
 
 end
 
 function Turn_begin_callback(turn_started,current_year)
   for player in players_iterate()do
-    setup_player_turn(player)
+    setup_player_turn(player,turn_started)
   end
 end
 

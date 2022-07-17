@@ -1,3 +1,60 @@
 
-*include "fantasy/effects/cosntructions/tier1.ruleset"
+[effect_capital]
+type    = "Capital_City"
+value   = 1
+reqs    = {"type","name","range"
+           "Building","Palace","City"
+} 
+
+[effect_gov_center]
+type = "Gov_Center"
+value = 1
+reqs = {"type","name","range"
+        "Building","Palace","City"
+}
+
+[effect_start_settlers_discount]
+type = "Popcost_Free"
+value = 2
+reqs = {"type","name","range","present"
+        "MinTechs","10","Player",FALSE
+        "Building","Mark Of Progress","World",FALSE
+}
+
+[effect_mark_of_progress_free_tech]
+type = "Give_Imm_Tech"
+value = 1
+reqs = {"type","name","range"
+        "Building","Mark Of Progress","Player"
+}
+
+[effect_mark_of_progress_food_production]
+type = "Output_Add_Tile"
+value = 1
+reqs = {"type","name","range"
+        "Building","Mark Of Progress","Player"
+        "OutputType","Food","Local"
+}
+[effect_mark_of_progress_shield_production]
+type = "Output_Add_Tile"
+value = 1
+reqs = {"type","name","range"
+        "Building","Mark Of Progress","Player"
+        "OutputType","Shield","Local"
+}
+[effect_mark_of_progress_trade_production]
+type = "Output_Add_Tile"
+value = 1
+reqs = {"type","name","range"
+        "Building","Mark Of Progress","Player"
+        "OutputType","Trade","Local"
+}
+[effect_mark_of_progress_city_size]
+type = "Size_Adj"
+value = 4
+reqs = {"type","name","range"
+        "Building","Mark Of Progress","Player"
+}
+
+*include "fantasy/effects/constructions/tier1.ruleset"
 

@@ -47,7 +47,7 @@ research_reqs = {"type","name","range"
 ;                "NationGroup","Tech Divine","Player"
 }
 ;flags =
-graphic = "a.divine_champion_1"
+graphic = "a.divine_basic_champion"
 graphic_alt = "a.philosophy"
 helptext = _("after being researched allows creation of basic champion")
 cost = 20
@@ -71,8 +71,8 @@ cost = 20
 ;bonus_message =
 
 
-[advance_divine_defensive_unit_and_wonder]
-name = _("Divine Defensive Unit And Wonder")
+[advance_faith_warriors]
+name = _("Faith Warriors")
 class = "Divine"
 req1 = "None"
 req2 = "None"
@@ -81,9 +81,9 @@ research_reqs = {"type","name","range"
 ;                 "NationGroup","Tech Divine","Player"
 }
 ;flags =
-graphic = "a.divine_defensive_unit_and_wonder"
+graphic = "a.faith_warriors"
 graphic_alt = "a.philosophy"
-helptext = _("Allows access to a new Unit and to the (insert wonder name here)")
+helptext = _("Allows access to the faith warrior unit and the Altar Of The Faithkeeper Sword")
 cost = 20
 ;bonus_message =
 

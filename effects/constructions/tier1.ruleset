@@ -4,3 +4,10 @@ value = 2
 reqs = { "type", "name", "range"
          "Building","Temple","City"
 }
+
+[effect_the_chapel_happyness]
+type = "Make_Content"
+value = 3
+reqs = { "type", "name", "range"
+         "Building","The Chapel","Player"
+}

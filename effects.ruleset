@@ -53,24 +53,12 @@ value = 4
 type    = "Tech_Cost_Factor"
 value   = 1
 
-[effect_capital]
-type    = "Capital_City"
-value   = 1
-reqs    = {"type","name","range"
-           "Building","Palace","City"
-} 
-[effect_gov_center]
-type = "Gov_Center"
-value = 1
-reqs = {"type","name","range"
-        "Building","Palace","City"
-}
-
 ; each city has at least one slot to build units
 [effect_city_build_slots_basic]
 type    = "City_Build_Slots"
 value   = 1
 
+*include "fantasy/effects/constructions/main.ruleset"
 *include "fantasy/effects/map/main.ruleset"
 *include "fantasy/effects/specialists.ruleset"
 *include "fantasy/effects/nation-effects.ruleset"

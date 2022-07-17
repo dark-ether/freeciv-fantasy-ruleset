@@ -33,12 +33,58 @@ veteran_power_fact = 100, 200, 300, 400, 500, 550, 600, 650, 700, 750
 veteran_move_bonus = 0, 0, 0, 0, 0, 4, 8, 12, 16, 20
 attack = 3
 defense = 3
-hitpoints = 20
-firepower = 2
+hitpoints = 10
+firepower = 1
 move_rate = 2
 vision_radius_sq = 1
 transport_cap = 0
 fuel = 0
 ;bonuses = { "flag","type","value"
 ;}
+helptext = _("todo add description")
+
+[unit_faith_warrior]
+;basics
+name = _("Faith Warrior")
+class = "Land"
+flags = "Paper"
+roles = "DefendGood"
+;UI
+graphic = "u.faith_warrior"
+graphic_alt = "u.warriors"
+sound_move = "m_faith_warrior"
+sound_move_alt = "m_generic"
+sound_fight = "f_faith_warrior"
+sound_fight_alt = "f_generic"
+;civ
+tech_req = "Faith Warriors"
+;impr_req =
+;gov_req =
+;obsolete_by = 
+build_cost = 50 
+pop_cost = 0
+;convert_to =
+;convert_time = 
+uk_happy = 1
+uk_food = 1
+uk_gold = 1
+uk_shield = 1
+;fight
+attack = 2
+defense = 3
+firepower = 1
+hitpoints = 10
+move_rate = 2
+vision_radius_sq = 4
+fuel = 0
+transport_cap = 0
+bonuses = { "flag","type","value"
+            "Rock","DefenseMultiplierPct",100
+            "Rock","DefenseDividerPct",100
+}
+;veteran_names = 
+;veteran_base_raise_chance =
+;veteran_work_raise_chance =
+;veteran_power_fact = 
+;veteran_move_bonus = 
 helptext = _("todo add description")
