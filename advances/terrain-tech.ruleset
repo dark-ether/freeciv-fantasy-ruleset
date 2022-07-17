@@ -85,8 +85,22 @@ root_req = "Wet Terrain Access"
 graphic = "a.wet_terrain_access"
 graphic_alt = "a.philosophy"
 helptext = _("Your civilization can work Wet tiles \
-furthur research on related technologies will unlock new improvements for Wet tiles")
+further research on related technologies will unlock new improvements for Wet tiles")
 cost = 0
 ;bonus_message =
 
 
+[advance_terrain_crystal]
+name = _("Terrain Crystal")
+class = "Special"
+req1 = "None"
+req2 = "None"
+root_req = "Terrain Crystal"
+research_reqs = {"type","name","range"
+}
+;flags =
+graphic = "a.terrain_crystal"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 0
+;bonus_message =

@@ -182,9 +182,9 @@ local function terrain_access_tech_routine (learned_tech, tr_player)
   for name, techList in pairs(Terrain_Access_Techs) do
     if Utility.table_contains(techList,learned_tech:rule_name()) then
       local special_tech_name = name .. Terrain_Access_Name
-      if not tr_player:knows_tech(find.tech_type(special_tech_name)) then
-        tr_player:give_tech(find.tech_type(special_tech_name),0,true,"researched")
-      end
+      local tech_in_learned = find.tech_type(special_tech_name)
+      tr_player:give_tech(tech_in_learned,0,true,"researched")
+      tr_player:give_tech(find.tech_type("Terrain Crystal"),0,true,"researched")
     end
   end
 end
