@@ -8,13 +8,13 @@ req1 = "None"
 req2 = "None"
 root_req = "None"
 research_reqs = {"type","name","range","present"
-;                 "Nation","Tech Divine","Player",TRUE
+                 "NationGroup","Tech Divine","Player",TRUE
 }
 ;flags =
 graphic = "a.divine_oceanic_terrain_access"
 graphic_alt = "a.philosophy"
-helptext = _("makes oceanic terrains workable, combined with other similar technologies\
-allows creation of terrain Improvements")
+helptext = _("makes oceanic terrains workable, combined with other similar technologies \
+empowers Terrain Crystals")
 cost = 20
 ;bonus_message =
 
@@ -26,13 +26,12 @@ req1 = "None"
 req2 = "None"
 root_req = "None"
 research_reqs = {"type","name","range"
-;                "NationGroup","Tech Divine","Player"
+                "NationGroup","Tech Divine","Player"
 }
 ;flags =
 graphic = "a.divine_wet_terrain_access"
 graphic_alt = "a.philosophy"
-helptext = _("makes wet terrains workable, combined with other similar technologies allows\
- creation of terrain improvements")
+helptext = _("makes wet terrains workable, combine with other similar technologies empowers Terrain Crystals")
 cost = 20
 ;bonus_message =
 
@@ -44,7 +43,7 @@ req1 = "None"
 req2 = "None"
 root_req = "None"
 research_reqs = {"type","name","range"
-;                "NationGroup","Tech Divine","Player"
+                 "NationGroup","Tech Divine","Player"
 }
 ;flags =
 graphic = "a.divine_basic_champion"
@@ -61,7 +60,7 @@ req1 = "None"
 req2 = "None"
 root_req = "None"
 research_reqs = {"type","name","range"
-;                "NationGroup","Tech Divine","Player"
+                 "NationGroup","Tech Divine","Player"
 }
 ;flags =
 graphic = "a.worship"
@@ -78,7 +77,7 @@ req1 = "None"
 req2 = "None"
 root_req = "None"
 research_reqs = {"type","name","range"
-;                 "NationGroup","Tech Divine","Player"
+                 "NationGroup","Tech Divine","Player"
 }
 ;flags =
 graphic = "a.faith_warriors"
@@ -96,13 +95,13 @@ req1 = "None"
 req2 = "None"
 root_req = "None"
 research_reqs = {"type","name","range"
-;               "NationGroup","Tech Flux","Player"          
+                 "NationGroup","Tech Flux","Player"          
 }
 ;flags =
 graphic = "a.flux_desert_terrain_access"
 graphic_alt = "a.philosophy"
 helptext = _("makes desert terrain workable, combined with other similar technologies \
-allows creation of terrain improvements")
+empowers Terrain Crystals")
 cost = 20
 ;bonus_message =
 
@@ -114,13 +113,13 @@ req1 = "None"
 req2 = "None"
 root_req = "None"
 research_reqs = { "type","name","range"
-;                 "NationGroup","Tech Flux","Player"
+                  "NationGroup","Tech Flux","Player"
 }
 ;flags =
 graphic = "a.flux_flux_affected_terrain_access"
 graphic_alt = "a.philosophy"
 helptext = _("makes desert terrain workable, combined with other similar technologies \
-allows creation of terrain improvements")
+empowers Terrain Crystals")
 cost = 20
 ;bonus_message =
 
@@ -132,14 +131,30 @@ req1 = "None"
 req2 = "None"
 root_req = "None"
 research_reqs = {"type","name","range"
-;                "NationGroup","Tech Flux","Player"
+                 "NationGroup","Tech Flux","Player"
 }
 ;flags =
 graphic = "a.flux_open_terrain_improvement"
 graphic_alt = "a.philosophy"
-helptext = _("allows improvement of open terrain combined with other similar technologies \
-allows the creation of further improvements")
+helptext = _("allows creation of Terrain Crystals on open terrain combined with other similar technologies\
+empowers Terrain Crystals")
 cost = 20 
+;bonus_message =
+
+[advance_flux_building_and_wonder_1]
+name = _("Flux Building And Wonder 1")
+class = "Flux"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Flux","Player"
+}
+;flags =
+graphic = "a.flux_building_and_wonder_1"
+graphic_alt = "a.philosophy"
+helptext = _("")
+cost = 20
 ;bonus_message =
 
 ;TODO: add other tier 1 flux technologies
@@ -159,7 +174,7 @@ research_reqs = {"type","name","range"
 graphic = "a.magical_desert_terrain_access"
 graphic_alt = "a.philosophy"
 helptext = _("makes desert terrain workable, combined with other similar technologies \
-allows creation of terrain improvements")
+empowers Terrain Crystals")
 cost = 20
 ;bonus_message =
 
@@ -177,7 +192,7 @@ research_reqs = { "type","name","range"
 graphic = "a.magical_cold_terrain_access"
 graphic_alt = "a.philosophy"
 helptext = _("makes cold terrain workable, combined with other similar technologies \
-allows creation of terrain improvements")
+empowers Terrain Crystals")
 cost = 20
 ;bonus_message =
 
@@ -196,25 +211,25 @@ research_reqs = {"type","name","range"
 ;flags =
 graphic = "a.scientific_open_terrain_improvement"
 graphic_alt = "a.philosophy"
-helptext = _("allows improvement of open terrain combined with other similar technologies \
-allows the creation of further improvements")
+helptext = _("allows creation of Terrain Crystals on open terrain combined with other similar technologies \
+empowers Terrain Crystals")
 cost = 20
 ;bonus_message =
 
-[advance_scietific_forested_terrain_improvement]
+[advance_scientific_forested_terrain_improvement]
 name = _("Scientific Forested Terrain Improvement")
 class = "Scientific"
 req1 = "None"
 req2 = "None"
 root_req = "None"
 research_reqs = {"type","name","range"
-                  "NationGroup","Tech Scientific","Player"
+                 "NationGroup","Tech Scientific","Player"
 }
 ;flags =
 graphic = "a.scientific_forested_terrain_improvement"
 graphic_alt = "a.philosophy"
-helptext = _("allows improvement of forested terrain combined with other similar technologies \
-allows the creation of further improvements")
+helptext = _("allows creation of Terrain Crystal on forested terrain combined with other similar technologies \
+empowers Terrain Crystals")
 cost = 20
 ;bonus_message =
 
@@ -225,14 +240,14 @@ class = "Scientific"
 req1 = "None"
 req2 = "None"
 root_req = "None"
-research_reqs = {"type","name","range"
+research_reqs = { "type", "name", "range"
                   "NationGroup","Tech Scientific","Player"
 }
 ;flags =
 graphic = "a.scientific_elevated_terrain_access"
 graphic_alt = "a.philosophy"
 helptext = _("makes elevated terrain workable, combined with other similar technologies \
-allows creation of terrain improvements")
+empowers Terrain Crystals")
 cost = 20
 ;bonus_message =
 
