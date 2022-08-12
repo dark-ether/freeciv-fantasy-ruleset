@@ -19,3 +19,17 @@ value = 1
 reqs = {"type", "name", "range"
         "Building", "Altar Of The Faithkeeper Sword","Player"
 }
+
+[effect_flux_theatre_happyness]
+type = "Make_Content"
+value = 2
+reqs = { "type", "name","range"
+         "Building","Flux Theatre","City"
+}
+
+[effect_twilight_concert_hall_happyness]
+type = "Make_content"
+value = 3
+reqs = {"type", "name", "range"
+        "Building","Twilight Concert Hall","Player"
+}

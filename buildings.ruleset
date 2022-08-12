@@ -79,7 +79,7 @@ genus = "GreatWonder"
 ;flags
 graphic = "b.mark_of_progress"
 graphic_alt = "b.palace"
-build_cost = 200
+build_cost = 500
 upkeep = 0 
 sabotage = 0
 sound = "b_mark_of_progress"

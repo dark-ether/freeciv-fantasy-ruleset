@@ -157,7 +157,22 @@ helptext = _("")
 cost = 20
 ;bonus_message =
 
-;TODO: add other tier 1 flux technologies
+[advance_motivate_marked_existence]
+name = _("Motivate Marked Existence")
+class = "Flux"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Flux","Player"
+}
+;flags =
+graphic = "a.motivate_marked_existence"
+graphic_alt = "a.philosophy"
+helptext = _("unlocks a new unit and a building which increases the maximum\
+size of a city")
+cost = 20
+;bonus_message =
 
 ;magical section
 
@@ -197,6 +212,23 @@ cost = 20
 ;bonus_message =
 
 ;TODO: add other tier1  magical techs
+
+
+[advance_initial_rune_carving]
+name = _("Initial Rune Carving")
+class = "Magical"
+req1 = "None"
+req2 = "None"
+root_req = "None"
+research_reqs = {"type","name","range"
+                 "NationGroup","Tech Magical","Player"
+}
+;flags =
+graphic = "a.initial_rune_carving"
+graphic_alt = "a.philosophy"
+helptext = _("")
+;cost = 
+;bonus_message =
 
 ;scientific section
 [advance_scientific_open_terrain_improvement]

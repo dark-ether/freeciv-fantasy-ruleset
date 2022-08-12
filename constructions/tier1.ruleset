@@ -12,7 +12,7 @@ upkeep = 0
 build_cost = 20
 sabotage = 100
 ;flags = 
-;helptext = _("")
+helptext = _("A temple makes 2 citizens content")
 
 [building_the_chapel]
 name = _("The Chapel")
@@ -21,7 +21,7 @@ reqs = {"type","name","range"
         "Tech","Worship","Player"
         "Building","Temple","City"
 }
-build_cost = 100
+build_cost = 200
 upkeep = 0
 sabotage = 100
 graphic = "b.the_chapel"
@@ -38,11 +38,45 @@ reqs = {"type","name","range"
 }
 graphic = "b.altar_of_the_faithkeeper_sword"
 graphic_alt = "b.barracks"
-build_cost = 100
+build_cost = 200
 ;obsolete_by =
 upkeep = 0
 sabotage = 0
 ;flags = 
 helptext = _("the altar is the source of power of the faithkeeper swords \
-any champion can be armed with one gaining 1 whole movement point\
+they make a single city content per city even if the unhappyness \
+is caused by military activity\
+\nTODO: chage to a attack bonus if/when more complex attack modifiers are possible\
 ")
+
+[building_flux_theatre]
+name = _("Flux theatre")
+genus = "Improvement"
+reqs = {"type","name","range"
+        "Tech","Flux Building And Wonder 1","Player"
+}
+graphic = "b.flux_theatre"
+graphic_alt = "b.temple"
+build_cost = 20
+;obsolete_by =
+upkeep = 1
+sabotage = 100
+;flags = 
+helptext = _("A flux theatre makes 2 citizes content")
+
+
+[building_twilight_concert_hall]
+name = _("Twilight Concert Hall")
+genus = "GreatWonder"
+reqs = { "type","name","range"
+         "Tech","Flux Building And Wonder 1","Player"
+}
+graphic = "b.twilight_concert_hall"
+graphic_alt = "b.temple"
+build_cost = 150
+;obsolete_by =
+upkeep = 0
+sabotage = 0
+;flags = 
+helptext = _("the twilight concert hall makes 3 content citizens per city \
+for the player that builds it")

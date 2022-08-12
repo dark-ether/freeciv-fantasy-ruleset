@@ -88,3 +88,47 @@ bonuses = { "flag","type","value"
 ;veteran_power_fact = 
 ;veteran_move_bonus = 
 helptext = _("todo add description")
+
+[unit_proponent_of_the_mark]
+;basics
+name = _("Proponent Of The Mark")
+class = "Flux"
+flags = "Paper"
+roles = ""
+;UI
+graphic = ""
+graphic_alt =
+sound_move =
+sound_move_alt = 
+sound_fight = 
+sound_fight_alt = 
+;civ
+tech_req =
+;impr_req =
+;gov_req =
+;obsolete_by = 
+build_cost = 50
+pop_cost = 0
+;convert_to =
+;convert_time = 
+uk_happy =  
+uk_food =
+uk_gold = 
+uk_shield = 
+;fight
+attack = 3
+defense = 2
+firepower = 1
+hitpoints = 10
+move_rate = 2
+vision_radius_sq = 2
+fuel = 0
+transport_cap = 0
+;bonuses = { "flag","type","value"
+;}
+;veteran_names = 
+:veteran_base_raise_chance =
+:veteran_work_raise_chance =
+;veteran_power_fact = 
+;veteran_move_bonus = 
+helptext = _("todo add description")
